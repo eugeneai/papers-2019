@@ -1,0 +1,15 @@
+1/24/19 12:14 PM
+Project Statistics
+
+                 	Segments	Words	Characters (without spaces)	Characters (including spaces)	#Files	
+Total:           	     248	 2343	                      15151	                        17264	     2	
+Remaining:       	     241	 2321	                      15015	                        17115	     2	
+Unique:          	     195	 2023	                      12856	                        14698	     2	
+Unique Remaining:	     191	 2011	                      12780	                        14615	     2	
+
+
+Individual File Statistics:
+
+File Name     	Total Segments	Remaining Segments	Unique Segments	Unique Remaining Segments	Total Words	Remaining Words	Unique Words	Unique Remaining Words	Total Characters (without spaces)	Remaining Characters (without spaces)	Unique Characters (without spaces)	Unique Remaining Characters (without spaces)	Total Characters (including spaces)	Remaining Characters (including spaces)	Unique Characters (including spaces)	Unique Remaining Characters (including spaces)	
+01_odbora.docx	           208	               204	            178	                      174	       2064	           2052	        1827	                  1815	                            13534	                                13458	                             11704	                                       11628	                              15411	                                  15328	                               13368	                                         13285	
+02_odbora.docx	            40	                37	             17	                       17	        279	            269	         196	                   196	                             1617	                                 1557	                              1152	                                        1152	                               1853	                                   1787	                                1330	                                          1330	
