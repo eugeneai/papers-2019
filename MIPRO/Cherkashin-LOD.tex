@@ -1,50 +1,124 @@
-\documentclass[12pt]{llncs}
+\documentclass[conference,a4paper]{IEEEtran}
+\usepackage{minted}
+\usemintedstyle{bw}
+% \usemintedstyle{borland}
+\setminted{fontsize=\footnotesize}
+
+% *** CITATION PACKAGES ***
+%
+\usepackage{cite}
+%\renewcommand\cite[1]{[[#1]]}
+\usepackage{iftex}
+\ifPDFTeX
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc} % Кодировка utf-8, cp1251 и т.д.
+\usepackage[russian,english]{babel}
+\usepackage{times}
+\else
+\usepackage{luatextra}
+  \usepackage{polyglossia}
+  \setmainlanguage{english}
+  \setotherlanguage{russian}
+  \defaultfontfeatures{Ligatures=TeX,Numbers=Lining,Scale=MatchLowercase}
+
+  \setmainfont{Times New Roman}
+  \setsansfont{Arial}
+  \setmonofont{Courier New}
+
+  %\setmathfont{Cambria Math}%
+
+  \newfontfamily{\cyrillicfont}{Times New Roman}
+  \newfontfamily{\cyrillicfontrm}{Times New Roman}
+  \newfontfamily{\cyrillicfonttt}{Courier New}
+  \newfontfamily{\cyrillicfontsf}{Arial}
+\fi
 
 \usepackage{hyperref}
-\usepackage{microtype}
-%\usepackage[russian,english]{babel}
-\usepackage[T2A]{fontenc}
-\usepackage[utf8]{inputenc} % Кодировка %utf-8, cp1251 и т.д.
-\usepackage[russian,english]{babel}
-%\usepackage{times}
 \hypersetup{
-    %bookmarks=true,         % show bookmarks bar?
+    % bookmarks=true,         % show bookmarks bar?
     unicode=true,          % non-Latin characters in Acrobat’s bookmarks
     pdftoolbar=true,        % show Acrobat’s toolbar?
     pdfmenubar=true,        % show Acrobat’s menu?
     pdffitwindow=false,     % window fit to page when opened
     pdfstartview={FitH},    % fits the width of the page to the window
-    pdftitle={Procedings of LYAP'2018 conference},    % title
-    pdfauthor={},     % author
-    pdfsubject={math},   % subject of the document
-    pdfcreator={LaTeX},   % creator of the document
-    pdfproducer={LaTeX}, % producer of the document
-    pdfkeywords={math}, % list of keywords
-    pdfnewwindow=true,      % links in new window
+    %pdftitle={},    % title
+    %pdfauthor={Author},     % author
+    %pdfsubject={Subject},   % subject of the document
+    %pdfcreator={Creator},   % creator of the document
+    %pdfproducer={Producer}, % producer of the document
+    %pdfkeywords={keyword1, key2, key3}, % list of keywords
+    %pdfnewwindow=true,      % links in new PDF window
     colorlinks=true,       % false: boxed links; true: colored links
-    linkcolor=black, %[rgb]{0 0.4 0.1},          % color of internal links
-    citecolor=black, %blue,        % color of links to bibliography
+    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    citecolor=black,        % color of links to bibliography
     filecolor=black,      % color of file links
-    urlcolor=black % [rgb]{0.3 0.0 0.3}           % color of external links
-}
+    urlcolor=black,           % color of external links
+    final=true
+  }
+
+
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifPDFTeX
+  \usepackage[pdftex]{graphicx}
+\else
+  \usepackage{graphicx}
+\fi
+
+
+
+
+
+% *** MATH PACKAGES ***
+%
+%\usepackage[cmex10]{amsmath}
+
+
+
+% *** ALIGNMENT PACKAGES ***
+%
+%\usepackage{array}
+
+
+% *** SUBFIGURE PACKAGES ***
+%\ifCLASSOPTIONcompsoc
+%  \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+%\else
+%  \usepackage[caption=false,font=footnotesize]{subfig}
+%\fi
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\providecommand\url[1]{\texttt{#1}}
+\graphicspath{{pics/}}
 
 \begin{document}
+\urlstyle{tt}
+\renewcommand\IEEEkeywordsname{Keywords}
+\date{}
+
 %\selectlanguage{english}
-\title{An approach to creation of linked--data based document archives}
+\title{Digital Archives Supporting Document Content Inference}
 %
 %\titlerunning{Abbreviated paper title}
 % If the paper title is too long for the running head, you can set
 % an abbreviated paper title here
 %
 
-\author{***}
+\DeclareRobustCommand*{\IEEEauthorrefmark}[1]{\raisebox{0pt}[0pt][0pt]{\textsuperscript{\footnotesize #1}}}
+\author{Evgeny Cherkashin\IEEEauthorrefmark{1,}\IEEEauthorrefmark{2},
+Alexey Shigarov\IEEEauthorrefmark{1},
+Vyacheslav Paramonov\IEEEauthorrefmark{1},
+Andrey Mikhailov\IEEEauthorrefmark{1}\\[0.3em]
 %
-\authorrunning{***}
-% First names are abbreviated in the running head.
-% If there are more than two authors, 'et al.' is used.
-%
-\institute{***}
-%\url{http://www.springer.com/gp/computer-science/lncs}
+\IEEEauthorblockA{\IEEEauthorrefmark{1}Matrosov Institute for System Dynamics and Control Theory of SB RAS, 134 Lermontov Street, Russia, 664033}
+\IEEEauthorblockA{\IEEEauthorrefmark{2}National Research Irkutsk State Technical University, 83 Lermontov Street, Russia, 664074}
+E-mail:\texttt{\{eugeneai,shig,slv,mikhailov\}@icc.ru}}
+
 
 %
 \maketitle              % typeset the header of the contribution
@@ -52,12 +126,21 @@
 \begin{abstract}
 An amount of documents created and circulated in the world increases day--to--day. Some of new documents may use parts of archived ones (e.g. header, names of persons and organisations, tabular data and their description, footers, etc.). In this case, creator should analyse existing documents, collect and process many data for their reuse. These processes may require a lot of time and efforts. Semantic description of documents allows simplifying them. The paper presents novel approach to creation of open document catalogues that involves LODs, documents templates, and logical inference. The approach was implemented by using a contemporary open software tool--set. We used it for forming documents for educational processes regulation in departments of Irkutsk State University. It allowed to simplify parts of archived documents reusing in preparing new ones.
 
-\keywords{Linked Open Data, component architecture, digital archive, document authoring.}
-
 \end{abstract}
+\vspace{1em}
+\begin{IEEEkeywords}
+Linked Open Data, component architecture, digital archive, document authoring.
+\end{IEEEkeywords}
+\IEEEpeerreviewmaketitle
 
 
 \section{Introduction}
+
+% The amount of documents created and circulated in the world increases day-to-day. Many of them are reused as a donor material for writing new documents. This often requires some time-consuming efforts on capturing, cleansing, and reformatting data that should be transferred from donor documents to recipient ones. The aim of the study is creating tools for developing digital archives to design and implement a domain-specific repositories of information objects. The paper presents a novel approach to the creation of digital archives aiming at an efficient data transfer among documents.
+
+% The approach enables us to enrich documents by metadata, using Linking Open Data, documents templates, and logical inference. It was implemented based on contemporary open software tools. The implemented toolset was successfully used to generate some documents of educational process regulation in departments of Irkutsk State University.
+
+
 
 
 Technologies of Linked Open Data (LOD) \cite{b1} have been suggested by
@@ -410,14 +493,15 @@ Consider the scheme of construction of marked--up work program in the
 proposed system. The presentation format is based on the results in
 \cite{b4,b15}.
 
-\begingroup\normalsize
-\begin{verbatim}
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 
+%\begingroup\normalsize
+% \begin{verbatim}
+\begin{minted}{xml}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
 ...>
 <html lang="ru" xmlns=http://www.w3.org/1999/xhtml
-xmlns:taa=http://irnok.net/engine/rdfa-manipulation 
+xmlns:taa=http://irnok.net/engine/rdfa-manipulation
 xml:lang="ru" metal:define-macro="page">
-<head> 
+<head>
 <!-- Connecting stylesheets and modules -->
 </head>
 <body prefix="rdf:
@@ -450,14 +534,14 @@ Contents</h2>
 <div property="cnt:chars"
 datatype="xsd:string">
 <h2 property="dc:title"
-datatype="xsd:string">Aims and objectives of the 
+datatype="xsd:string">Aims and objectives of the
 discipline (module)</h2>
 <p>The aim of teaching the discipline ...</p>
 </div>
 </div>
 . . . . . . . .
-\end{verbatim}
-\endgroup
+\end{minted}
+%\endgroup
 
 In the example, the key structures are started from \texttt{taa:} prefix. Let us
 comment the structures.
@@ -509,7 +593,8 @@ generation of documents with the grammar agreement engine substituting
 the phrases and suffixes in its text. Consider the example of power of
 attorney form representations (in Russian).
 
-\begin{verbatim}
+\selectlanguage{russian}
+\begin{minted}{xml}
 <p>Я, <span
 property="fibol:designatesSignatory bibo:owner"
 typeof="fibol:Signatory foaf:Person dbr:Principal"
@@ -521,9 +606,9 @@ property="adoc:hasPassport" resource="#signatory-
 passport" typeof="acrt:Certification"> <span
 property="acrt:qualification"
 resource="dbr:Passport">паспорт</span>...
-\end{verbatim}
+\end{minted}
 
-
+\selectlanguage{english}
 This example expresses the fact that the principal
 (fibol:designates\-Signatory) is certified (adoc:hasPassport) with a
 document, a passport (acrt:qualification dbr:Passport).
@@ -545,14 +630,14 @@ Let us continue the previous example: processing grammatical structure.
 %\begin{russian}
 %\begingroup
 %\footnotesize
-\begin{verbatim}
-...проживающ<span class="disp" id="signatory-name" 
+\begin{minted}{xml}
+...проживающ<span class="disp" id="signatory-name"
 data-m="ий" data-f="ая">___</span> по
 адресу:... Подпись <span class="disp string"
 id="signatory-name"
 data-case="gent">___</span>
 удостоверяю...
-\end{verbatim}
+\end{minted}
 %\endgroup
 %\end{russian}
 
