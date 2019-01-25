@@ -124,15 +124,13 @@ E-mail:\texttt{\{eugeneai,shig,slv,mikhailov\}@icc.ru}}
 \maketitle              % typeset the header of the contribution
 %
 \begin{abstract}
-An amount of documents created and circulated in the world increases day--to--day. Some of new documents may use parts of archived ones (e.g. header, names of persons and organisations, tabular data and their description, footers, etc.). In this case, creator should analyse existing documents, collect and process many data for their reuse. These processes may require a lot of time and efforts. Semantic description of documents allows simplifying them. The paper presents novel approach to creation of open document catalogues that involves LODs, documents templates, and logical inference. The approach was implemented by using a contemporary open software tool--set. We used it for forming documents for educational processes regulation in departments of Irkutsk State University. It allowed to simplify parts of archived documents reusing in preparing new ones.
-
+  Authoring new documents is based on analysis of existing documents, collecting and processing their data, which is time consuming creative work.  The amount of documents created and circulated in the world increases day--to--day.  New documents may use parts of existing ones, \emph{e.g.}, header data, names of persons and organizations, tabular data and their description, footers, etc.  Semantic description of frequently used classes of documents allows simplifying the authoring process.  The paper presents novel approach to creation of open document catalogues that involves technologies of Linked Open Data, documents templates, and logical inference for deducing parts of documents from data of the catalogs.  The approach is being realized as open software tool--set and services on the base of other open source systems.  The software under development is used to construct information system components in various application areas, \emph{e.g.}, for synthesis educational processes regulations in departments of Irkutsk State University and organizations of joint accounting for source data acquisition.
 \end{abstract}
 \vspace{1em}
 \begin{IEEEkeywords}
-Linked Open Data, component architecture, digital archive, document authoring.
+Linked Open Data, component architecture, digital archive, document authoring, logical inference, Prolog
 \end{IEEEkeywords}
 \IEEEpeerreviewmaketitle
-
 
 \section{Introduction}
 
@@ -144,27 +142,29 @@ Linked Open Data, component architecture, digital archive, document authoring.
 
 
 Technologies of Linked Open Data (LOD) \cite{b1} have been suggested by
-the W3C consortium to represent the semantic information in the data
+the W3C consortium to represent the semantic information in the document
 published in order to provide the possibility of its processing with
-software agents (Semantic Web), as well as to link all available
+software agents (Semantic Web, SW), as well as to link all available
 information into a single semantic graph using relations and universal
-resource identifiers (URIs). The descriptive capabilities of the
-Semantic web technologies, services of HTML5 document serving and the
+resource identifiers (URIs).  The descriptive capabilities of the
+SW technologies, services of HTML5 document serving and
 LOD technologies create infrastructural basis of document publishing
-with providing logical links between documents. The document content
+with providing logical links between documents.  The document content
 information is associated with the content information of another one by
-means of relations (links) to relevant resources. Resources represent
-both the static contents and the results of the procedures execution
+means of relations (links) to relevant resources.  Resources represent
+both the static contents and the results of the procedures execution for
 publishing (converting) structural data, and generating marked--up text
 content.
 
 An important advantage of using LOD in organizations' information
 environments is weakening requirements for storage of the information
 being published: the document itself is a data warehouse in a formalized
-way. To some extent, this fact reallocates the time spent on designing
+way.  To some extent, this fact reallocates the time spent on designing
 the database structure for storage partially structured documents to the
 process of solving a substantive problems: the user (developer) markups
 the text data with semantic structures with an instrument.
+
+\textbf{Не хватает описания цели и задач исследования}
 
 \subsection{Related works}
 \label{sec:relwks}
@@ -176,322 +176,138 @@ flow modeling, security, etc.  At present, digital archives are integrated
 with domain automation information systems, such as CRM, ERP, research and
 development support platform.
 
-One of the projects related to semantic markup control is Semantic MediaWiki; it extends a Wiki engine used for the site content representation. The text of the document is marked up with RDFa attributes with wiki tags. Semantic annotations allow development of search engines for Wiki pages that takes into account the semantics of the marked text \cite{c6}.
+One of the projects related to semantic markup control is Semantic MediaWiki; it extends a Wiki engine used for the site content representation.  The text of the document is marked up with RDFa attributes with wiki tags.  Semantic annotations allow development of search engines for Wiki pages that takes into account the semantics of the marked text \cite{c6}.
 
-Unlike Semantic MediaWiki, in OntoWiki project, similar results were obtained implementing different idea. OntoWiki is based on the primary usage of the logical description of information in a semantic network. This logical structure is edited by means of the software generated user forms for the known terms in a vocabulary. The user can change only one text property of LOD lod:content, which, in General, contains HTML texts. The HTML markup is not tied to the logical structure of the displayed object (the subject). The lod:content text is edited with OntoWiki built--in WYSIWYG editor. The OntoWiki project is aimed at support of social network technologies based on Linked Data \cite{b6}.
+Unlike Semantic MediaWiki, in OntoWiki project, similar results were obtained implementing different idea.  OntoWiki is primarily based on the usage of the logical description of information in a semantic network.  This logical structure is edited by means of the software generated user forms for the known terms in a vocabulary.  The user can change only one text property of LOD \texttt{lod:content}, which, in general, contains HTML text.  The HTML markup is not associated with the logical structure of the displayed object (the subject).  The \texttt{lod:content} text is edited with OntoWiki built--in WYSIWYG editor.  The OntoWiki project is aimed at support of social network technologies based on Linked Data \cite{b6}.
 
-As was mentioned above, used format of the markup of the documents is a further development of the results of the Dokieli project located at web site \url{https://github.com/linkeddata/dokieli} \cite{b14}. The project is a WYSIWYG--editor of LOD marked HTML pages, display style sheet (CSS) and built--in subgraph (its content is not visible on the page) presented in different formats (TTL, N3, JSON--LD, TriG). The user is able to add new RDFa markup with editor tools, in this case, the function of our interest is implemented in a general form. In addition, user authentication functions are implemented according to the WebID standard with client--side JavaScript. The system extensively supports commenting (text markup) with Open Annotation (oa).
+Project Dokieli is aimed at constructing an environment for shared document authoring by integrating various algorithms, services, and vocabularies located on different servers \cite{b14} and implemented as JavaScript modules.  The project is, essentially, a WYSIWYG--editor of LOD marked HTML pages, display style sheet (CSS) and built--in subgraph (its content is not visible on the page) presented in different formats (TTL, N3, JSON--LD, TriG).  The user is able to add new RDFa markup with editor tools, in this case, the function of our interest is implemented in a general form.  In addition, user authentication functions are implemented according to the WebID standard with client--side JavaScript.  The system extensively supports commenting (text markup) with Open Annotation (oa).  The annotation engine is integrated with \texttt{gitter.im} service, which shows readers' comments in the form of a dialogue.  All the information is stored either on servers that support Solid protocol, or locally in the browser database.
 
-The annotation engine is integrated with gitter.im service, which shows readers' comments in the form of a dialogue. All the information is stored either on servers that support the protocol Solid (\url{https://solid.mit.edu/}), or locally in the database of a browser. The edited document can be easily moved (copied) from one Solid store to another. The resulting texts can be downloaded to the user workstation as XTHML documents. Thus, Dokieli is a system supporting distributed text content editing, which fully implements the interaction with other LOD resources, and all these functions are implemented exclusively by means of the client--side browser JavaScript.
-
-There is also a huge class of browser document editors focused on the creation of scientific publications, see, e.g., \url{http://substance.io/}. In our study, the development of tools is aimed at automating the markup of a document based on the analysis of document changes proposed in \cite{b14}, and specifically in this work, at implementing one of the infrastructural problems connected with a creation of the documents on the platform web browser controlled with LOD.
-
+There is also a huge class of browser document editors focused on the creation of scientific publications, see, e.g., \url{http://substance.io/}.  %In our study, the development of tools is aimed at automating the markup of a document based on the analysis of document changes proposed in \cite{b14}, and specifically in this work, at implementing one of the infrastructural problems connected with a creation of the documents on the platform web browser controlled with LOD.
 Our research is aimed at developing digital document archives enabling
 synthesis of new documents combining data stored in the archive and other
-services.
+services, as well as results of server-side logical inference over archive data.
+
+\textbf{Почему это важно и нужно? Почему это надо делать именно так. Потому, что логические зависимости удобно логически обрабатывать, используя декларативные языки, не заморачиваясь алгоритмами вывода и поиска решений.}
 
 \subsection{Contribution}
 \label{sec:contr}
 
-Our work presence an architecture of digital archives, which allows
+Our work present an architecture of digital archives, which allows
 developers device information system and document processing services
 with the following features:
 \begin{itemize}
 \item load LOD marked up document, extract, store in a graph and index RDF data;
-\item retrieve RDF data as triples on RDF or full--text search request;
+\item retrieve RDF data as triples or as a result of full--text search query;
 \item combine existing LOD data and its content in new documents dynamically
   thanks to relatively simple browser based context inference machine;
 \item ability to use server site inference machine (Prolog) to process RDF data upon
-  request from browser's part of the system.
+  request from browser's part of the system;
   % \item organizes a platform for document semantic markup,
+\item convert created RDFa marked--up HTML5 documents into Excel and Word formats.
 \end{itemize}
 
-For the purpose of implementation of the feature we had to investigate existing
-vocabularies used to represent generic document data LOD markup.
+For the purpose of implementation of the features, we investigated existing
+vocabularies used to represent generic document data LOD markup.  \textbf{Это было необходимо для стандартизации видов отношений, используемых для разметки документов, в глобальном масштабе.}
 %We also show
 %two proof-of-concept examples of the developed service usage in combination of
 %other LOD aware web services of background data support and linguistic processing.
 
-% The aim of the study is creating tools for developing digital archives
-% to design and implement a domain-specific repositories of information
-% objects.
+Based on the produced tool set, a proof--of--concept digital archives of documents were developed, which intended for generation of the documentation on study courses.  The use of LOD data formats, web browser HTML processing, and developed technologies allows us to solve a wide class of problems of synthesis of documents, starting from the generation of substantial parts of the texts ending the presentation of stylistic characteristics of texts and the integration of logical markup into a global data retrieval services.
 
-Based on the produced tool set, a proof--of--concept digital archives of
-documents are
-developed, which intended for generation of the documentation on study
-courses. The use of LOD data formats, web browser HTML processing, and
-developed technologies allows us to solve a wide class of problems of
-synthesis of documents, starting from the generation of substantial
-parts of the texts ending the presentation of stylistic characteristics
-of texts and the integration of logical markup into a global data
-retrieval services.
-
-This work continues the research outlined in \cite{b2} in the direction of
-the software tools development including services storage, processing
-and access to semantic information.
+This work continues the research outlined in \cite{b2} in the direction of the software tools development including services storage, processing and access to semantic information.
 
 \section{Approach}
 \subsection{Technologies of LOD}
 
-The technologies of LOD are based on the representation of the published
-information in the form of semantically marked--up document, usually web
-page or a result of a database query as HTML content. When using HTML
-for presentation of content, RDFa (Resource Description Framework in
-Attributes) is the primary mark--up format being supported. The markup is
-a graph (subgraph) formed by the relations (triples) of the form
-\texttt{<subject, relation, object>}, applied to a tree
-structure of HTML with special attributes. Most of these attributes are
-ignored by the web browser and do not affect the structure and style of
-the displayed document.
+The technologies of LOD are based on the representation of the published information in the form of semantically marked--up document, usually web page, with content generated with database query result.  The markup is realized with RDFa, the Resource Description Framework in Attributes.  The markup defines a subgraph (of domain model) formed by the relations (triples) of the form \texttt{<subject, relation, object>}.  The triples are integrated into HTML content with special attributes ignored by the web browser.
 
-Separately from the visual content, standard Semantic Web formats RDF,
-OWL, TTL, N3 and 4, JSON--LD, RDF/JSON are used for presentation to the
-LOD. These representations are extensions of standard text, XML and JSON
-formats. There are several binary formats that support compact storage
-of the graphs in the file system.
+Separately from the visual content, standard SW formats RDF, OWL, TTL, N3 and 4, JSON--LD, RDF/JSON are used for presentation of additional LOD data, which either placed within \texttt{<script>} tag of the page or is referred as special \texttt{rdfs:seeAlso} resource.  There are several binary formats that support compact storage of the graphs in the file system.
 
-The representation of a graph in workstation memory devices in most
-libraries and software frameworks are focused on fast search and
-filtering operations of triples according to one or more criteria, as
-well as the support of standard SPARQL queries. Some storage
-additionally support the interpretation of relations such as
-rdf:subClassOf, rdf:subPropertOf and relations derived from the
-rdfs:label. This allows one to create visualization of the contents of
-the graph, for example, to build the administrator interfaces for the
-repositories.
+The representation of a SW graph in computer memory in most libraries and software frameworks is focused on fast search and filtering operations of triples according to their content, as well as the support of SPARQL standard.  Some storages additionally support the interpretation of relations such as \texttt{rdf:subClassOf}, \texttt{rdf:subPropertOf} and relations derived from the \texttt{rdfs:label}.  This allows one to easily create visualization of the contents of the graph, for example, to build the administrator interfaces for the repositories.
 
-LOD developers created a number of resources to discover vocabularies
-(ontologies), including a set of base--level vocabularies for describing
-various aspects of the content (scos, rdfs, XMLSchema, dc, prov, oa,
-schema.org, etc.), graphs representing encyclopedic data, for example,
-DBpedia \cite{b3} and Wikidata \cite{b4}, the Google Knowledge Graph,
-services of partial automation of semantic markup of text, such as
-DBpedia Spotlight \cite{b5}, means of the distributed execution of SPARQL
-queries. Created resources allow us to develop integration engines for
-data and graph distributed in Internet into a single information
-infrastructure.
+LOD developers created a number of resources to discover domain vocabularies, including a set of base--level vocabularies for describing various aspects of the content (scos, rdfs, XMLSchema, dc, prov, oa, schema.org, \emph{etc}.), graphs representing encyclopedic data, for example, DBpedia \cite{b3} and Wikidata \cite{b4}, the Google Knowledge Graph, services of partial automation of semantic markup of text, such as DBpedia Spotlight \cite{b5}, means of the distributed execution of SPARQL queries.  Created resources allow us to develop integration engines for data and graph distributed in Internet into a single information infrastructure.
 
 \subsection{Digital archive tools}
 
-Digital archive instrumental tools supporting LOD is being designed to
-provide development of publishing tools of data aggregated in an
-institution in a new form allowing its integration into the information
-infrastructure, e.g., in form of web applications publishing data of
-processing result in a scientific research.
+Digital archive instrumental tools supporting LOD is being designed to provide development of publishing tools of data aggregated in an institution in a new form allowing its integration into the information infrastructure, \emph{e.g.}, in form of web applications publishing data of processing result in a scientific research.
 
-The digital archive tool architecture is based on components. Zope
-Component Architecture (ZCA) \cite{b6} used in the Python programming
-environment \cite{b7} has been chosen as a architecture basis for the
-implementation of the instrumental tools. Rdflib library is used for the
-internal representation the LOD graphs. Graphs are serialized into
-appropriate text or binary formats when transferring data to an external
-process.
+The digital archive tool architecture is based on components. Zope Component Architecture (ZCA) \cite{b6} used in the Python programming environment \cite{b7}.  It has been chosen as a architecture basis for the implementation of the instrumental tools.  Rdflib library is used for the internal representation of the LOD graphs.  Graphs are serialized into appropriate text or binary formats when transferring data to an external process.
 
 The toolkit consists of the following components:
-
 \begin{itemize}
-\item
-  content and metadata repository with SPARQL and full--text search; the
-  engines for LOD processing, based on the logical inference;
-\item
-  service for analysis of the stored content enriching of the archive
-  with semantic information describing the content;
-\item
-  the tools for development of LOD applications and their user
-  interfaces.
+\item content and metadata repository with SPARQL and full--text search; the engines for LOD processing, based on the logical inference;
+\item service for analysis of the stored content enriching the archive with semantic information describing the content;
+\item tools for development of LOD applications and their user interfaces.
 \end{itemize}
-
-
 
 \subsection{Storing LOD documents}
 
-The document content is stored either in the Kyotocabinet database,
-either as a file in a file system. Meta--information obtained by
-processing and analyzing a document is a content annotation and is
-described according to LOD standard vocabulary oa as a subgraph.
+The document content is stored either in the Kyotocabinet key-value database, either as a file in a file system.  Metainformation obtained by processing and analyzing a document is a content annotation and is described according to LOD standard vocabulary oa as a subgraph.
 
-Each annotation (subject) is a tree with at least two nodes formed by
-the relations oa:hasTarget referring the original content and the
-oa:hasBody referring the annotation. The text content of the document,
-if it has been acquired, is the document annotation as well as a
-structure of type Dublin Core (dc) describing meta--information found.
-The contents (bytes, text) stored in Kyotocabinet is identified by its
-128--bit Murmur3 hash function that allows us to create a reference key
-(hash) to the contents and backward. The hash is a content identifier in
-LOD. Used hashing system allows us to simply and effectively implement
-computational mapping at a sufficiently low probability of clash of hash
-values.
+Each annotation (subject) is a tree with at least two nodes formed by the relations \texttt{oa:hasTarget} referring the original content and the \texttt{oa:hasBody} referring the annotation.  The text content of the document, if it has been acquired, is the document annotation as well as a structure of type Dublin Core (dc) describing metainformation found.  The contents (bytes, text) stored in Kyotocabinet is identified by its 128-bit Murmur3 hash function that allows us to create a reference key (hash) to the contents and in the backward direction.  Using such hashing, allows us to simply and effectively implement computational mapping at a sufficiently low probability of clash of hash values.
 
-Let us list the basic properties of used vocabularies in description of
-the content.
+Let us list the basic properties of used vocabularies in description of the content.
 
-Open Annotation (oa). The vocabulary standard is adopted in 2017 by OMG, it is
-used to represent the content annotation describing other content. A
-browser bookmark is an example of such content.
+Open Annotation (\textbf{oa}). The vocabulary standard is adopted in 2017 by OMG, it is used to represent the content annotation describing other content.  A browser bookmark is an example of such content.
 
-Friend--of--a--friend (foaf) allows one to describe information about
-agents: physical and legal entities, software agents.
+Friend--of--a--friend (\textbf{foaf}) allows one to describe information about agents: physical and legal entities, software agents.
 
-Provenence (prov). The prov ontology is the base of description of
-information flows in documents and their relationships. The prov
-vocabulary is used to associate the document and owner organization or
-physical entity.
+Provenance (\textbf{prov}).  The \textbf{prov} ontology is the base of a description of information flows in documents and their relationships. The \textbf{prov} vocabulary is used to associate the document and owner organization or physical entity.
 
-In annotation, Dublin Core (dc) represents metainformation about the
-creative work: authors, format, contents, description, etc.
+Dublin Core (\textbf{dc}) represents metainformation about the creative work: authors, format, contents, description, \emph{etc}.
 
-DBpedia resource (dbr) is the namespace of the objects (resources) of
-Wikipedia. The dbr ontology is used to refer to a specific entity,
-geographical names, etc.
+DBpedia resource (\textbf{dbr}) is the namespace of the objects (resources) of Wikipedia.  The \textbf{dbr} ontology is used to refer to a specific entity, geographical names, \emph{etc}.
 
-Schema.org (schema) represents the objects that are recognized by the
-crawlers of Google, Yandex, Yahoo etc.
+Schema.org (\textbf{schema}) represents the objects that are recognized by the crawlers of Google, Yandex, Yahoo \emph{etc}.
 
-In addition to these ontologies, we use standard ontologies (RDF, RDFs,
-RDFa, XSD) and ontologies from the NEPOMUK project
-(\url{https://userbase.kde.org/Nepomuk}) to describe objects stored in the
-full--text indexes of digital archives.
+In addition to these ontologies, we use standard ontologies (RDF, RDFs, RDFa, XSD) and ontologies from the NEPOMUK project (\url{https://userbase.kde.org/Nepomuk}), describing objects stored in the full--text indexes of digital archives.
 
 \subsection{Component of content analysis}
 
-Meta--information about the content is enriched with results of the
-analysis by so--called extractors. The extractors analyze the content and
-try to acquire information about text content, author, time of content
-creation, format, etc. Extractors are implemented with the utilities
-such as file, extract (libextract), tracker and recoll. All these
-utilities are free software and integrated with the component as
-external processes.
+Metainformation about the content is enriched with results of the analysis by so--called extractors. The extractors analyze the content and try to acquire information about text content, author, time of content creation, format, \emph{etc}. Extractors are implemented with the utilities such as \texttt{file}, \texttt{extract} (\texttt{libextract}), \texttt{tracker} and \texttt{recoll}.  All these utilities are free software and integrated with the component as external processes.
 
-The results of the extractor analysis are presented as a subgraph oa,
-associated with the source content and stores in a metadata repository
-of LOD.
+The results of the extractor analysis are presented as a subgraph \textbf{oa}, associated with the source content and stored in a metadata repository of LOD. \textbf{Повторение}
 
-\subsection{The metadata store}
+\subsection{The metadata storage}
 
-The implementation of metadata LOD graph storage is realized using
-ClioPatria \cite{b8} ontology server. The ClioPatria system is implemented
-in the SWI--Prolog programming environment. The project is under active
-development and aims to create a LOD graph storage service, implementing
-all the standards of storage and access, together with tight Prolog
-interpreter integration.
+The implementation of metadata LOD graph storage is realized using ClioPatria \cite{b8} ontology server.  The ClioPatria system is implemented in the SWI--Prolog programming environment.  The project is under active development and aims to create a LOD graph storage service, implementing all the standards of storage and access, together with tight Prolog interpreter integration.
 
-The system storage tier is implemented in C programming language. The
-store uses compact data structures to represent triples in RAM and on
-hard disk. A special feature of the storage is the fact that all triples
-are stored directly in RAM, as the service has no special assumptions
-about the structure of queries, which can be issued by adjacent
-software. Thus, server memory space is a critical resource of the
-repository.
+The system storage tier is implemented in C programming language.  The store uses compact data structures to represent triples in RAM and on hard disk.  A special feature of the storage is the fact that all triples are stored directly in RAM, as the service has no special assumptions about the structure of queries, which can be issued by client software.  Thus, server memory space is a critical resource of the repository.
 
-ClioPatria developers implemented repository accessing in several ways:
-the SPARQL queries according to a standard protocol, direct queries to
-the ClioPatria Prolog subsystem using Pengines Protocol \cite{b9}. For the
-Pengines protocols a number of APIs has been created for object--oriented
-programming languages such as JavsScript, Java, Python. Using API
-classes, application developers and software agents are able to interact
-with the logic inference engine of the ClioPatria server.
+ClioPatria developers implemented repository accessing in several ways: the SPARQL queries according to a standard protocol, direct queries to the ClioPatria Prolog subsystem using Pengines Protocol \cite{b9}.  For the Pengines protocols a number of APIs has been created for object--oriented programming languages such as JavsScript, Java, Python.  Using API classes, application developers and software agents are able to interact with the logic inference engine of the ClioPatria server.
 
 \subsection{The inference machine}
 
-Availability of ClioPatria's embedded programming system of SWI--Prolog
-\cite{b10} and the integration with RDFa allow one to process the
-marked--up digital information stored in the archive on the base of
-logical inference. Prolog allows us to make queries in SPARQL and
-Datalog formats, as well as to build a knowledge system to process the
-received data.
+Availability of ClioPatria's embedded programming system of SWI--Prolog \cite{b10} and the integration with RDFa allow one to process the marked--up digital information stored in the archive on the base of logical inference.  Prolog allows us to make queries in SPARQL and Datalog formats, as well as to build a knowledge system to process the received data.
 
-As experiment, in a very short time, we managed to integrate well--known
-Turbo Prolog 2.0 example of a natural--language interface to a database
-on the US geography with ClioPatria's built--in SWI--Prolog RDF support
-system. As a result, we developed a prototype with similar interface to
-a database of active faults of Siberia, aggregated at the Institute of
-earth crust SB RAS.
+As an experiment, in a very short time, we managed to integrate well--known Turbo Prolog 2.0 example of a natural--language interface to a database on the US geography with ClioPatria's built--in SWI--Prolog RDF system.  As a result, we developed a prototype with similar interface to a database of active faults of Siberia, aggregated at the Institute of earth crust SB RAS.
 
+\textbf{О возможности получать новые данные из данных документов на стороне сервера}
 
 \subsection{Full-text search}
 
-The ClioPatria system has instruments of searching the text information
-for keywords, however, it is advisable to use a more powerful system of
-a full--text index, for example, Elasticsearch \cite{b13}. Implementation
-and integration of this service is quite simple, since every RDF graph
-is representable as JSON (JSON--LD), while JSON is the primary format for
-storing the indexed information in the ElasticSearch search engine; it
-is only necessary to separate a particular triples on the server, which
-are responsible for the representation of the resource to the user in
-the search results. Elasticsearch has the means of fuzzy comparison of
-terms that allows developing search subsystems retrieving relevant
-information. The main aspects of modules' function are discussed later
-in the article in the application section.
+The ClioPatria system has instruments of searching the text information for keywords, however, it is advisable to use a more powerful system of a full--text index, for example, Elasticsearch \cite{b13}.  Integration of this service is quite simple, since every RDF graph is representable as JSON (JSON--LD), while JSON is the primary format for storing indexed information in the ElasticSearch search engine; it is only necessary to separate a particular triples on the server responsible for the representation of the resource to the user in the search results.  Elasticsearch has the means of fuzzy comparison of terms that allows developing search subsystems retrieving relevant information.  \textbf{The main aspects of modules' function are discussed later in the article in the application section.}
 
 
 \subsection{Tabular data interpretation}
 
-A lot of documents have different tables. They may contain a lot of useful information. Extraction and understanding tabular data allows improve their semantic interpretation and get more qualitative meta--data. To extract an information from tables we should detect table(s), recognize their structure, implement a structural analysis, and provide logically related data for further processing \cite{Shigarov_2017}.
+Stored documents may contain a lot of useful information in their tables.  Extraction and understanding tabular data allows one to improve their semantic interpretation and get more qualitative metadata.  To extract an information from tables we should detect table(s), recognize their structure, implement a structural analysis, and provide logically related data for further processing \cite{Shigarov_2017}.
 
-Let us consider these processes more in detail. Table detection is the initial stage of table interpretation. In this approach it makes according document page template mark--up. Table structure recognition task consists in detection and extraction different structural elements such as cells, entries, labels, and categories. Detection of structure elements of a table comes by using a set of rules on CLR. The rule engine implements matches available facts against loaded rules. As a result, we gets new facts about structure elements. Recognition of table semantic elements allows present table in canonical form. Canonical form topmost row contains field (attribute) names. Each of the remaining rows is a record (tuple). It obligatorily includes the field that contains entries of cell. Each recovered category becomes a separate field that contains its labels. Any record presents recovered relationships between an entry and one label in each category. Usually each record is unique within a canonical table \cite{Shigarov_2016}. Tabular data canonical presentation provide a possibility for restoring relationships between elements of a table and their further mark--up and interpretation.
+Table structure recognition task consists in detection and extraction different structural elements such as cells, entries, labels, and categories.  Detection of structural and semantic elements of a table is carried out with a set of rules in the CLR language.  The rule engine realized as a network service, it matches available facts of table elements against rules.  As a result, we get new facts about matched structure elements.  Recognition of semantic elements allows us to present table in a canonical form, with topmost row containing attribute names, and the remaining rows being a data record.  \textbf{FIXME: It obligatorily includes the field that contains entries of cell. Each recovered category becomes a separate field that contains its labels. Any record presents recovered relationships between an entry and one label in each category.}  Usually each data record is unique within a canonical table \cite{Shigarov_2016}, resulting in a possibility for restoring semantic relationships between elements of a table and their further mark--up and interpretation.
 
 \section{Application}
 
-The designed tools used in solving a number of applied tasks built out
-of digital archive services, LOD and archive components.
+The designed tools used in solving a number of applied tasks built out of digital archive services, LOD and content processing components.
 
-The Ministry of education and science of the Russian Federation switched to the incorporation of the
-Bologna process in the educational environment of the Russian
-Federation. One of the tasks solved in the framework of this
-introduction is the transition to competence--oriented representation of
-the requirements to the pedagogical process. The reform affects all
-aspects of the process, including the system of classification of
-specialties (introducing programs and directions, specialization
-according to skill levels (bachelor, master degrees, etc.), introduction
-of applied bachelor degree, list of courses, aims and objectives of the
-courses (negotiation with the competencies specified in the Federal
-standard), forms of conducting classes in universities (introduction of
-interactive forms of learning), the distribution of lectures and
-practical sessions, etc. The existing documentation is supplemented by
-new forms of mandatory documents: the Fund of Assessment Means (FAM),
-annotations of courses. In addition to this, the university management
-with the aim of improving the quality of educational services introduced
-its own additions to the form, content and requirements to the design
-documentation, in particular, to the quality of the conversion to HTML
-for publication on the website of the university.
+The Ministry of education and science of the Russian Federation incorporate the Bologna process in the educational environment of the Russian Federation.  One of the tasks solved is the transition to competence--oriented representation of the requirements to the pedagogical process.  The reform affects all aspects of the process, including the system of classification of specialties \textbf{(introducing programs and directions, specialization according to skill levels (bachelor, master degrees, etc.), introduction of applied bachelor degree, list of courses, aims and objectives of the courses (negotiation with the competencies specified in the Federal standard), forms of conducting classes in universities (introduction of interactive forms of learning), the distribution of lectures and practical sessions, \emph{etc}.)}  The existing documentation is supplemented by new forms of mandatory documents: the Fund of Assessment Means (FAM), annotations of the courses.  In addition, the university management with the aim of improving the quality of educational services introduced its own improvements to form, content and document design requirements, in particular, to the quality of the conversion to HTML for publication on the website of an university.
 
-For the minimum requirements fulfillment of the management of the
-universities for each course, the instructor is required to prepare at
-least three documents: the working program of the course, the summary
-annotation, and the FAM. This set is realized for each possible
-parameters combination of a course: the university, the department,
-specialty, direction (profile), programme, qualification (bachelor,
-specialist, undergraduate, graduate), academic or applied version of the
-qualification, form of study (full--time, part--time, evening, etc.). Each
-combination is reflected in the curriculum of the university from which
-data is annually or twice a year should be actualized in the work
-programmes.
+For the minimum requirements fulfillment of the university management for each course, the instructor is required to prepare at least three documents: the working program of the course, the summary annotation, and the FAM.  This set is realized for each possible parameters combination of a course: the university, department, specialty, direction (profile), program, qualification (bachelor, specialist, undergraduate, graduate), academic or applied version of the qualification, form of study (full--time, part--time, evening, \emph{etc}.).  Each combination is reflected in the curriculum of the university, whose data is annually or twice a year being actualized in the work programs.
 
-The last five years showed the level of maturity of decisions made by
-the managers of the Ministry in terms of requirements to the
-presentation of the course - four generations of the standards (1, 2, 3
-and 3+) are developed -- for which it was required to resubmit documents
-in the appropriate updated form. The task of developing the new
-textbooks now seem more simple than before as compared to the
-fulfillment the course documentation requirements. Experience shows that
-most instructors are not able to cope with high-quality paperwork in the
-given time constraints, thus requiring the departments to hire a
-secretary, whose function is to bring documentation to the required
-quality level.
+The last five years showed the level of maturity of decisions made by the managers of the Ministry in terms of requirements to the presentation of the course -- four generations of the standards (1, 2, 3 and 3+) are developed.  Each update required resubmission of the documents in the appropriate new form.  The task of developing new handbooks now seems more simple than before as compared to the fulfillment the course documentation requirements.  Experience shows that most instructors are not able to cope with high"=quality paperwork in the given time constraints, thus requiring the departments to hire a secretary, whose function is to bring documentation to the required quality level.
 
-The solution to this problem lies in developing a software system that
-allows instructors to collect the texts of the work programmes,
-abstracts and FAMs from separate parts: a list of competencies and
-curriculum; contents (subjects of taught module/course) and FAM, which
-are shared between different versions of documents. The title pages are
-generated also from data of curriculum and templates set by the
-management. Microsoft Word and Excel means, that are commonly used for
-this task including built--in VBA, are clearly not enough to support
-problem solution.
+The solution to this problem consists in developing a software system that allows instructors to collect the texts of the work programs, abstracts and FAMs from separate parts: a list of competencies and curriculum; contents (subjects of taught module/course) and FAM, which are shared between different versions of documents.  The title pages are generated also from data of curriculum and templates set by the management.  Microsoft Word and Excel tools, that are commonly used for this task including built--in VBA, are clearly not enough to support problem solution.
 
-Consider the scheme of construction of marked--up work program in the
-proposed system. The presentation format is based on the results in
-\cite{b4,b15}.
+Consider the scheme of construction of marked--up work program as an HTML page with the proposed system.  The presentation format is based on the results presented in \cite{b4,b15}.
 
 %\begingroup\normalsize
 % \begin{verbatim}
@@ -543,31 +359,13 @@ discipline (module)</h2>
 \end{minted}
 %\endgroup
 
-In the example, the key structures are started from \texttt{taa:} prefix. Let us
-comment the structures.
+In the example, the key structures are started from \texttt{taa:} prefix. Let us comment the structures.
 
-The page displayed to the user is the abstract of the document
-``\#annotation'', and both the annotated content and the annotation text
-is the same at the stage of formation of the document -- resource
-``\#course-work-program''. In LOD, all resources are global. This is
-achieved by substitution of the default namespace --- the full URI of the
-current page --- at the left side of the name of the resource.
+The page displayed to the user is the abstract of the document ``\texttt{\#annotation}'', and both the annotated content and the annotation text is the same at the stage of formation (authoring) of the document -- resource ``\texttt{\#course-work-program}''.  In LOD, all resources are global.  This is achieved by substitution of the default namespace (ull URI of the current page) at the left side of the name of the resource.
 
-The title page and the approval sheet are inserted from the templates
-page ``imei.html'' (information about the Institute of mathematics,
-economics and informatics of Irkutsk state university\footnote{\url{http:\\\\math.isu.ru}}).
-The course data and the name of the specialty is filled in the templates
-from the context of the main document. All the key static templates of
-courses can be placed in one page of templates.
+The title page and the approval sheet are inserted from the templates page ``imei.html'' (information about the Institute of mathematics, economics and informatics of Irkutsk state university\footnote{\url{http://math.isu.ru}}).  The course data and the name of the specialty is filled in the templates from the context of the main document.  All the key static templates of courses can be placed in one page of templates. \textbf{Это и есть браузерная машина вывода.}
 
-The text is divided into sections, surrounded by tags
-<div> and <span> with the
-relevant RDFa structures. Analysis of the experience of the developers
-LOD resources has shown that for the formation of the relationship is
-sufficient to use RDFa tags property, typeof and datatype. The use of
-rel and about attributes are recommended to be abandoned. This makes the
-structure of semantic markup more clean by reducing the number of
-entities used.
+The text is divided into sections, surrounded by tags \texttt{<div>} and \texttt{<span>} with the relevant RDFa structures.  Analysis of the experience of the developers LOD resources has shown that for the formation of the relationship is sufficient to use RDFa attributes \texttt{resource}, \texttt{property}, \texttt{typeof} and \texttt{datatype}.  The use of \texttt{rel} and \texttt{about} attributes are recommended to be abandoned.  This makes the structure of semantic markup more clean by reducing the number of entities used.
 
 Team taa:content adds to the document a text from another HTML page,
 whose address is formed by the interpretation of the attribute, for
@@ -646,6 +444,8 @@ at: \url{https://github.com/isu-enterprise}.
 
 \section{Conclusion and further development}
 \label{sec:conc}
+
+\textbf{About acquiring data from documents as by-product.}
 
 The paper discusses the facilities of the use of Linked Open Data (LOD)
 technologies for the solution of tasks of {creating} digital document
