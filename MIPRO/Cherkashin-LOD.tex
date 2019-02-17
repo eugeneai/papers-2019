@@ -277,9 +277,9 @@ The ClioPatria system has instruments of searching the text information for keyw
 
 Stored documents may contain a lot of useful information in their tables.  Extraction and understanding tabular data allows one to improve their semantic interpretation and get more qualitative metadata.  To extract information from tables we should detect them, recognize their structure, implement a structural analysis, and provide logically related data for further processing \cite{Shigarov_2017}.
 
-Table structure recognition task consists in detection and extraction different structural elements such as cells, entries, labels, and categories.  Detection of structural and semantic elements of a table is carried out with a set of rules in the CLR language.  The rule engine is realized as a network service, it matches available facts of table elements against rules.  As a result, we get new facts about matched structure elements.  Recognition of semantic elements allows us to present table in a canonical form, with topmost row containing attribute names, and the remaining rows being a data record.  The attribute row refer cell columns and is associated with a categories, which are hierarchically organized, containing semantic labels.  Thus, data records present recovered relationships between their attribute labels in  categories.  Usually each data record is unique within a canonical table \cite{Shigarov_2016}, resulting in a possibility for restoring semantic relationships between elements of a table and their further mark--up and interpretation.  The corresponding conversion procedures are also implemented, producing various forms of rational tables.
+Table structure recognition task consists in detection and extraction different structural elements such as cells, entries, labels, and categories.  Detection of structural and semantic elements of a table is carried out with a set of rules in the CRL language.  The rule engine is realized as a network service, it matches available facts of table elements against rules.  As a result, we get new facts about matched structure elements.  Recognition of semantic elements allows us to present table in a canonical form, with topmost row containing attribute names, and the remaining rows being a data record.  The attribute row refer cell columns and is associated with a categories, which are hierarchically organized, containing semantic labels.  Thus, data records present recovered relationships between their attribute labels in  categories.  Usually each data record is unique within a canonical table \cite{Shigarov_2016}, resulting in a possibility for restoring semantic relationships between elements of a table and their further mark--up and interpretation.  The corresponding conversion procedures are also implemented, producing various forms of rational tables.
 
-\section{Application}
+\section{Applications}
 
 The designed tools used in solving a number of applied tasks built out of digital archive services, LOD and content processing components.
 
@@ -401,12 +401,6 @@ The contribution of this work was supported by the Russian Science Foundation, G
 \url{http://muthukadan.net/docs/zca.html}. Last accessed 01 July 2017
 \bibitem{b14}
   Capadisli, S., Guy, A., Verborgh, R., Lange, C., Auer, S., Berners-Lee, T.: Decentralised Authoring, Annotations and Notifications for a Read-Write Web with dokieli, Procs of ICWE international conference, 5-8 June, 2017, Rome, Italy. p. 469--481 URL: \doi{10.1007/978-3-319-60131-1_33}
-\bibitem{b2}
-  Cherkashin, E. A., Belykh, P. V. et al. An approach to managing a site
-  content on the base of RDF technologies // Materials of All-Russian
-  conference with international participation "Knowledge -- Ontology --
-  Theory" (KONT-2013), 8 -- 10 October. Vol. 2. Novosibirsk.
-  Publishing house "AIC Price-courier" (2013)
 \bibitem{b3}
   Lehmann J., Isele R., Jakob M., Jentzsch A., Kontokostas D., et al.
   DBpedia -- A Large-scale, Multilingual Knowledge Base Extracted from
@@ -419,6 +413,12 @@ The contribution of this work was supported by the Russian Science Foundation, G
   Daiber J., Jakob M., Mendes P. Improving Efficiency and Accuracy in
   Multilingual Entity Extraction // Proceedings of the 9th International
   Conference on Semantic Systems (I-Semantics) (2013)
+\bibitem{b2}
+  Cherkashin, E. A., Belykh, P. V. et al. An approach to managing a site
+  content on the base of RDF technologies // Materials of All-Russian
+  conference with international participation "Knowledge -- Ontology --
+  Theory" (KONT-2013), 8 -- 10 October. Vol. 2. Novosibirsk.
+  Publishing house "AIC Price-courier" (2013)
 \bibitem{b7}
   Langtangen H. A Primer on Scientific Programming with Python (Texts in
   Computational Science and Engineering) 3rd ed. Springer. 798 P. (2012)
