@@ -2,10 +2,10 @@
 
 LATEXMK=latexmk -lualatex -latexoption=-shell-escape
 
-Cherkashin-LOD.pdf: Cherkashin-LOD.tex
+talk.pdf: talk.tex
 	$(LATEXMK) $<
 
-run: Cherkashin-LOD.pdf
+run: talk.pdf
 	$(LATEXMK) $<
 
 clean:
