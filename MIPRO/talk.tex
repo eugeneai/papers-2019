@@ -137,7 +137,8 @@
 \usepackage{changepage}
 
 \begin{document}
-\title[Digital archives with AI]{Digital Archives Supporting Document Content Inference}
+\title{Digital Archives Supporting Document Content Inference}
+%\title[Digital archives with AI]{Digital Archives Supporting Document Content Inference}
 \author[E.~Cherkashin, A.~Shigarov, V.~Paramonov, A.~Mikhailov]{Evgeny Cherkashin,
 Alexey Shigarov,\\
 Viacheslav Paramonov,
@@ -225,7 +226,7 @@ xml:lang="ru" metal:define-macro="page">
 <head> . . . . </head>
 <body prefix="rdf: http://www.w3.org/1999/...-ns# foaf: http://xmlns.com/foaf/...
 imei: imei.html# course: https://irnok.net/college/plan/01..16-...\
-%D0\%BA_PB-SM.plm.xml.xlsx-....2.3.1.html#"  |\BB{resource="#post"}|
+%D0\%BA_PB-SM.plm.xml.xlsx-....2.3.1.html#"  resource="#post"
 typeof="schema:CreativeWork sioc:Post prov:Entity">
 <!-- The application control panel -->
 
@@ -315,16 +316,16 @@ typeof="schema:CreativeWork sioc:Post prov:Entity">
   \frametitle{Used ontologies}
   \begin{itemize}
   \item Friend-of-a-friend (\textbf{foaf}) - agent information: individuals, legal entities, program agents.
-  \item Provenence (\textbf{prov}) - references between documents.
+  \item Provenance (\textbf{prov}) - references between documents.
   \item Dublin Core (\textbf{dc}) - edited annotation mark up.
   \item DBPedia resource (\textbf{dbr}) – references to instant objects and classes.
-  \item Schema.org (\textbf{schema}) - Google, Yandex, Yahoo, etc. searchable objects, structural elements.
+  \item Schema.org (\textbf{schema}) - Google, Yandex, Yahoo, \emph{etc}. searchable objects, structural elements.
   \item The Bibliographic Ontology (\textbf{bibo}) - literature reference mark up.
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Contribution}
+  \frametitle{Conclusion}
 A tools (components) for digital archive implementation, which allows
 to device information systems and document processing services
 with the following features:
@@ -349,15 +350,17 @@ with the following features:
 
 \end{frame}
 
-
-
 \begin{frame}
   \vfill
   \begin{center}
     {\Huge Thanks for Your attention!}
   \end{center}
   \vfill
+  \begin{center}
+    \includegraphics[width=0.3\linewidth]{qr-frame.png}
+  \end{center}
   % Исходный код (без документации) доступен на github.com: \url{https://github.com/isu-enterprise/icc.xmitransform}, \url{https://github.com/eugeneai/icc.mothurpim}.
+  \url{https://github.com/eugeneai/papers-2019/raw/master/MIPRO/talk.pdf}
 \end{frame}
 
 \end{document}
