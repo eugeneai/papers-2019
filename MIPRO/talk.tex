@@ -172,7 +172,7 @@ CIS, MIPRO-42,
 \end{frame}
 
 \begin{frame}
-  \frametitle{Linked Open Data}
+  \frametitle{Linked Open Data, LOD}
   \begin{enumerate}
   \item Information is published in Internet with open access license;
   \item It is represented in a machine-readable form, e.g., Excel table instead of a bitmap picture;
@@ -227,10 +227,14 @@ with the following features:
   %   \end{column}
   % \end{columns}
 
-\begin{minted}{xml}
+\newcommand{\GB}[1]{\colorbox{green}{#1}}
+\newcommand{\BB}[1]{\colorbox{blue}{#1}}
+\newcommand{\RB}[1]{\colorbox{red}{#1}}
+
+\begin{minted}[escapeinside=||]{xml}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 ...>
 <html lang="ru" xmlns=http://www.w3.org/1999/xhtml
-xmlns:taa=http://irnok.net/engine/rdfa-manipulation
+|\GB{xmlns:taa}|=http://irnok.net/engine/rdfa-manipulation
 xml:lang="ru" metal:define-macro="page">
 <head>
 <!-- Connecting stylesheets and modules -->
@@ -248,8 +252,8 @@ typeof="oa:Annotation" id="main-doc-container">
 work-prog"></div> <article property="oa:hasBody"
 typeof="foaf:Document curr:WorkingProgram"
 resource="#course-work-program" id="main-document">
-<div taa:content="imei:title-page"></div>
-<div taa:content="imei:neg-UMK"></div>
+<div |\GB{taa:content}|="imei:title-page"></div>
+<div |\GB{taa:content}|="imei:neg-UMK"></div>
 <section id="TOC" class="break-after">
 <h2 class="nocount c">Table of Contents</h2>
 <div id="tableOfContents"></div>
@@ -305,12 +309,14 @@ file:///home/eugeneai/project/text/pres/html-presentations/pictures/shots/work-p
 
 \begin{frame}
   \frametitle{Used ontologies}
-  Friend-of-a-friend (foaf) - информацию об агентах: физических, юридических, программных.
-Provenence (prov) - происхождение информации: связь между документами.
-Dublin Core (dc) - разметка редактируемой аннотации.
-DBPedia resource (dbr) – ссылки на экземпляры объектов и классы.
-Schema.org (schema) - объекты, распознаваемые поисковыми агентами Google, Yandex, Yahoo и др. (часть-целое).
-The Bibliographic Ontology (bibo) - разметка списка литературы.
+  \begin{itemize}
+  \item Friend-of-a-friend (\textbf{foaf}) - agent information: individuals, legal entities, program agents.
+  \item Provenence (\textbf{prov}) - references between documents.
+  \item Dublin Core (\textbf{dc}) - edited annotation mark up.
+  \item DBPedia resource (\textbf{dbr}) – references to instant objects and classes.
+  \item Schema.org (\textbf{schema}) - Google, Yandex, Yahoo, etc. searchable objects, structural elements.
+  \item The Bibliographic Ontology (\textbf{bibo}) - literature reference mark up.
+\end{itemize}
 \end{frame}
 
 \begin{frame}
