@@ -269,6 +269,12 @@ The direct way of a transformation implementation is to use \textsc{Prolog} or a
 \subsection{SWI-Prolog Semantic WEB library}
 \label{sec:swi-sw}
 
+SWI Prolog standard distribution contains library for RDF processing.  The library represents URI as a corresponding functor with atom argument. This structure can be constructed with a special form \texttt{<NS>:<ID>}, where \texttt{<NS>} is an abbreviation of a name space, and \texttt{<ID>} is identifier of an entity.  Library contains predicates for loading graphs from files and sites, store them in various text based and binary formats.
+
+The library support queries for the graphs as a predicate and as SPARQL.  There is a basic query optimization.  For the subclass and subpropery relation, library realizes transitive closure, which can be used in the predicate queries.  [[what else ???]]
+
+The library imported in LogTalk as object, that is an encapsulation of all the library predicates.  There is a little conflict of operation ``:'' between LogTalk and RDF library [[How to resolve]].
+
 \subsection{PSM representation}
 \label{sec:blocks}
 
@@ -506,6 +512,8 @@ list_separator(Separator):-
 
 :- end_category.
 \end{minted}
+
+Similarly lists .... [[(list of superclasses, variables,...)]]
 
 In the same way, we can construct procedures for creating structures of databases and populating them with initial data.
 
