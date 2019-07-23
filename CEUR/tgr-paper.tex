@@ -293,6 +293,15 @@ The \verb|code_block|--objects consist of source code string lines and other obj
 \subsection{Programming LogTalk Methods}
 \label{sec:lgt-methods}
 
+LogTalk object consists of encapsulated predicates (methods), some of them can be defined as dynamic, implementing object state.  LogTalk as a macro package provides two kind of objects: static and dynamic.  Static objects is defined and instantiated during compilation, dynamic ones are created with \texttt{create\_object/4} usually at runtime.  Static parameterized objects can be considered as third way of instantiation.
+
+Static object instances are used for defining configurations, scenarios, interfaces to input and output targets (streams, models), graph databases, and other global compile time known entities.  Dynamic objects are used in construction of PSM objects, currently, each instantiation is an entity of target programming language.  Parametrized objects are facade interfaces to other objects, e.g., input targets and graph databases.  These objects enables programmer to define recognition rules over set of structures provided it with parameters.  Parameterized objects should be stateless, in this case, LogTalk compiles it in statically executed code.
+
+%%%%% Methods can be redefined during inheritance.  Sending to the redefined method is done with ``\texttt{\^\^}'' message to self.
+
+
+[[Idea how to implement objects, methods, instantiations, references, calls]]
+
 \section{Defining rules of transformation}
 \label{sec:mda-rules}
 
