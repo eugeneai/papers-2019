@@ -4,21 +4,29 @@
 % 2019 7. Разработка технологий и инструментальных средств создания размеченных документов на основе интерпретации комплексной платформонезависимой модели информационной системы.
 % 2020 7. Разработка специализированного интерпретатора платформонезависимой модели, ориентированного на поддержку современных средств разработки интернет-приложений, функционирующих в среде Linked Open Data.
 
-\documentclass[12pt,a4paper]{llncs}
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 %\usepackage[T1]{fontenc}
 %\usepackage[utf8]{inputenc}
 \usepackage{luatextra}
 \usepackage{currvita}
 \usepackage{minted}
-\usepackage{graphicx}
-\usepackage{color}
 %\usepackage{ulem}
 %\usepackage[]{geometry}
-\usepackage[a4paper,margin=2cm]{geometry}
+% \usepackage[a4paper,margin=2cm]{geometry}
 \usepackage{multicol}
 \usemintedstyle{bw}
 \usepackage{enumitem}
-\usepackage{indentfirst}
+%\usepackage{indentfirst}
 \setminted{fontsize=\small}
 
 \providecommand{\sout}[1]{}
@@ -27,7 +35,6 @@
 
 % *** CITATION PACKAGES ***
 %
-\usepackage{cite}
 %\renewcommand\cite[1]{[[#1]]}
 
 \usepackage{hyperref}
@@ -56,36 +63,31 @@
 \setmainfont{Times New Roman}
 
 \begin{document}
-\title{Complex Model Transformation within MDA Approach}
+\title{Complex Model Transformation within MDA Approach\thanks{The results are obtained with the partial support of Russian Foundation for Basic Research, grants 18-07-0075, and ..., RSF, ISC SB RAS}}
 
 % \titlerunning{Implementation of a QMS with MDA}
 
-\author{Evgeny Cherkashin\inst{1,2}\and
-Alexey Shigarov\inst{1}\and
-Viacheslav Paramonov\inst{1}\and
-Ljubica Kazi\inst{3}
+\author{
+\IEEEauthorblockN{Evgeny Cherkashin, Alexey Shigarov, Viacheslav Paramonov}
+\IEEEauthorblockA{\textit{Matrosov Institute for System Dynamics and Control Theory of SB RAS} \\
+ \textit{Irkutsk Scientific Center of SB RAS} \\ 134 Lermontov Street, Irkutsk, 664033, Russia\\\{eugeneai,shig,slv\}@icc.ru}
 }
 
-\tocauthor{Evgeny Cherkashin, Alexey Shigarov, Viacheslav Paramonov, Ljubica Kazi}
+% \tocauthor{Evgeny Cherkashin, Alexey Shigarov, Viacheslav Paramonov, Ljubica Kazi}
 
-\authorrunning{Evgeny Cherkashin, Alexey Shigarov \emph{et al.}}
+% \authorrunning{Evgeny Cherkashin, Alexey Shigarov \emph{et al.}}
 
-\institute{%
-Matrosov Institute for System Dynamics and Control Theory of SB RAS,\\ 134 Lermontov Street, Irkutsk, 664033, Russia\and
-%Melentiev Energy Systems Institute of SB RAS, 130 Lermontov Street, Irkutsk, 664033, Russia\and
-%Irkutsk State University, 20 Gagarina Avenue, Irkutsk, 664002, Russia\and
-National Research Irkutsk State Technical University,\\ 83 Lermontov Street, Irkutsk, 664074, Russia\\
-%\email{eugeneai@icc.ru, tualatin32@mail.ru, ljubica.kazi@gmail.com}}
-University of Novi Sad, Technical faculty "Mihajlo Pupin",\\ \DJ{}ure \DJ{}akovi\'ca bb, Zrenjanin, 23000, Serbia\and
-\email{\{eugeneai,shig,slv\}@icc.ru, ljubica.kazi@gmail.com}}
+% \email{\{eugeneai,shig,slv\}@icc.ru, ljubica.kazi@gmail.com}}
 
 \maketitle
 
 \begin{abstract} % 70-150 words
 The problem of software modeling and its transformation using complex approach, having various models as sources, is considered.  The software system (most frequently, information system) is synthesized as a result of a logical inference of a set of subgoals (a scenario) represented in the LogTalk programming language within Model Driven Architecture (MDA) paradigm.  The source model is represented as a set of BPMN2.0, SysML, CMMN and UML diagrams.  The models are converted in a A-box and stored on an ontology server.  The models are transformed into Platform Specific Models.  Additional data for the transformation are provided from Linked Open Data compliant sources.  Usage of such kind of MDA allows us to develop information systems on the abstract model level, refining the source model with modeling instruments specially intended for the corresponding modeling aspect.
-
-\keywords{model driven architecture, logical inference, complex model of software, linked open data}
 \end{abstract}
+
+\begin{IEEEkeywords}
+model driven architecture, logical inference, complex model of software, linked open data
+\end{IEEEkeywords}
 
 \section{Introduction}
 \label{sec:intro}
@@ -129,7 +131,7 @@ The architecture of the software development tools is based on the provision of 
 
 \begin{figure}[htb]
   \centering
-   \includegraphics[width=0.8\linewidth]{pics/architecture-mda-lod-ext.pdf}
+   \includegraphics[width=1\linewidth]{pics/architecture-mda-lod-ext.pdf}
   \caption{Architecture of MDA tools}
   \label{fig:archi}
 \end{figure}
@@ -550,10 +552,6 @@ The idea of formal description of the business process during transition of a me
 CIM is being designed with visual editors, \emph{e.g.} Modelio \cite{modelio}, translated from their XMI to RDF and stored as ontology graphs as files or network resources.  MDA-transformation is represented and executed within Prolog programming environment LogTalk \cite{tereh1}, which provides us knowledge structuring, rich set of libraries and uniform well-known programming language for defining transformation rules.  The general scheme of transformation definition is presented.
 
 IS development tools is being tested in representation of bioinformatic tool Mothur as Rapidminer dataflow diagrams \cite{dataflow}.  The source data for transformation is the module specifications and UML Class Diagram, which organizes submodules in virtual class hierarchies.  %The result is a Rapidminer plug-in, with each Mothur module being represented as a data block.
-
-\section{Acknowledgments}
-\label{sec:acks}
-The results are obtained with the partial support of Russian Foundation for Basic Research, grants 18-07-00758. The results obtained with the use of the network infrastructure of Telecommunication center of collective use ``Integrated information-computational network of Irkutsk scientific-educational complex'' (\url{http://net.icc.ru}).
 
 \begin{thebibliography}{99}
 \bibitem{techaudit} [[[A book about technical audit.]]]
