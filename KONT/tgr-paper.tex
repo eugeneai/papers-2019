@@ -63,9 +63,7 @@
 \setmainfont{Times New Roman}
 
 \begin{document}
-\title{Object Representation of MDA Transformation by Means of Logical Inference\thanks{The results are obtained with the partial support of the various projects: Russian Foundation for Basic Research, grant 18--07--0075,
-Russian Science Foundation, grant 18--71--10001,
-Irkutsk scientific center of SB RAS, grant 4.2.}}
+\title{Object Representation of MDA Transformation by Means of Logical Inference}
 
 % \titlerunning{Implementation of a QMS with MDA}
 
@@ -125,45 +123,49 @@ model driven architecture, logical inference, resource description framework, Lo
 
 % TOO MANY GOALS AND TOO COMPLEX SOFTWARE - SHOULD BE PRESENTED AS A COMPONENT DIAGRAM WHICH CAPTURES THE IDEA AND SERVES AS A BASIS FOR THE LONG-TERM DEVELOPMENT.THE IDEA WRITTEN THIS WAY IS TOO WIDE AND MISTY.
 
-One of the main challenge of informational systems (IS), as well as other industrial software design, development is complexity expressed in its structure, integration with other software, prototyping on the stage of design.  Rising the stage of code generation of IS within the development to abstract level of design allows us to produce IS prototypes as early as the specification are formalized.  CASE--systems are usually developed close to standard industrial  technologies; it is not popular in developing IS for small organization and startups, which is characterized uncertainties of requirements and specification.
+One of the main challenge of informational systems (IS), as well as other industrial software design, development is complexity expressed in its structure, integration with other software, fast prototyping on the stage of design.  Rising the stage of code generation of IS within the development to abstract level of design allows us to produce IS prototypes as early as the specification are formalized.  CASE--systems are usually developed close to standard industrial  technologies; it is not popular in developing IS for small organization and startups, which is characterized uncertainties of requirements and specification.
 
-In order to support IS subsystems generation, we are to develop an expressive means for transformation from set of formalized models represented in UML, SysML, BPMN and other notations constructed with corresponding design tools.  The process of tradition programming should allow us to develop specialized versions for peculiar software design approaches, with conserving common practices as libraries.  One of the paradigm of the implementation could be object--orientation, which in context of knowledge based systems of transformation will allow us to have a powerful tools enabling knowledge structuring, manipulation, and encapsulation as components.  [[Low popularity of generative approaches is due to absence of transformation implementation techniques ``consuming and adapting previous experience'' expressed in transformational libraries, which are also absent.]]
+In order to support IS subsystems generation, we are to develop an expressive means for transformation from set of formalized models represented in UML, SysML, BPMN and other ones constructed with corresponding design tools.  The process of tradition programming should allow us to develop specialized versions for peculiar software design approaches, with conserving common practices as libraries.  One of the paradigm of the implementation could be object--orientation, which in context of knowledge based systems will allow us to have a powerful tools enabling knowledge structuring, manipulation, and encapsulation as transformation components.  % This technique should improve generative approaches is due to absence of transformation implementation techniques ``consuming and adapting previous experience'' expressed in transformational libraries, which are also absent.
 
-The most investigates transformational approach of code generation, that goes beyond the CASE, is Model Driven Architecture (MDA).
-[[MDA description, PSM, sources, PIM, CIM (vice-versa). Then notion of transformation CIM->PIM->PSM->sources and data]]
+The most investigated transformational approach of code generation, that goes beyond the CASE, is Model Driven Architecture (MDA).  MDA represents code generation as multistage process of model transformation.  The source code and initial data are produced from a Platform Specific Model (PSM) that represents IS implementation on a specific program and hardware platform.  PSM is obtained from a Platform Independent Model (PIM), which describe IS more abstract without platform specifics.  PIM could be resulted from a Computational Independent Model representing the IS and its environment on conceptual, organizational, system level, which does not define information conversion (e.g., computation).
 
-[[First - data sources, show which models can be used in each levels. Speak about that there is a lot of useful data, already well enough structured and represented as ontologies and ...pedias, which could be used in the synthesis as auxiliary data sources.]]
+%Input models are stored in various format, including proprietary ones; they could be converted to OMG standard XMI representation.  XMI is a set of identified structural components,
+CIM and PIM usually defined as a sets of SysML, CMMN, UML and other visual models, which saved in a standard way as XMI\footnote{XML Metadata Interchange} files.  Dispute these notations additional data for transformation can be obtained from Semantic Web (SW), for example, ontology definitions, literal names of entities in various natural languages, current state of processes, and so on.  The popular ways of model transformation, like ATL\footnote{ATLAS Transformation Language}, are based on transformation one XMI model to another XMI, and then to the code.  Involving SW data is problematic.
 
-The \emph{object} of the research is the development of a tradition technology \cite{} of expression of process structure of an organization in above mentioned notations (SysML, BPMN-2.0, CMMN, UML) and conversions of the description into subsystems of a complex information system supporting the BP reingeneering processes. The \emph{subject} we consider in this paper is to describe tools and techniques of complex model definition and its interpretation as a MDA transformations.
+We propose a more general approach, where for all model sources a converter to RDF\footnote{Resource Description Framework} format, the standard SW data and knowledge representation, and the transformation is defined as object-oriented logical program in the LogTalk language.  This allows us represent the transformation as a scenario of objects exchanging messages, querying a SW graph fact database on model structures and SW data.  Object programming enables us to structure, manipulate the knowledge base with encapsulation, inheritance, extending and composition.
+
+The \emph{object} of the research is the development of a technology for transformation implementation as knowledge based system and be capable to process heterogeneous model sources as a complex of CIM and PIM. The \emph{subject} of the paper is to describe above proposed data representation and transformation techniques.
 
 \section{Architecture of MDA tools}
 
 % (here we speak about how to convert BPMN, SysML and CMMN models into carcass of an Inform. System... various stages of processing, including input....)
 
-The architecture of the software development tools is based on the provision of uniformity of the transformation rules language and predicate input data representation.  That's why we require either to store all the input model data in Semantic Web graphs of ontologies, or provide an interface representing the source model as the ontology graph.  The ontologies could be served as RDF--files of triples or with servers having SPARQL endpoints.  A general architecture of the development tools is presented in Fig.~\ref{fig:archi}.
+The architecture of the transformation tools is based on the provision of uniformity of the transformation rules language and predicate input data representation.  That's why we require either to store all the input model data in SW graphs of ontologies, or provide an interface representing the source model as the ontology graph.  The ontologies could be served as RDF--files of triples or with servers having SPARQL endpoints.  A general architecture of the development tools is presented in Fig.~\ref{fig:archi}.
 
 \begin{figure}[htb]
   \centering
    \includegraphics[width=1\linewidth]{pics/architecture-mda-lod-ext.pdf}
-  \caption{Architecture of MDA tools}
+  \caption{Architecture of MDA transformational tools}
   \label{fig:archi}
 \end{figure}
 
 The MDA tools consists of the following main components:
 \begin{itemize}
-\item domain model server (2), which stores and retrieve model data as RDF triples;
-\item transformation MDA engine (1), which queries data from the domain server and auxiliary from other SPARQL compliant ontology servers (4);
-\item the main model data sources, representing CIM (3) and PIM (6);
+\item source model server (2), which stores and retrieve model data as RDF triples;
+\item MDA transformation engine (1), which queries data from the server other SPARQL compliant  servers (4);
+\item the CIM (3) and PIM (6) model data sources;
 \item indexing engine (5), which provides persistent utility means for text data storage and text processing interfaces.
 \end{itemize}
 
 All components interact by means of network protocols and use utf-8 encoded HTML, TXT, XML and JSON formats for data representation, which are expressive enough and easily debugged.  Inference engines also support SPARQL protocol for issuing subqueries.
 
-The kernel of the system is MDA Tool, which is a set of transformational modules (T--Modules). Each of T--Module in a general case is a parameterized LogTalk object.  The object queries the Server of domain models, which is built on the base of ClioPatria \cite{Clio}, other objects and other Ontology servers for structural patterns.  These patterns are analyzed and the results are stored as the objects states, \emph{i.e.} cached.  The states of the object represent Platform Specific Model (PSM), which is translated into source code and initial data.  Input structures of CIM and PIM models are converted into graphs with converter adapters.  For example in Fig.~\ref{fig:archi} CIM (3) drawn in Modelio \cite{modelio} is converted to triples with a special module ``XMI to RDF converter''.  Similar converter is realized for PIM represented in UML.  This approach makes the input stage modular, and, consequently, easier extensible with new model types.
+The kernel of the system is MDA Tool, which is a set of transformational modules (T--Modules). Each of T--Module in a general case is a parameterized LogTalk object.  The object queries the Server of domain models, which is built on the base of ClioPatria \cite{Clio}, other objects and other Ontology servers for structural patterns.  These patterns are analyzed and the results are stored as the objects states, \emph{i.e.}, cashed in the indexing engine.  The states of the object represent PSM, which is translated into source code and initial data.
+
+Input structures of CIM and PIM models are converted into graphs with converter adapters.  For example in Fig.~\ref{fig:archi} CIM (3) drawn in Modelio \cite{modelio} is converted to triples with a special module ``XMI to RDF converter''.  Similar converter is realized for PIM represented in UML.  This approach makes the input stage modular, and, consequently, easier extensible with new model types.
 
 %IF WE EMPHASIZE SYSML, HOW IS IT RELATED TO SEMANTIC WEB TRIPLETS? THIS SHOULD BE EXPLAINED.
 
-There are number of partially structured data sources related to terms reflecting common objects.  For example, \texttt{DBPedia.org} contains naming in various languages, as well as relations, of the entities represented in Wikipedia.  This information can be used to describe user interface properties of the program objects, and referred by URI's from devised models.  For example, we can use DBPedia for constructing \texttt{title} and \texttt{placeholder} attributes of an input widget, together with its label name text in user's locale and a help description.
+One of auxiliary RDF--compliant data sources is \texttt{DBPedia.org} containing naming literals in various languages, as well as relations, of the entities represented in Wikipedia.  This information can be used to describe user interface properties of the program objects, and referred by URI's from devised models.  For example, we can use DBPedia for constructing \texttt{title} and \texttt{placeholder} attributes of an input widget, together with its label name text in user's locale and a help description.
 
 % Some UML-structures (OCL) and relations may be interpreted constructively as methods of objects: events, handlers, subscribers, database triggers and selectors (lookups widgets).
 
@@ -570,7 +572,7 @@ IS development tools is being tested in representation of bioinformatic tool Mot
 \section{Acknowledgements}
 \label{sec:ack-descr}
 
-The presented research results is distributed among three grants as follows: aspect of LOD data representation and integration is supported by Russian Science Foundation, logical inference combining various source models and object--oriented knowledge representation is supported by Russian Foundation of Basic Research, and the presented example of Rapidminer dataflow modules is being developed with support of grant of Irkutsk Scientific Center SB RAS.
+The presented research results is distributed among three grants as follows: aspect of LOD data representation and integration is supported by Russian Science Foundation, grant 18--07--0075; logical inference combining various source models and object--oriented knowledge representation is supported by Russian Foundation of Basic Research, grant 18--71--10001; the presented example of Rapidminer dataflow modules generation is being developed with support of grant of Irkutsk Scientific Center SB RAS, project No 4.2.
 
 \begin{thebibliography}{99}
 \bibitem{techaudit} [[[A book about technical audit.]]]
