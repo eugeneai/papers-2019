@@ -63,13 +63,15 @@
 \setmainfont{Times New Roman}
 
 \begin{document}
-\title{Complex Model Transformation within MDA Approach\thanks{The results are obtained with the partial support of Russian Foundation for Basic Research, grants 18-07-0075, and ..., RSF, ISC SB RAS}}
+\title{Object Representation of MDA Transformation by Means of Logical Inference\thanks{The results are obtained with the partial support of the various projects: Russian Foundation for Basic Research, grant 18--07--0075,
+Russian Science Foundation, grant 18--71--10001,
+Irkutsk scientific center of SB RAS, grant 4.2.}}
 
 % \titlerunning{Implementation of a QMS with MDA}
 
 \author{
 \IEEEauthorblockN{Evgeny Cherkashin, Alexey Shigarov, Viacheslav Paramonov}
-\IEEEauthorblockA{\textit{Matrosov Institute for System Dynamics and Control Theory of SB RAS} \\
+\IEEEauthorblockA{\textit{Matrosov Institute for System Dynamics and Control Theory of SB RAS,} \\
  \textit{Irkutsk Scientific Center of SB RAS} \\ 134 Lermontov Street, Irkutsk, 664033, Russia\\\{eugeneai,shig,slv\}@icc.ru}
 }
 
@@ -82,46 +84,57 @@
 \maketitle
 
 \begin{abstract} % 70-150 words
-The problem of software modeling and its transformation using complex approach, having various models as sources, is considered.  The software system (most frequently, information system) is synthesized as a result of a logical inference of a set of subgoals (a scenario) represented in the LogTalk programming language within Model Driven Architecture (MDA) paradigm.  The source model is represented as a set of BPMN2.0, SysML, CMMN and UML diagrams.  The models are converted in a A-box and stored on an ontology server.  The models are transformed into Platform Specific Models.  Additional data for the transformation are provided from Linked Open Data compliant sources.  Usage of such kind of MDA allows us to develop information systems on the abstract model level, refining the source model with modeling instruments specially intended for the corresponding modeling aspect.
+  The problem of software modeling having various models as sources and its transformation based on logical inference is considered.  Source models are converted into graphs of RDF (Resource Description Framework) and then processed with knowledge based system organized in a network of objects.  Various notation can be used to represent models, such as UML, SysML, CMMN, BPMN2.0, as well as RDF graphs and analyzed source code, having implemented a corresponding converter.  The objects are represented in the LogTalk programming language.  Objects query graphs and other objects implementing a scenario of a software system (most frequently, information system) carcass synthesis within Model Driven Architecture (MDA) paradigm.
+
+  Usage of such kind of MDA transaction approach allows us to develop information system carcasses on the level of abstract models, involve various sources of model data in the transformation, define and structuring conversion knowledge as objects.  An example of a dataflow environment synthesis encapsulating Mothur library for new generation sequencing is presented.
 \end{abstract}
 
 \begin{IEEEkeywords}
-model driven architecture, logical inference, complex model of software, linked open data
+model driven architecture, logical inference, resource description framework, LogTalk
 \end{IEEEkeywords}
 
 \section{Introduction}
 \label{sec:intro}
 
-The simplest approach to a system improvement consists of the repetitive execution of the following steps over a level of organization under reingeneering:
-\begin{enumerate}
-\item imaging the target state of the system (future),
-\item comparison with the present state,
-\item assessment of the deviations from the target state,
-\item planning set of actions for reaching the target state,
-\item performing the planned set of actions,
-\item control of the achieving the target state by, e.g., checking the set of target criteria.
-\end{enumerate}
+% The simplest approach to a system improvement consists of the repetitive execution of the following steps over a level of organization under reingeneering:
+% \begin{enumerate}
+% \item imaging the target state of the system (future),
+% \item comparison with the present state,
+% \item assessment of the deviations from the target state,
+% \item planning set of actions for reaching the target state,
+% \item performing the planned set of actions,
+% \item control of the achieving the target state by, e.g., checking the set of target criteria.
+% \end{enumerate}
 
-Business process (BP) reingeneering usually starts from a technical audit (TA), the process of a system analysis of an organization structure, its problems and resources \cite{techaudit}.  The result of the TA is set of text documents describing the present state of the organization and its BPs on the various levels (social, administrative, technical, and physical).  The set comprises specifications of organization structure, BP models (AS-IS, TO-BE), target state requirements and restrictions, etc.
+% Business process (BP) reingeneering usually starts from a technical audit (TA), the process of a system analysis of an organization structure, its problems and resources \cite{techaudit}.  The result of the TA is set of text documents describing the present state of the organization and its BPs on the various levels (social, administrative, technical, and physical).  The set comprises specifications of organization structure, BP models (AS-IS, TO-BE), target state requirements and restrictions, etc.
 
-[[Specification structure]]
+% [[Specification structure]]
 
-[[[Point of views: people resources, marketing, technology, IT, finance]]]
+% [[[Point of views: people resources, marketing, technology, IT, finance]]]
 
-[[Gathering information]]
+% [[Gathering information]]
 
-There are three general creative roles of stakeholders involved in the improvement and revealed during TA: \emph{problem owner}, \emph{knowledge owner}, and \emph{problem solver}.  Problem owner is the agent (person), who recognizes the problems in the current state.  This role describes future target state as a ranged list of \emph{requirements} and \emph{restrictions}.  Knowledge owner describes the states in technical terms of the problem domain.  The description contains structure of BPs, their sequences, parameters, causal relationship, control processes, etc.  Problem solver searches and devices a problem solution, relying on a problem solving methodology, respecting interests of the problem owner, and information acquired from knowledge owner.
+% There are three general creative roles of stakeholders involved in the improvement and revealed during TA: \emph{problem owner}, \emph{knowledge owner}, and \emph{problem solver}.  Problem owner is the agent (person), who recognizes the problems in the current state.  This role describes future target state as a ranged list of \emph{requirements} and \emph{restrictions}.  Knowledge owner describes the states in technical terms of the problem domain.  The description contains structure of BPs, their sequences, parameters, causal relationship, control processes, etc.  Problem solver searches and devices a problem solution, relying on a problem solving methodology, respecting interests of the problem owner, and information acquired from knowledge owner.
 
-[[[How we can represent specifications as IT SUBSYSTEM of an existing system? dring the process of improvement]]]
+% [[[How we can represent specifications as IT SUBSYSTEM of an existing system? dring the process of improvement]]]
 
-[[[Application of the nowadays modeling notations in specifications for the low levels]]]
-.....MOD to be improved with more expressive but complex notions of SysML (System Markup Language), BPMN--2.0 (Business Process Modeling Notation) and CMMN (Case Management Modeling Notation).  SysML used to describe organizational and administrative structures in higher degree of abstraction with respect to UML2, which is used at administrative and technical levels, and in the same time to be more detailed.  The usage of these modeling notation will allow to describe the present organizational structure more formally and precisely as a Computational Independent Model (CIM) and Platform Independent Model (PSM) of MDA paradigm, resulting the bridge between specifications and IT resource under development.
+% [[[Application of the nowadays modeling notations in specifications for the low levels]]]
+% .....MOD to be improved with more expressive but complex notions of SysML (System Markup Language), BPMN--2.0 (Business Process Modeling Notation) and CMMN (Case Management Modeling Notation).  SysML used to describe organizational and administrative structures in higher degree of abstraction with respect to UML2, which is used at administrative and technical levels, and in the same time to be more detailed.  The usage of these modeling notation will allow to describe the present organizational structure more formally and precisely as a Computational Independent Model (CIM) and Platform Independent Model (PSM) of MDA paradigm, resulting the bridge between specifications and IT resource under development.
 
-Heaving described BPs structure and flows of an organization in the formal detailed multilevel form in SysML, we could construct an environment of a permanent IS research and development.  At the first stage, a most simple case is being realized: the description could be converted into check lists controlling conditions of business process starting and ending points. The second stage of implementation is the automation of planning after reaching a checked condition.  The third stage is to organize data processing according to the synthesized plan.  In the long run a refined specification description is being integrated with already used software.  All the stages are accompanied with a lot of useful information to be accumulated, forming the quality measurement, knowledge and analysis basis \cite{aiowa}.
+% Heaving described BPs structure and flows of an organization in the formal detailed multilevel form in SysML, we could construct an environment of a permanent IS research and development.  At the first stage, a most simple case is being realized: the description could be converted into check lists controlling conditions of business process starting and ending points. The second stage of implementation is the automation of planning after reaching a checked condition.  The third stage is to organize data processing according to the synthesized plan.  In the long run a refined specification description is being integrated with already used software.  All the stages are accompanied with a lot of useful information to be accumulated, forming the quality measurement, knowledge and analysis basis \cite{aiowa}.
 
-%TOO MANY GOALS AND TOO COMPLEX SOFTWARE - SHOULD BE PRESENTED AS A COMPONENT DIAGRAM WHICH CAPTURES THE IDEA AND SERVES AS A BASIS FOR THE LONG-TERM DEVELOPMENT.THE IDEA WRITTEN THIS WAY IS TOO WIDE AND MISTY.
+% TOO MANY GOALS AND TOO COMPLEX SOFTWARE - SHOULD BE PRESENTED AS A COMPONENT DIAGRAM WHICH CAPTURES THE IDEA AND SERVES AS A BASIS FOR THE LONG-TERM DEVELOPMENT.THE IDEA WRITTEN THIS WAY IS TOO WIDE AND MISTY.
 
-The \emph{object} of the research is the development of a generative technology \cite{} of expression of process structure of an organization in abovementioned notations (SysML, BPMN-2.0, CMMN, UML) and conversions of the description into subsystems of a complex information system supporting the BP reingeneering processes. The \emph{subject} we consider in this paper is to describe tools and techniques of complex model definition and its interpretation as a MDA transformations.
+[[Speak about complexity of IS. One of solution is rising automation level to design. CASE and their closeness of ``standard'' technologies, disallowing usage in, e.g., web IS, special cases. Working with lazy IT customer (uncertainties of its requirements)]]
+
+[[Problem - develop a expressive means for transformation implementation, allowing known practice of object-oriented programming within implementation of the transformations based on knowledge application, allowing us to use various model sources describing IS from various aspects (structural, dynamic, organizational, integration with other ISs, etc.).  Low popularity of generative approach in web development due to high flexibility of the frameworks and absence of transformation implementation techniques ``consuming and adapting previous experience'' expressed in transformational libraries, which are also absent.]]
+
+The most examined transformational approach of code generation is Model Driven Architecture.
+[[MDA description, PSM, sources, PIM, CIM (vice-versa). Then notion of transformation CIM->PIM->PSM->sources and data]]
+
+[[First - data sources, show which models can be used in each levels. Speak about that there is a lot of useful data, already well enough structured and represented as ontologies and ...pedias, which could be used in the synthesis as auxiliary data sources.]]
+
+The \emph{object} of the research is the development of a tradition technology \cite{} of expression of process structure of an organization in above mentioned notations (SysML, BPMN-2.0, CMMN, UML) and conversions of the description into subsystems of a complex information system supporting the BP reingeneering processes. The \emph{subject} we consider in this paper is to describe tools and techniques of complex model definition and its interpretation as a MDA transformations.
 
 \section{Architecture of MDA tools}
 
@@ -191,52 +204,54 @@ When implementing complex systems, which are composed from existing subsystems, 
 
 \section{Related works}
 
-The most widely used technology of model transformation is ATL (ATLAS Transformation Language) \cite{atl} and its predecessor QVT, a OMG standard \cite{QVT}.  The language and its engine supports conversion from one XMI model to another one in the same format.  The language structures describe recognition of properties of compositions of the source model and direct construction of new structures in the target model accounting the property values.
+The most widely used technology of model transformation is ATL (ATLAS Transformation Language) \cite{atl} and its predecessor QVT, an OMG standard \cite{QVT}.  The language and its engine supports conversion from one XMI model to another one in the same XMI format.  The language structures describe recognition of properties of compositions of the source model and direct construction of new structures in the target model.
 
-The ATL is supported with visual tools for rule construction.  The tools are integrated in Eclipse IDE.  Similar to ATL, Transformation Model Representation Language (TMRL) is developed in \cite{nikita} but oriented on knowledge visual representation with following conversion in various production rules in CLIPS and OWL.  The visual presentation of transforming rules are used also in \cite{GT}, where a general approach is adopted for the purpose.  In a recent paper \cite{azis}, ATL is used to transform Computational Independent Model (CIM) represented as BPMN diagram into set of UML diagrams, defining PIM. Paper \cite{Rhazali} proposes a model transformation CIM to PIM for web-applications, where CIM is represented with State and Use case UML-Diagrams logically connected with ATL rules.  In \cite{Hamid} is proposed an evaluation of security aspects of distributed applications using MDA description; the evaluation is implemented a logical inference over the MDA synthesized logical security models. The paper \cite{Zdun} is considered a highly decoupled distributed event-driven application environment, whose design and functioning is dynamically controlled by its three-level DSL description and MDA transformations, which support change propagation.
+Similar to ATL, Transformation Model Representation Language (TMRL) is developed in \cite{nikita} but oriented on visual representation of a knowledge base with following conversion in various production rules in CLIPS and OWL.  The visual presentation of transforming rules are used also in \cite{GT}.  In \cite{azis}, ATL is used to transform Computational Independent Model (CIM) represented as BPMN diagram into set of UML diagrams, defining PIM. Paper \cite{Rhazali} proposes a model transformation CIM to PIM for web-applications, where CIM is represented with State and Use case UML-Diagrams logically connected with ATL rules.  In \cite{Hamid} is proposed an evaluation of security aspects of distributed applications using MDA description; the evaluation is implemented a logical inference over the MDA synthesized logical security models. The paper \cite{Zdun} is considered a highly decoupled distributed event-driven application environment, whose design and functioning is dynamically controlled by its three-level DSL description and MDA transformations, which support change propagation.
 
-Paper \cite{Malki} is presented a practical approach with four-level ATL-description from HTML-page to a LOD structure (via stage of an MDA PIM). In \cite{uml2owl}, a converter of UML package structures represented in XMI was developed as a XSLT transformation. A wide overview of Western approaches to program transformation is given in \cite{Dama,Dama2}, a transformation language PROMOL is suggested as well as its logical semantics. The book \cite{Dama}, together with John McCarthy's and Steve Russell's LISP technologies and Enn Tyugu's conceptual programming, covers the problem space history almost completely. OMG proposed ODM standard \cite{odmprof} for knowledge modeling.  A Visual Ontology Modeler \cite{odnext} is being developed for building and verifying OWL ontologies for ODM~1.0, as well as in the reverse direction, ontologies are represented as UML Class Diagrams \cite{odmvis}.
+Paper \cite{Malki} presents a practical approach with four-level ATL-description from HTML-page to a LOD structure (via stage of an MDA PIM). In \cite{uml2owl}, a converter of UML package structures represented in XMI was developed as a XSLT transformation. A wide overview of Western approaches to program transformation is given in \cite{Dama,Dama2}, a transformation language PROMOL is suggested as well as its logical semantics. OMG proposed ODM standard \cite{odmprof} for knowledge modeling.  A Visual Ontology Modeler \cite{odnext} is being developed for building and verifying OWL ontologies for ODM~1.0, as well as in the reverse direction, ontologies are represented as UML Class Diagrams \cite{odmvis}.
 
 An XML based specifications are used in representing metadata about web services, WSDL \cite{wsdl}, and the WS-BPEL language \cite{wsbpel} for describing orchestration of web services within execution of an instance of a business process.  The idea of the language is to describe complex systems down to Web Services units, their internal and external structure and behavior, as well as services interaction in the script instance.
 
-\subsection{Ontology Usage in Model Representation}
-\label{sec:use-onto}
+Thus, the majority of the presented techniques are closed with respect of XMI file format: the source data and the result of the transaction are represented in it, and it goes beyond only on the stage of the source code generation.  Our approach allows one to use other sources (not being presented in XMI) of model information, as well as general purpose libraries in implementation of the transformation engine.  Usage of object-oriented logical language LogTalk allows us powerfully structuring and manipulate knowledge base by means of the object encapsulation, inheritance, and composition.
 
-SysML is the dedicated system-level UML-based notation proposed by the OMG. In research \cite{raslan} system design productivity is addressed as one of the main challenges. Some suggested approaches are increasing the level of abstraction and automation, as well as producing executable specifications. In \cite{natale}, model driven development is used for the construction of complex embedded systems integrating software and firmware. A SysML system model is devised according to the platform-based design paradigm, in which a functional model of the system is paired to a model of the execution platform. Subsystems are refined as Simulink models or hand-coded in C++.
+% \subsection{Ontology Usage in Model Representation}
+% \label{sec:use-onto}
 
-The SysML standard is attracting more attention of hardware designers as UML and SysML have been used to automatically generate an HDL code written in SystemC, Verilog and VHDL. In \cite{boute}, contrarily to the existing works, authors propose the new reverse engineering approach to generate SysML definition of block and internal block diagrams from VHDL code. Code generation is done on the basis of a set of well-defined mapping rules between SysML and VHDL concepts.
+% SysML is the dedicated system-level UML-based notation proposed by the OMG. In research \cite{raslan} system design productivity is addressed as one of the main challenges. Some suggested approaches are increasing the level of abstraction and automation, as well as producing executable specifications. In \cite{natale}, model driven development is used for the construction of complex embedded systems integrating software and firmware. A SysML system model is devised according to the platform-based design paradigm, in which a functional model of the system is paired to a model of the execution platform. Subsystems are refined as Simulink models or hand-coded in C++.
 
-UML profiles like SysML and MARTE have been a major research topic in electronic system design, but are mainly applied for specification and analysis in early design phases.  Research \cite{mish} addresses the problem of the High-Level Synthesis (HLS), \emph{i.e.} physical implementation aspect of electronic systems, which need diversity of design models and levels of abstraction.  To overcome the conflict between a higher degree of abstraction and necessary details for further synthesis, modular interfaces are introduced as object-oriented synthesizable technique. In \cite{mish}, SysML is used as an adequate modeling language for modular interfaces and C/C++/SystemC-based HLS. Authors extended SysML with annotations for synthesizable SystemC and high-level synthesis constraints and implemented a code generation scheme to achieve design flow automation. They used SysML editor Artisan Studio with industrial case study to demonstrate the applicability of SysML as a front-end for HLS.
+% The SysML standard is attracting more attention of hardware designers as UML and SysML have been used to automatically generate an HDL code written in SystemC, Verilog and VHDL. In \cite{boute}, contrarily to the existing works, authors propose the new reverse engineering approach to generate SysML definition of block and internal block diagrams from VHDL code. Code generation is done on the basis of a set of well-defined mapping rules between SysML and VHDL concepts.
 
-In \cite{tom16} UML/SysML is used to model avionics.  The implementation language is C\# with using libXML for XMI import and processing.  Generated objects represent each syntactic element (\texttt{struct}, \texttt{enum}, function, \emph{etc.}), which represents the target source code.  Authors implemented only State Machine diagram transformation.
+% UML profiles like SysML and MARTE have been a major research topic in electronic system design, but are mainly applied for specification and analysis in early design phases.  Research \cite{mish} addresses the problem of the High-Level Synthesis (HLS), \emph{i.e.} physical implementation aspect of electronic systems, which need diversity of design models and levels of abstraction.  To overcome the conflict between a higher degree of abstraction and necessary details for further synthesis, modular interfaces are introduced as object-oriented synthesizable technique. In \cite{mish}, SysML is used as an adequate modeling language for modular interfaces and C/C++/SystemC-based HLS. Authors extended SysML with annotations for synthesizable SystemC and high-level synthesis constraints and implemented a code generation scheme to achieve design flow automation. They used SysML editor Artisan Studio with industrial case study to demonstrate the applicability of SysML as a front-end for HLS.
 
-% \cite{fab} % the lost reference
+% In \cite{tom16} UML/SysML is used to model avionics.  The implementation language is C\# with using libXML for XMI import and processing.  Generated objects represent each syntactic element (\texttt{struct}, \texttt{enum}, function, \emph{etc.}), which represents the target source code.  Authors implemented only State Machine diagram transformation.
 
-Some experience of representing document flows are obtained by commercial software vendors developing Directum, Documentum systems automatizing Russian municipal institutions and state corporations.  Directum uses SysML state--like block diagrams to define flow of documents and the ISBL object-oriented language to express sophisticated behavior.
+% % \cite{fab} % the lost reference
 
-% NOT ONLY THIS, THERE IS MORE NEEDED IN THE RELATED WORK SECTION: BUSINESS PROCESS MANAGEMENT SYSTEMS, BUSINESS RULES MANAGEMENT SYSTEMS, WORKFLOW MANAGEMENT SYSTEMS.
+% Some experience of representing document flows are obtained by commercial software vendors developing Directum, Documentum systems automatizing Russian municipal institutions and state corporations.  Directum uses SysML state--like block diagrams to define flow of documents and the ISBL object-oriented language to express sophisticated behavior.
 
-In our research we focus on representation of ISO 9001 entities in SysML and other DSLs translatable to RDF, and the MDA transformation logical inference representable as LogTalk objects.
+% % NOT ONLY THIS, THERE IS MORE NEEDED IN THE RELATED WORK SECTION: BUSINESS PROCESS MANAGEMENT SYSTEMS, BUSINESS RULES MANAGEMENT SYSTEMS, WORKFLOW MANAGEMENT SYSTEMS.
 
-\section{SysML representation of QMS}
+% In our research we focus on representation of ISO 9001 entities in SysML and other DSLs translatable to RDF, and the MDA transformation logical inference representable as LogTalk objects.
 
-QMS is represented in SysML with nine diagrams \cite{sysmlpres}.  QMS requirements is represented with new (with respect to UML) \emph{Requirement Diagram}, describing stated structural and logical constraints. Structural aspects are represented with following UML2 diagrams:
-\begin{itemize}
-\item \emph{Block Definition Diagram} decomposes structure of activities, attributes and objects on elements;
-\item \emph{Internal Block Diagram} models interaction of the decomposed elements and their data flow; its descendant new \emph{Parametric Diagram} describes model of block attribute relationships;
-\item \emph{Package Diagram} organizes models in packages in various ways.
-\end{itemize}
-Behavioral aspect of a QMS is expressed with UML2
-\begin{itemize}
-\item \emph{Use Case Diagram}, which expresses functions of the system and their mutual relationships;
-\item \emph{State Machine Diagram} defines the states of the blocks and transitions between the states;
-\item \emph{Sequence Diagram} describes the order of messages between blocks and actors;
-\item \emph{Activity Diagram} represents computational process of converting data enclosed in blocks.
-\end{itemize}
+% \section{SysML representation of QMS}
 
-BPMN2.0 diagram is used to describe imperative procedures, it is very expressive diagram representing functions and involving agents, together with their relationships.  CMMN represents declarative aspects of the QMS especially data structures, processing stages, events and check points (milestones).  Adding BPMN2.0 and CMMN diagrams to SysML diagram set creates a redundancy, but in the same time it allows one to use more rich tool set for QMS modeling.
+% QMS is represented in SysML with nine diagrams \cite{sysmlpres}.  QMS requirements is represented with new (with respect to UML) \emph{Requirement Diagram}, describing stated structural and logical constraints. Structural aspects are represented with following UML2 diagrams:
+% \begin{itemize}
+% \item \emph{Block Definition Diagram} decomposes structure of activities, attributes and objects on elements;
+% \item \emph{Internal Block Diagram} models interaction of the decomposed elements and their data flow; its descendant new \emph{Parametric Diagram} describes model of block attribute relationships;
+% \item \emph{Package Diagram} organizes models in packages in various ways.
+% \end{itemize}
+% Behavioral aspect of a QMS is expressed with UML2
+% \begin{itemize}
+% \item \emph{Use Case Diagram}, which expresses functions of the system and their mutual relationships;
+% \item \emph{State Machine Diagram} defines the states of the blocks and transitions between the states;
+% \item \emph{Sequence Diagram} describes the order of messages between blocks and actors;
+% \item \emph{Activity Diagram} represents computational process of converting data enclosed in blocks.
+% \end{itemize}
 
-\subsection{Technique of Transformation Implementation}
+% BPMN2.0 diagram is used to describe imperative procedures, it is very expressive diagram representing functions and involving agents, together with their relationships.  CMMN represents declarative aspects of the QMS especially data structures, processing stages, events and check points (milestones).  Adding BPMN2.0 and CMMN diagrams to SysML diagram set creates a redundancy, but in the same time it allows one to use more rich tool set for QMS modeling.
+
+\section{Technique of Transformation Implementation}
 \label{sec:tech-imp}
 
 The main idea behind implementation of transformation engine is an usage of a logical programming language adapted to meet the following constraints:
@@ -309,7 +324,6 @@ Static object instances are used for defining configurations, scenarios, interfa
 
 Transformation process is organized as a scenario of connected transformational objects (in terms of LogTalk) \cite{tereh1}.  Scenario is programmed as a special object defining transformation by means of calling \verb|tr/N| rules.  Rules recognize structures in the input graph elements and constructs code blocks.
 
-\begin{multicols}{2}
 \begin{minted}{logtalk}
 :- object(direct(_Package,_LocalProf,_CodeProf)).
 :- public([tr/4,tr/3]).
@@ -350,11 +364,9 @@ tr(method, Method, ClassID, MethodID):-
     Method::name(Name).
 :- end_object.
 \end{minted}
-\end{multicols}
 
 The previous listing uses static parameterized object \verb|query/1|, whose argument is a graph representing model under transformation.  This is a powerful LogTalk abstraction instrument, which reduces necessity of adapter object creation in dynamic memory.  The SPARQL is encapsulated in methods.
 
-\begin{multicols}{2}
 \begin{minted}{logtalk}
 :- object(query(_XMI)).
 :- protected(xmi/1).
@@ -374,11 +386,9 @@ method(Name, ClassID, ID):- ::xmi(XMI),
     XMI::rdf(ID, rdfs:label, literal(Name)).
 :- end_object.
 \end{minted}
-\end{multicols}
 
 Procedure of source code generation is build using \verb|code_block|--objects (the idea was taken from \verb|llvmlite| library), which provide PSM representation:
 
-\begin{multicols}{2}
 \begin{minted}{logtalk}
 :- object(code_block, specializes(root)).
 :- public([append/1, prepend/1, clear/0,
@@ -413,11 +423,9 @@ renderitem(Item, String):-
     root::iswritef(String, '%q', [Item]).
 :- end_object.
 \end{minted}
-\end{multicols}
 
 
 The following example shows rendering class for Python classes. It contains public methods for defining class elements.
-\begin{multicols}{2}
 \begin{minted}{logtalk}
 :- object(class, specializes(code_block),
    imports([named])). % A category of named entities
@@ -468,7 +476,6 @@ render(Result):- % Render the class
     root::unindent, Result=[Signature|StringList].
 :- end_object.
 \end{minted}
-\end{multicols}
 
 \subsection{Categories}
 \label{sec:cats-impl}
@@ -496,34 +503,35 @@ The category implies interface of \texttt{code\_object} for the object being enr
 
 \begin{minted}{logtalk}
 :- category(namedtyped, extends(named)).
-:- public([type/1,render/2,separator_option/2,list_separator/1]).
+:- public([type/1,render/2,separator_option/2,
+   list_separator/1]).
 :- protected([renderitem/2]).
 
 type(Type):-
-    ::append(type(Type)).
+   ::append(type(Type)).
 
 renderitem(Item, String):-
-    ^^renderitem(Item, String),!.
+   ^^renderitem(Item, String),!.
 renderitem(type(Type),String):-!,
-    ::list_separator(Separator),
-    writef::swritef(String, '%w%w', [Separator, Type]).
+   ::list_separator(Separator),
+   writef::swritef(String, '%w%w', [Separator, Type]).
 
 render(Middle, String):-
-    ^^render(SName),
-    (
-        ::item(type(Type)) ->
-        ::renderitem(type(Type), SType),
-        string_concat(SName, Middle, _1),
-        string_concat(_1, SType, String) ;
-        SName = String
-    ).
+   ^^render(SName),
+   (
+     ::item(type(Type)) ->
+     ::renderitem(type(Type), SType),
+     string_concat(SName, Middle, _1),
+     string_concat(_1, SType, String) ;
+     SName = String
+   ).
 
 render(String):-
-    ::render("", String).
+   ::render("", String).
 
 list_separator(Separator):-
-    ::separator_option(Name, Default),!,
-    root::option(Name, Separator, Default).
+   ::separator_option(Name, Default),!,
+   root::option(Name, Separator, Default).
 
 :- end_category.
 \end{minted}
@@ -546,12 +554,23 @@ In the same way, we can construct procedures for creating structures of database
 
 \section{Conclusion}
 
-The idea of formal description of the business process during transition of a medical institution for compliance to ISO 9001:2015 standard is considered in the paper.  Diagrams SysML, BPMN2.0, CMMN are proposed to be used for this purpose.  The description provides Computational Independent Model (CIM) of Model Driven Architecture
-(MDA) software development approach, and it is to be transformed in subsystems of Informational System (IS).
+% The idea of formal description of the business process during transition of a medical institution for compliance to ISO 9001:2015 standard is considered in the paper.  Diagrams SysML, BPMN2.0, CMMN are proposed to be used for this purpose.  The description provides Computational Independent Model (CIM) of Model Driven Architecture
+% (MDA) software development approach, and it is to be transformed in subsystems of Informational System (IS).
 
-CIM is being designed with visual editors, \emph{e.g.} Modelio \cite{modelio}, translated from their XMI to RDF and stored as ontology graphs as files or network resources.  MDA-transformation is represented and executed within Prolog programming environment LogTalk \cite{tereh1}, which provides us knowledge structuring, rich set of libraries and uniform well-known programming language for defining transformation rules.  The general scheme of transformation definition is presented.
+% CIM is being designed with visual editors, \emph{e.g.} Modelio \cite{modelio}, translated from their XMI to RDF and stored as ontology graphs as files or network resources.  MDA-transformation is represented and executed within Prolog programming environment LogTalk \cite{tereh1}, which provides us knowledge structuring, rich set of libraries and uniform well-known programming language for defining transformation rules.  The general scheme of transformation definition is presented.
 
-IS development tools is being tested in representation of bioinformatic tool Mothur as Rapidminer dataflow diagrams \cite{dataflow}.  The source data for transformation is the module specifications and UML Class Diagram, which organizes submodules in virtual class hierarchies.  %The result is a Rapidminer plug-in, with each Mothur module being represented as a data block.
+[[Presented how to use LogTalk to represent knowledge]]
+
+[[What we have better with our approach.]] [[About instrumentation allowing development a special cases of transformation for startups]]
+
+[[Problems of absence programmer practice of Logtalk: what sources to study.]]
+
+IS development tools is being tested in representation of bioinformatic tool Mothur as Rapidminer dataflow diagrams \cite{dataflow}.  The source data for transformation is the module specifications and UML Class Diagram, which organizes submodules in virtual class hierarchies.  The result is a Rapidminer plug-in, with each Mothur module being represented as a data block.
+
+\section{Acknowledgements}
+\label{sec:ack-descr}
+
+The presented research results is distributed among three grants as follows: aspect of LOD data representation and integration is supported by Russian Science Foundation, logical inference combining various source models and object--oriented knowledge representation is supported by Russian Foundation of Basic Research, and the presented example of Rapidminer dataflow modules is being developed with support of grant of Irkutsk Scientific Center SB RAS.
 
 \begin{thebibliography}{99}
 \bibitem{techaudit} [[[A book about technical audit.]]]
