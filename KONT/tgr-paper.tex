@@ -123,7 +123,7 @@ model driven architecture, logical inference, resource description framework, Lo
 
 % TOO MANY GOALS AND TOO COMPLEX SOFTWARE - SHOULD BE PRESENTED AS A COMPONENT DIAGRAM WHICH CAPTURES THE IDEA AND SERVES AS A BASIS FOR THE LONG-TERM DEVELOPMENT.THE IDEA WRITTEN THIS WAY IS TOO WIDE AND MISTY.
 
-One of the main challenge of informational systems (IS), as well as other industrial software design, development is complexity expressed in its structure, integration with other software, fast prototyping on the stage of design.  Rising the stage of code generation of IS within the development to abstract level of design allows us to produce IS prototypes as early as the specification are formalized.  CASE--systems are usually developed close to standard industrial  technologies; it is not popular in developing IS for small organization and startups, which is characterized with uncertainties of requirements and specification.
+One of the main challenge of informational systems (IS), as well as other industrial software design, development is complexity expressed in its structure, integration with other software, fast prototyping on the stage of design.  Rising the stage of code generation of IS within the development to abstract level of design allows us to produce IS prototypes as early as the specification are formalized.  CASE--systems are usually developed close to standard industrial technologies; it is not popular in developing IS for small organization and startups, which is characterized with uncertainties of requirements and specification.
 
 In order to support IS subsystems generation, we are to develop an expressive means for transformation from set of formalized models represented in UML, SysML, BPMN and other ones constructed with corresponding design tools.  The process of tradition programming should allow us to develop specialized versions for peculiar software design approaches, with conserving common practices as libraries.  One of the paradigm of the implementation could be object--orientation, which in context of knowledge based systems will allow us to have a powerful tools enabling knowledge structuring, manipulation, and encapsulation as transformation components.  % This technique should improve generative approaches is due to absence of transformation implementation techniques ``consuming and adapting previous experience'' expressed in transformational libraries, which are also absent.
 
@@ -152,7 +152,7 @@ The architecture of the transformation tools is based on the provision of unifor
 The MDA tools consists of the following main components:
 \begin{itemize}
 \item source model server (2), which stores and retrieve model data as RDF triples;
-\item MDA transformation engine (1), which queries data from the server other SPARQL compliant  servers (4);
+\item MDA transformation engine (1), which queries data from the server other SPARQL compliant servers (4);
 \item the CIM (3) and PIM (6) model data sources;
 \item indexing engine (5), which provides persistent utility means for text data storage and text processing interfaces.
 \end{itemize}
@@ -181,14 +181,14 @@ In order to meet SW requirements, each model should be identified with a global 
 
 Entity identification and naming in RDF have various aspects.  An entity or a relation exist if they are defined or referred with its URI.  An entity can be named by means of a relation with its URI, \emph{e.g.}, \texttt{dc:title} or \texttt{rdfs:label}.  The relation refers to a \texttt{literal} string with a corresponding name in a natural language (defined by an attribute).  Each model structure element or a relation in a model notation must have a corresponding notation in an model representation ontology.
 
-As the entities have global identification, their mentioning in different models denote the same object, e.g. in a BPMN diagram, a record object could be created of a type defined in an UML Class Diagram.  The references of an entity of a model from another model can be done as RDF names of a form \texttt{<prefix>:<identifier>}, where \texttt{<prefix>} is the prefix of the model, where \texttt{<identifier>} is defined.  Most UML and other modeling software do not restrict names of the identifiers, together with their semantics, which is defined with transformation tools.
+As the entities have global identification, their mentioning in different models denote the same object, \emph{e.g.}, in a BPMN diagram, a record object could be created of a type defined in an UML Class Diagram.  The references of an entity of a model from another model can be done as RDF names of a form \texttt{<prefix>:<identifier>}, where \texttt{<prefix>} is the prefix of the model, where \texttt{<identifier>} is defined.  Most UML and other modeling software do not restrict names of the identifiers, together with their semantics, which is defined with transformation tools.
 
 %[[ What else it is necessary to describe here?]]
 
 \subsection{Model extensions}
 \label{sec:mod-ext}
 
-A flexible modeling tools also allow designer to extend a notation of a model (metamodel).  For example, all UML diagrams support \emph{stereotypes}, \emph{tag values}, and \emph{object constrains}.  Stereotypes declare an extended set of properties for an object or relation, \emph{e.g.}, in UML Class Diagram stereotypes are used to define the kind of a class.  If a class  is assigned standard \texttt{<<interface>>} stereotype then it is an interface definition.  By default all classes are standard \texttt{<<class>>}-es.  The same is used to describe relations between use cases in Use Case diagram.  A use case can \texttt{<<include>>} another one or be \texttt{<<extend>>}-ed with another use case.  User-defined stereotypes can express various aspects of classes, \emph{e.g.}, we can define the storage class as an ORM\footnote{Object Relation Mapping} for a class by \texttt{<<RDBMSRecord>>} stereotype.  In this case, class is added to set of classes describing a relation database records, all relations between such classes are interpreted as rational (one--to--one, one--to--many, many--to--many, mandatory, etc.) relations.  One entity can be assigned many stereotypes.
+A flexible modeling tools also allow designer to extend a notation of a model (metamodel).  For example, all UML diagrams support \emph{stereotypes}, \emph{tag values}, and \emph{object constrains}.  Stereotypes declare an extended set of properties for an object or relation, \emph{e.g.}, in UML Class Diagram stereotypes are used to define the kind of a class.  If a class is assigned standard \texttt{<<interface>>} stereotype then it is an interface definition.  By default all classes are standard \texttt{<<class>>}-es.  The same is used to describe relations between use cases in Use Case diagram.  A use case can \texttt{<<include>>} another one or be \texttt{<<extend>>}-ed with another use case.  User-defined stereotypes can express various aspects of classes, \emph{e.g.}, we can define the storage class as an ORM\footnote{Object Relation Mapping} for a class by \texttt{<<RDBMSRecord>>} stereotype.  In this case, class is added to set of classes describing a relation database records, all relations between such classes are interpreted as rational (one--to--one, one--to--many, many--to--many, mandatory, etc.) relations.  One entity can be assigned many stereotypes.
 
 Tag values allow one to associate a string value identified by a string key, which are somehow interpreted with a transformation procedure.  For example, the easy way of providing of an interface label name for an object \texttt{age} field in a class defined in a Class Diagram is an association the field with tag name \texttt{interface-label-name} as ``\texttt{Age}'' string.  Using RDF, we can change the tag name to \texttt{dc:title} and value can be interpreted as URI, \emph{e.g.}, to a \texttt{DBPedia} object.
 
@@ -539,9 +539,7 @@ Transformation generates Java modules implementing structural and operational fe
 
 Overall time spent to develop the proposed transformation technique and the basic (structural) aspects of Mothur module representation is two human-months.  The implemented internal logic allowed us to determine some errors in Mothur source module descriptions.  So the transformation modules can be used as a verification system for the sources.
 
-One of the system's functioning mode will be interaction with big data storage, so after refining in the current stand--alone mode we are to develop a variant of the visual tools, which would able to query needed content from the storage and generate LOD\footnote{Linked Open Data}--marked up reports. % For this purpose we develop a models of data stored
-
-
+One of the system's functioning mode will be interaction with big data storage, so after refining in the current stand--alone mode we are to develop a variant of the visual tools, which would able to query needed content from the storage and generate LOD\footnote{Linked Open Data}--marked up reports.  LOD is based on RDF so our input model representation data can be used in generation the markup of the report templates and algorithms.
 
 \section{Conclusion}
 
@@ -563,8 +561,15 @@ The presented research results is distributed among three grants as follows: asp
 
 \begin{thebibliography}{99}
 % \bibitem{techaudit} [[[A book about technical audit.]]]
-\bibitem{Clio} \emph{Wielemaker,J.}, \emph{Beek,W.}, \emph{Hildebrand,M.}, \emph{Ossenbruggen,J.} ClioPatria: A SWI-Prolog Infrastructure for the Semantic Web, Semantic Web. vol. 7, no. 5, 2016, pp.~529-541. DOI:\url{10.3233/SW-150191}
-\bibitem{modelio} Modelio Open Source -- UML and BPMN free modeling tool. URL:\url{https://www.modelio.org/}.
+\bibitem{Clio} J.\,Wielemaker, W.\,Beek, M.\,Hildebrand, J.\,Ossenbruggen, ``ClioPatria: a SWI-Prolog infrastructure for the Semantic Web,'' Semantic Web. vol.~7, no. 5, 2016, pp.~529-541. % DOI:\url{10.3233/SW-150191}
+\bibitem{modelio} ``Modelio open source -- UML and BPMN free modeling tool.'' URL:\url{https://www.modelio.org/}.
+\bibitem{GT} A.\,Belghiat, M.\,Bourahla, ``UML Class Diagrams to OWL ontologies: a graph transformation based approach,'' International Journal of Computer Applications. no. 41. pp.~41--46. % 10.5120/5525-7566.
+\bibitem{azis}Y.\,Rhazali, Y.\,Hadi, A.\,Mouloudi. ``Model transformation with ATL into MDA from CIM to PIM structured through MVC,''Procedia Computer Science 83 (2016) 1096-–1101. URL:\url{https://doi.org/10.1016/j.procs.2016.04.229}
+\bibitem{Rhazali} Y.\,Rhazali, Y.\,Hadi, I.\,Chana, M.\,Lahmer, A.\,Rhattoy, ``A model
+ transformation in model driven architecture from business model to web
+ model,'' IAENG International Journal of Computer Science, vol.~45(1), 2018, 104-117, URL:\url{http://www.iaeng.org/IJCS/issues_v45/issue_1/IJCS_45_1_16.pdf}.
+\bibitem{Hamid} B.\,Hamid, D.\,Weber, ``Engineering secure systems: models, patterns and empirical validation,'' Computers \& Security,  vol.~77, 2018, p.~315-348.
+\bibitem{Zdun}  S.\,Tragatschnig, S.\,Stevanetic, U.\,Zdun, ``\href{https://www.sciencedirect.com/science/article/abs/pii/S0950584916303251}{Supporting the  evolution of event-driven service-oriented architectures using change  patterns.}'' Information and Software Technology. vol.~100, 2018, p.~133-146. % \href{doi:10.1016/j.infsof.2018.04.005}{https://www.sciencedirect.com/science/article/abs/pii/S0950584916303251}
 %Related research
 % \bibitem{raslan} \emph{Raslan, W.}, \emph{Sameh, A.} Accelerating High-Level SysML and SystemC SoC Designs, URL:\url{https://www.design-reuse.com/articles/17562/high-level-sysml-systemc-soc-designs.html}
 % \bibitem{natale} \emph{Natale,M.}, \emph{Perillo,D.}, \emph{Chirico,F.}, \emph{Sindico,A.}, \emph{Sangiovanni-Vincentelli,A.} A Model-based approach for the synthesis of software to firmware adapters for use with automatically generated components, Software \& Systems Modeling, February 2018,~Volume 17,~Issue~1,~pp.~11-–33
@@ -573,10 +578,8 @@ The presented research results is distributed among three grants as follows: asp
 % \bibitem{tom16} \emph{Hauswald,T.} Automatic Code Synthesis of UML/SysML State Machines for airborne Applications.  Bachelor Thesis. Hamburg Univeristy of Technology. August 15. 2016. 80~p.
 % \bibitem{sysmlpres} \emph{Friedenthal,S.}, \emph{Moore,A.}, \emph{Steiner,R.} OMG Systems Modeling Language (OMG SysML™) Tutorial. 2009. 132~p. \url{http://www.omgsysml.org/INCOSE-OMGSysML-Tutorial-Final-090901.pdf}
 % \bibitem{tereh1} \emph{Cherkashin,E.}, \emph{Larionov,A.} \emph{et al.} Logical programming and data mining as engine for MDA model transformation implementation. Procs of 36th International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO). May 20--24, 2013, Opatija, Croatia, pp.~1029--1036.
-\bibitem{digarch} E. Cherkashin, A. Shigarov, V. Paramonov, A. Mikhailov. Digital Archives Supporting Document Content Inference. Procs of 42-nd International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO), 20-24 May, 2019, Opatija, Croatia. pp. 1037-1042.
 % \bibitem{icist} ICIST
-\bibitem{bit2019} E. Cherkashin, A. Shigarov, F. Malkov, A. Morozov. An Instrumental Environment for Metagenomic Analysis. In: Bychkov I., Voronin V. (eds) Information Technologies in the Research of Biodiversity. Springer Proceedings in Earth and Environmental Sciences. Springer, Cham, 2019, pp.~151--158.
-\bibitem{ghsrc} E. Cherkashin. GitHub project page of ICC.XMITransform project. URL:\url{https://github.com/isu-enterprise/icc.xmitransform} (access date: 01-oct-2019)
+\bibitem{bit2019} E.\,Cherkashin, A.\,Shigarov, F.\,Malkov, A.\,Morozov, ``An instrumental environment for metagenomic analysis,'' In: Bychkov I., Voronin V. (eds) Information Technologies in the Research of Biodiversity. Springer Proceedings in Earth and Environmental Sciences. Springer, Cham, 2019, pp.~151--158.
 
 % \begin{thebibliography}{11}
 % \bibitem{Bizer} \textbf{Ch.\,Bizer, T.\,Heath, T.\,Berners-Lee.} Linked Data -- The Story So Far. \emph{Semantic Web and Information Systems}. 2009. Vol. 5 (3). pp.~1--22.
@@ -587,28 +590,16 @@ The presented research results is distributed among three grants as follows: asp
 % \bibitem{tereh1} \textbf{E.\,Cherkashin, A.\,Larionov et al.} Logical programming and data mining as engine for MDA model transformation implementation. \emph{Procs of 36th International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO).} May 20--24, 2013, Opatija, Croatia, pp.~1029--1036.
 % \bibitem{MDA} \textbf{D.\,Frankel.} Model Driven Architecture: Applying MDA to Enterprise Computing. Wiley; 1 edition, 2003, 352 p.
 % \bibitem{Clio} \textbf{J.\,Wielemaker, W.\,Beek, M.\,Hildebrand, J.\,Ossenbruggen.} ClioPatria: A SWI-Prolog Infrastructure for the Semantic Web, \emph{Semantic Web.} vol. 7, no. 5, 2016, pp.~529-541. DOI:\url{10.3233/SW-150191}
-\bibitem{atl} \textbf{F.\,Jouault, F.\,Allilaire, J.\,Bezivin, I.\,Kurtev.} Atl: A model transformation tool. \emph{Sci. Comput. Program.} 72(1--2), pp.~31--39 (2008)
-\bibitem{QVT} The MOF Query/View/Transformation Specification Version 1.1. URL:\url{http://www.omg.org/spec/QVT/1.1}
-\bibitem{nikita} \textbf{A.\,Berman, M.\,Grishchenko, N.\,Dorodnykh, O.\,Nikolaychuk, A.\,Yurin.} A model-driven approach and a tool to support creation of rule-based expert systems for industrial safety expertise. \emph{Proc. of the 12 th International Forum on Knowledge Asset Dynamics (IFKAD-2017)} -- Russia, St.\,Petersburg : Graduate School of 16 Management of St.\,Petersburg University.  2017.  P.~2034--2050.
-\bibitem{GT} \textbf{A.\,Belghiat, M.\,Bourahla.} UML Class Diagrams to OWL Ontologies: A Graph Transformation based Approach. \emph{International Journal of Computer Applications}. 41. pp.~41--46. 10.5120/5525-7566.
-\bibitem{azis}\textbf{Y.\,Rhazali, Y.\,Hadi, A.\,Mouloudi.} Model Transformation with ATL into MDA from CIM to PIM Structured through MVC. \emph{Procedia Computer Science 83} (2016) 1096–1101. URL:\url{https://doi.org/10.1016/j.procs.2016.04.229}
-\bibitem{Rhazali} \textbf{Y.\,Rhazali, Y.\,Hadi, I.\,Chana, M.\,Lahmer, A.\,Rhattoy.} A model
- transformation in model driven architecture from business model to web
- model. \emph{IAENG International Journal of Computer Science}, vol.~45(1), 2018, 104-117, URL:\url{http://www.iaeng.org/IJCS/issues_v45/issue_1/IJCS_45_1_16.pdf}.
-% % The paper \ref{Rhazali} proposes a model  transformation  method  to  master  the  transformation
-% % from  CIM  to  PIM  web-based  in  accordance  with  the  Model
-% % Driven  Architecture  approach. CIM is represented mainly with State and Use case UML-Diagrams connected with ATL rules.
+\bibitem{atl} F.\,Jouault, F.\,Allilaire, J.\,Bezivin, I.\,Kurtev, ``ATL: a model transformation tool,'' Sci. Comput. Program. vol. 72(1--2), pp.~31--39 (2008)
+\bibitem{QVT} ``The MOF query/view/transformation specification version 1.1.'' URL:\url{http://www.omg.org/spec/QVT/1.1}
+\bibitem{nikita} A.\,Berman, M.\,Grishchenko, N.\,Dorodnykh, O.\,Nikolaychuk, A.\,Yurin. ``A model-driven approach and a tool to support creation of rule-based expert systems for industrial safety expertise,'' Proc. of the 12-th International Forum on Knowledge Asset Dynamics (IFKAD-2017) -- Russia, St.\,Petersburg\,:\,Graduate School of 16 Management of St.\,Petersburg University.  2017.  P.~2034--2050.
+\bibitem{ghsrc} E.\,Cherkashin, ``GitHub project page of ICC.XMITransform project.'' URL:\url{https://github.com/isu-enterprise/icc.xmitransform} (access date: 01-oct-2019)
+\bibitem{digarch} E.\,Cherkashin, A.\,Shigarov, V.\,Paramonov, A.\,Mikhailov,  ``Digital archives supporting document content inference,'' Procs of 42-nd International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO), 20--24 May, 2019, Opatija, Croatia. pp. 1037--1042.
 
-\bibitem{Hamid} \textbf{B.\,Hamid, D.\,Weber.} Engineering secure systems: Models, patterns
-and empirical validation. \emph{Computers \& Security},  vol~77, 2018, p.~315-348.
 % \href{https://www.sciencedirect.com/science/article/pii/S0167404818303043}{doi:10.1016/j.cose.2018.03.016}
 
 % % In \ref{Hamid} an approach proposed for evaluation security aspects of distributed applications using modeling, MDA description and synthesis of the applications. A logical inference evaluation is carried out over the MDA synthesized logical security models.
 
-\bibitem{Zdun}
- \textbf{S.\,Tragatschnig, S.\,Stevanetic, U.\,Zdun.} \href{https://www.sciencedirect.com/science/article/abs/pii/S0950584916303251}{Supporting the
- evolution of event-driven service-oriented architectures using change
- patterns.} \emph{Information and Software Technology.} vol.~100, 2018, p.~133-146. % \href{doi:10.1016/j.infsof.2018.04.005}{https://www.sciencedirect.com/science/article/abs/pii/S0950584916303251}
 
 
 % % The paper \ref{Zdun} is considered a highly decoupled distributed event-driven application environment, whose design and functioning is dynamically controlled by its three-level DSL description and MDA transformations, which support change propagation.
