@@ -63,7 +63,7 @@
 \setmainfont{Times New Roman}
 
 \begin{document}
-\title{Representation of MDA Transformation by Means of Logical Objects}
+\title{Representation of MDA Transformation with Logical Objects}
 
 % \titlerunning{Implementation of a QMS with MDA}
 
@@ -82,9 +82,9 @@
 \maketitle
 
 \begin{abstract} % 70-150 words
-  The problem of software modeling having various models as sources and its transformation based on logical inference is considered.  Source models are converted into graphs of RDF (Resource Description Framework) and then processed with knowledge based system organized in a network of objects.  Various notation can be used to represent models, such as UML, SysML, CMMN, BPMN2.0, as well as RDF graphs and analyzed source code, having implemented a corresponding converter.  The objects are represented in the LogTalk programming language.  Objects query graphs and other objects implementing a scenario of a software system (most frequently, information system) carcass synthesis within Model Driven Architecture (MDA) paradigm.
+  The problem of software modeling having various models as sources and its transformation based on logical inference is considered.  Source models are converted into graphs of RDF and then processed with knowledge based system organized in a network of objects.  Various notation can be used to represent models, such as UML, SysML, CMMN, BPMN2.0, as well as RDF graphs and analyzed source code, having implemented a corresponding converter.  The objects are represented in the LogTalk programming language.  Objects query graphs and other objects implementing a scenario of a software system synthesis within Model Driven Architecture paradigm.
 
-  Usage of such kind of MDA transaction approach allows us to develop information system carcasses on the level of abstract models, involve various sources of model data in the transformation, define and structuring conversion knowledge as objects.  An example of a dataflow environment synthesis encapsulating Mothur library for new generation sequencing is presented.
+  Usage of such kind of MDA transformation approach allows us to develop software system carcasses on the level of abstract models, involve various sources of model data in the transformation, define and structuring conversion knowledge as objects.  An example of a dataflow environment synthesis encapsulating Mothur library for new generation sequencing is presented.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -123,11 +123,11 @@ model driven architecture, logical inference, resource description framework, Lo
 
 % TOO MANY GOALS AND TOO COMPLEX SOFTWARE - SHOULD BE PRESENTED AS A COMPONENT DIAGRAM WHICH CAPTURES THE IDEA AND SERVES AS A BASIS FOR THE LONG-TERM DEVELOPMENT.THE IDEA WRITTEN THIS WAY IS TOO WIDE AND MISTY.
 
-One of the main challenge of informational systems (IS), as well as other industrial software design, development is complexity expressed in its structure, integration with other software, fast prototyping on the stage of design.  Rising the stage of code generation of IS within the development to abstract level of design allows us to produce IS prototypes as early as the specification are formalized.  CASE--systems are usually developed close to standard industrial  technologies; it is not popular in developing IS for small organization and startups, which is characterized uncertainties of requirements and specification.
+One of the main challenge of informational systems (IS), as well as other industrial software design, development is complexity expressed in its structure, integration with other software, fast prototyping on the stage of design.  Rising the stage of code generation of IS within the development to abstract level of design allows us to produce IS prototypes as early as the specification are formalized.  CASE--systems are usually developed close to standard industrial  technologies; it is not popular in developing IS for small organization and startups, which is characterized with uncertainties of requirements and specification.
 
 In order to support IS subsystems generation, we are to develop an expressive means for transformation from set of formalized models represented in UML, SysML, BPMN and other ones constructed with corresponding design tools.  The process of tradition programming should allow us to develop specialized versions for peculiar software design approaches, with conserving common practices as libraries.  One of the paradigm of the implementation could be object--orientation, which in context of knowledge based systems will allow us to have a powerful tools enabling knowledge structuring, manipulation, and encapsulation as transformation components.  % This technique should improve generative approaches is due to absence of transformation implementation techniques ``consuming and adapting previous experience'' expressed in transformational libraries, which are also absent.
 
-The most investigated transformational approach of code generation, that goes beyond the CASE, is Model Driven Architecture (MDA).  MDA represents code generation as multistage process of model transformation.  The source code and initial data are produced from a Platform Specific Model (PSM) that represents IS implementation on a specific program and hardware platform.  PSM is obtained from a Platform Independent Model (PIM), which describe IS more abstract without platform specifics.  PIM could be resulted from a Computational Independent Model representing the IS and its environment on conceptual, organizational, system level, which does not define information conversion (e.g., computation).
+The most investigated transformational approach of code generation, that goes beyond the CASE, is Model Driven Architecture (MDA).  MDA represents code generation as multistage process of model transformation.  The source code and initial data are produced from a Platform Specific Model (PSM) that represents IS implementation on a specific program and hardware platform.  PSM is obtained from a Platform Independent Model (PIM), which describe IS more abstract without platform specifics.  A part of PIM could be resulted from a Computational Independent Model representing the IS and its environment on conceptual, organizational, system level, which does not define information conversion (e.g., computation).
 
 %Input models are stored in various format, including proprietary ones; they could be converted to OMG standard XMI representation.  XMI is a set of identified structural components,
 CIM and PIM usually defined as a sets of SysML, CMMN, UML and other visual models, which saved in a standard way as XMI\footnote{XML Metadata Interchange} files.  Dispute these notations additional data for transformation can be obtained from Semantic Web (SW), for example, ontology definitions, literal names of entities in various natural languages, current state of processes, and so on.  The popular ways of model transformation, like ATL\footnote{ATLAS Transformation Language}, are based on transformation one XMI model to another XMI, and then to the code.  Involving SW data is problematic.
@@ -159,20 +159,20 @@ The MDA tools consists of the following main components:
 
 All components interact by means of network protocols and use utf-8 encoded HTML, TXT, XML and JSON formats for data representation, which are expressive enough and easily debugged.  Inference engines also support SPARQL protocol for issuing subqueries.
 
-The kernel of the system is MDA Tool, which is a set of transformational modules (T--Modules). Each of T--Module in a general case is a parameterized LogTalk object.  The object queries the Server of domain models, which is built on the base of ClioPatria \cite{Clio}, other objects and other Ontology servers for structural patterns.  These patterns are analyzed and the results are stored as the objects states, \emph{i.e.}, cashed in the indexing engine.  The states of the object represent PSM, which is translated into source code and initial data.
+The kernel of the system is MDA tool, which is a set of transformational modules (T--modules). Each T--module in a general case is a parameterized LogTalk object.  The object queries the Server of domain models, which is built on the base of ClioPatria \cite{Clio}, other objects and other Ontology servers for structural patterns.  These patterns are analyzed and the results are stored as the objects states, \emph{e.g.}, cashed in the indexing engine.  The states of the object represent PSM, which is translated into source code and initial data.
 
 Input structures of CIM and PIM models are converted into graphs with converter adapters.  For example in Fig.~\ref{fig:archi} CIM (3) drawn in Modelio \cite{modelio} is converted to triples with a special module ``XMI to RDF converter''.  Similar converter is realized for PIM represented in UML.  This approach makes the input stage modular, and, consequently, easier extensible with new model types.
 
 %IF WE EMPHASIZE SYSML, HOW IS IT RELATED TO SEMANTIC WEB TRIPLETS? THIS SHOULD BE EXPLAINED.
 
-One of auxiliary RDF--compliant data sources is \texttt{DBPedia.org} containing naming literals in various languages, as well as relations, of the entities represented in Wikipedia.  This information can be used to describe user interface properties of the program objects, and referred by URI's from devised models.  For example, we can use DBPedia for constructing \texttt{title} and \texttt{placeholder} attributes of an input widget, together with its label name text in user's locale and a help description.
+One of auxiliary RDF--compliant data sources is \texttt{DBPedia.org} containing naming literals in various languages, as well as relations, of the entities represented in Wikipedia.  This information can be used to describe user interface properties of the program objects, and referred by URI's from devised models.  For example, we can use DBPedia for constructing \texttt{title} and \texttt{placeholder} attributes of a web input widget, together with its label name text in user's locale and a help description.
 
 % Some UML-structures (OCL) and relations may be interpreted constructively as methods of objects: events, handlers, subscribers, database triggers and selectors (lookups widgets).
 
 \section{RDF representation of the models}
 \label{sec:rdf-repr}
 
-The past 20 years of unhurried SW technologies development formed descriptions of commonly used domains and represented them as W3C approved ontologies.  It enables system designer and programmer to use globally identified resource references (URI), and ontology representation standards (RDF, RDFa, TTL, etc.), which are implemented in various programming environments as libraries.  This results in a globally approved (in various software projects) knowledge and data base, the common foundation of a domain description.  This is why, we decided to represent the source model data in the SW framework too, enriching the existing knowledge with a specific domains.  From other hand side, converting the complex tree-like structures used for model representation to set of triples, \emph{i.e.}, facts for inference machine, enables us to use Prolog based engines for transformation definition.
+The past 20 years of unhurried SW technologies development formed descriptions of commonly used domains and represented them as W3C approved ontologies.  It enables system designer and programmer to use globally identified resource references (URI), and ontology representation standards (RDF, RDFa, TTL, etc.), which are implemented in various programming environments as libraries.  This results in a globally approved in various software projects knowledge and data base, the common foundation of a domain description.  This is why, we decided to represent the source model data in the SW framework too, enriching the existing knowledge with a specific domains.  From other hand side, converting the complex tree-like structures used for model representation to set of triples, \emph{i.e.}, facts for inference machine, enables us to use Prolog--based engines for transformation definition.
 
 In order to meet SW requirements, each model should be identified with a global URI, and in addition, its prefix could be defined.  All relations and attributes must be expressed in a SW ontology, which should preferably be a standard one and have a publicly accessible formal definition.  The entity names and their relation expressed with the source notation must be convertible to the RDF definition upon request from transformation engine.
 
@@ -188,18 +188,18 @@ As the entities have global identification, their mentioning in different models
 \subsection{Model extensions}
 \label{sec:mod-ext}
 
-A flexible modeling tools also allow designer to extend a notation of a model (metamodel).  For example, all UML diagrams support \emph{stereotypes}, \emph{tag values}, and \emph{object constrains}.  Stereotypes declare an extended set of properties for an object or relation, \emph{e.g.}, in UML Class Diagram stereotypes are used to define the kind of a class.  If a class box is assigned standard \texttt{<<interface>>} stereotype then it is an interface definition.  By default all classes are standard \texttt{<<class>>}-es.  The same is used to describe relations between use cases in Use Case diagram.  A use case can \texttt{<<include>>} another one or be \texttt{<<extend>>}-ed with another use case.  User-defined stereotypes can express various aspects of classes, \emph{e.g.}, we can define the storage class as an ORM\footnote{Object Relation Mapping} for a class by \texttt{<<RDBMSRecord>>} stereotype.  In this case, class is added to set of classes describing a relation database records, all relations between such classes are interpreted as rational (one--to--one, one--to--many, many--to--many, mandatory, etc.) relations.  One entity can be assigned many stereotypes.
+A flexible modeling tools also allow designer to extend a notation of a model (metamodel).  For example, all UML diagrams support \emph{stereotypes}, \emph{tag values}, and \emph{object constrains}.  Stereotypes declare an extended set of properties for an object or relation, \emph{e.g.}, in UML Class Diagram stereotypes are used to define the kind of a class.  If a class  is assigned standard \texttt{<<interface>>} stereotype then it is an interface definition.  By default all classes are standard \texttt{<<class>>}-es.  The same is used to describe relations between use cases in Use Case diagram.  A use case can \texttt{<<include>>} another one or be \texttt{<<extend>>}-ed with another use case.  User-defined stereotypes can express various aspects of classes, \emph{e.g.}, we can define the storage class as an ORM\footnote{Object Relation Mapping} for a class by \texttt{<<RDBMSRecord>>} stereotype.  In this case, class is added to set of classes describing a relation database records, all relations between such classes are interpreted as rational (one--to--one, one--to--many, many--to--many, mandatory, etc.) relations.  One entity can be assigned many stereotypes.
 
 Tag values allow one to associate a string value identified by a string key, which are somehow interpreted with a transformation procedure.  For example, the easy way of providing of an interface label name for an object \texttt{age} field in a class defined in a Class Diagram is an association the field with tag name \texttt{interface-label-name} as ``\texttt{Age}'' string.  Using RDF, we can change the tag name to \texttt{dc:title} and value can be interpreted as URI, \emph{e.g.}, to a \texttt{DBPedia} object.
 
-The usage experience of stereotypes and tag values resulted in recognition of the fact, that assigning a stereotype usually implies definition of the same set of tag values.  UML standard of version 2.4 fixed this observation, allowing formal definition the set of tag values for user-defined stereotypes.  Special user interfaces were developed to control assignment a stereotype to an entity.  As stereotype does not provide a value in its association, table name for \texttt{<<RDBMSRecord>>} an optional tag value can be defined for this purpose, e.g., \texttt{rdbms:table-name}.  UML-2.4 explicit stereotype descriptions is a powerful tool for attributing entities with additional information.
+The usage experience of stereotypes and tag values resulted in recognition of the fact, that assigning a stereotype usually implies definition of a set of regular tag values.  UML standard of version 2.4 fixed this observation, allowing formal definition the set of tag values for user-defined stereotypes.  Special user interfaces were developed to control assignment a stereotype to an entity.  As stereotype does not provide a value in its association, table name for \texttt{<<RDBMSRecord>>} an optional tag value can be defined for this purpose, \emph{e.g.}, \texttt{rdbms:table-name}.  UML-2.4 explicit stereotype descriptions is a powerful tool for attributing entities with additional information.
 
 % [[[Resume of some kind]]]
 
 \subsection{Other sources of model data}
 \label{sec:other-models}
 
-When implementing complex systems, which are composed from existing subsystems, these subsystem's specifications can be additional sources of model data.  For example, in our project \cite{bit2019}, the main PIM model is extracted from source code of the original library Mothur and converted to TTL (turtle) representation.  This approach requires one-time programming for adaptation of the sources, but for each new version of the library we can obtain new version of the PSM without additional analysis.  Formal rules of the source code analysis ad interpretation as PSM can also assist in finding errors in the source code.
+When implementing complex software, which are composed from existing subsystems, their specifications can be additional sources of model data.  For example, in our project \cite{bit2019}, the main PIM model is extracted from source code of the original library Mothur and converted to TTL (turtle) representation.  This approach requires one-time programming for adaptation of the sources, but for each new version of the library we can obtain new version of the PSM without additional analysis.  %Formal rules of the source code analysis ad interpretation as PSM can also assist in finding errors in the source code.
 
 % [[PSM libraries....???]]
 
@@ -208,13 +208,13 @@ When implementing complex systems, which are composed from existing subsystems, 
 
 The most widely used technology of model transformation is ATL (ATLAS Transformation Language) \cite{atl} and its predecessor QVT, an OMG standard \cite{QVT}.  The language and its engine supports conversion from one XMI model to another one in the same XMI format.  The language structures describe recognition of properties of compositions of the source model and direct construction of new structures in the target model.
 
-Similar to ATL, Transformation Model Representation Language (TMRL) is developed in \cite{nikita} but oriented on visual representation of a knowledge base with following conversion in various production rules in CLIPS and OWL.  The visual presentation of transforming rules are used also in \cite{GT}.  In \cite{azis}, ATL is used to transform Computational Independent Model (CIM) represented as BPMN diagram into set of UML diagrams, defining PIM. Paper \cite{Rhazali} proposes a model transformation CIM to PIM for web-applications, where CIM is represented with State and Use case UML-Diagrams logically connected with ATL rules.  In \cite{Hamid} is proposed an evaluation of security aspects of distributed applications using MDA description; the evaluation is implemented a logical inference over the MDA synthesized logical security models. The paper \cite{Zdun} is considered a highly decoupled distributed event-driven application environment, whose design and functioning is dynamically controlled by its three-level DSL description and MDA transformations, which support change propagation.
+Similar to ATL, Transformation Model Representation Language (TMRL) is developed in \cite{nikita} but oriented on visual representation of a knowledge base with following conversion in various production rules in CLIPS and OWL.  The visual presentation of transforming rules are used also in \cite{GT}.  In \cite{azis}, ATL is used to transform Computational Independent Model (CIM) represented as BPMN diagram into set of UML diagrams, defining PIM. Paper \cite{Rhazali} proposes a model transformation CIM to PIM for web-applications, where CIM is represented with State and Use case UML-Diagrams logically connected with ATL rules.  In \cite{Hamid} is proposed an evaluation of security aspects of distributed applications using MDA description; the evaluation is implemented a logical inference over the MDA synthesized logical security models. The paper \cite{Zdun} is considered a highly decoupled distributed event-driven application environment, whose design and functioning is dynamically controlled by its three-level DSL\footnote{Domain Specific Language} description and MDA transformations, which support change propagation.
 
-Paper \cite{Malki} presents a practical approach with four-level ATL-description from HTML-page to a LOD structure (via stage of an MDA PIM). In \cite{uml2owl}, a converter of UML package structures represented in XMI was developed as a XSLT transformation. A wide overview of Western approaches to program transformation is given in \cite{Dama}, a transformation language PROMOL is suggested as well as its logical semantics. OMG proposed ODM standard \cite{odmprof} for knowledge modeling.  A Visual Ontology Modeler \cite{odnext} is being developed for building and verifying OWL ontologies for ODM~1.0, as well as in the reverse direction, ontologies are represented as UML Class Diagrams \cite{odmvis}.
+%Paper \cite{Malki} presents a practical approach with four-level ATL-description from HTML-page to a LOD structure (via stage of an MDA PIM). In \cite{uml2owl}, a converter of UML package structures represented in XMI was developed as a XSLT transformation. A wide overview of Western approaches to program transformation is given in \cite{Dama}, a transformation language PROMOL is suggested as well as its logical semantics. OMG proposed ODM standard \cite{odmprof} for knowledge modeling.  A Visual Ontology Modeler \cite{odnext} is being developed for building and verifying OWL ontologies for ODM~1.0, as well as in the reverse direction, ontologies are represented as UML Class Diagrams \cite{odmvis}.
 
 % An XML based specifications are used in representing metadata about web services, WSDL \cite{wsdl}, and the WS-BPEL language \cite{wsbpel} for describing orchestration of web services within execution of an instance of a business process.  The idea of the language is to describe complex systems down to Web Services units, their internal and external structure and behavior, as well as services interaction in the script instance.
 
-Thus, the majority of the presented techniques are closed with respect of XMI file format: the source data and the result of the transaction are represented in it, and it goes beyond only on the stage of the source code generation.  Our approach allows one to use other sources (not being presented in XMI) of model information, as well as general purpose libraries in implementation of the transformation engine.  Usage of object-oriented logical language LogTalk allows us powerfully structuring and manipulate knowledge base by means of the object encapsulation, inheritance, and composition.
+Thus, the majority of the presented techniques are closed with respect of XMI file format: the source data and the result of the transaction are represented in it, and it goes beyond only on the stage of the source code generation.  Our approach allows one to use other sources (not being presented in XMI) of model information, as well as general purpose libraries in implementation of the transformation engine.  Usage of object-oriented logical language LogTalk allows us powerfully structuring and manipulate knowledge base. % by means of the object encapsulation, inheritance, and composition.
 
 % \subsection{Ontology Usage in Model Representation}
 % \label{sec:use-onto}
@@ -260,7 +260,7 @@ The main idea behind implementation of transformation engine is an usage of an o
 \begin{itemize}
 \item support multiple sources of model data,
 \item first-order language for definition of the transformation,
-\item transformation is represented as rules (patterns),
+\item transformation is represented as rules,
 \item rules should be encapsulated in objects,
 \item objects should query other objects for results,
 \item means for transformation configuration and scenario description,
@@ -324,14 +324,14 @@ PSM and source code generation are represented with \texttt{code\_block} objects
 :- end_protocol.
 \end{minted}
 
-The \verb|code_block|--objects consist of source code string lines, structures denoting source code, objects, and other code blocks. Each item is accessed via \verb|item/1|.  The type of the element is defined by outer functor of the argument, \emph{e.g.}, we define with \verb|append(attributes(L))| a list \verb|L| of attributes of a class.  The way of rendering the sources is implemented by subclassing the object and realizing \verb|render/1| and \verb|renderitem/2|.  The first argument of \verb|renderitem/2| is the \verb|item/1|--structure to be rendered, and the second one is the list of strings representing generated source code.  Elements of a code block can be \verb|append|ed, \verb|prepend|ed and \verb|remove|ed.  We specially disallow inserting \verb|item|s into the database, as it will make object and its database more complex.  Instead, programmer can add an \verb|item| being another code block, inserting its content in the outer block.
+The \verb|code_block|--objects consist of source code string lines, structures denoting source code, objects, and other code blocks. Each item is accessed via \verb|item/1|.  The type of the element is defined by outer functor of the argument, \emph{e.g.}, we define with \verb|append(attributes(L))| a list \verb|L| of attributes of a class.  The way of rendering the sources is implemented by subclassing the object and realizing \verb|render/1| and \verb|renderitem/2|.  The first argument of \verb|renderitem/2| is the \verb|item/1|--structure to be rendered, and the second one is the list of strings representing generated source code.  Elements of a code block can be \verb|append|ed, \verb|prepend|ed and \verb|remove|ed.  We specially disallow inserting \verb|item|s into code blocks, as it will make object and its database more complex.  Instead, programmer can add an \verb|item| being another code block, inserting its content in the outer block.
 
-If needed the item's definition can include provision information which can be used in result construction of its object query.
+If needed the item's definition can include provision information which can be used in result construction, when its object being queried.
 
 \subsection{Defining rules of transformation}
 \label{sec:mda-rules}
 
-Transformation process is organized as a scenario of connected transformational objects (in terms of LogTalk) \cite{tereh1}.  Scenario is programmed as a special object defining transformation by means of calling \verb|tr/N| rules.  Rules recognize structures in the input graph elements and constructs code blocks.
+Transformation process is organized as a scenario of connected transformational objects (in terms of LogTalk).  Scenario is programmed as a special object defining transformation by means of calling \verb|tr/N| rules.  Rules recognize structures in the input graph elements and constructs code blocks.
 
 \begin{minted}{logtalk}
 :- object(direct(_Package,_LocalProf,_CodeProf)).
@@ -412,14 +412,14 @@ methods(MethodList):- % List of methods
 renderitem(Item, Result):- % Default
     ^^renderitem(Item, Result).
 render(Result):- % Render the class
-    ^^render(Name),
+    ^^render(Name), % Call inherited method.
     ( ::item(classlist(List)) ->
       List::render(ClassList),
       root::iswritef(Signature,'class %w(%w):',
         [Name, ClassList]);
       root::iswritef(Signature,'class %w:',
         [Name]) ),
-    root::indent, % add an indent
+    root::indent, % Add an indent
     ( ::item(attributes(Attributes))->
       Attributes::render(DefAttrList),
       root::iswritef(ConstructorDef,
@@ -535,7 +535,7 @@ Each block structure, namely, the sets of input and output connections, together
 
 The analysis of the sources is performed with regular expressions and simple translation units.  We tried to use a version of GCC\footnote{GNU C Compiler}, which outputs abstract syntax tree as an XML file.  Unfortunately, the structure of this file is too complex to analyze and contained only declarative parts of the sources (types, classes with field and method declarations and external variables).
 
-Transformation generated Java modules implementing structural and operational features of blocks.  The logic of some Mothur modules functioning requires to make flexible set of output connection to make usage of complex modules to be more convenient for end user. Now we are working on extending the knowledge base to generate algorithms figuring out the set of acceptable connections depending input and module configuration.
+Transformation generates Java modules implementing structural and operational features of blocks.  The logic of some Mothur modules functioning requires to make flexible set of output connection to make usage of complex modules to be more convenient for end user. Now we are working on extending the knowledge base to generate algorithms figuring out the set of acceptable connections depending input combination and module configuration.
 
 Overall time spent to develop the proposed transformation technique and the basic (structural) aspects of Mothur module representation is two human-months.  The implemented internal logic allowed us to determine some errors in Mothur source module descriptions.  So the transformation modules can be used as a verification system for the sources.
 
@@ -546,11 +546,11 @@ Overall time spent to develop the proposed transformation technique and the basi
 
 % CIM is being designed with visual editors, \emph{e.g.} Modelio \cite{modelio}, translated from their XMI to RDF and stored as ontology graphs as files or network resources.  MDA-transformation is represented and executed within Prolog programming environment LogTalk \cite{tereh1}, which provides us knowledge structuring, rich set of libraries and uniform well-known programming language for defining transformation rules.  The general scheme of transformation definition is presented.
 
-We presented an approach to implementation of transformation procedures for Model Driven Architecture (MDA) that mediates most convenient features of logical and object-oriented programming, representation of source model data as RDF sets (graphs).  The usage of LogTalk language allowed us to use object facilities to structure transformational knowledge, create an instrumental basis for manipulation knowledge sets with object inheritance and composition.  The encapsulation gave us possibility to hide specialized knowledge behind object interfaces.
+We presented an approach to implementation of transformation procedures for Model Driven Architecture (MDA) that mediates most convenient features of logical and object-oriented programming, representation of source model data as RDF graphs.  The usage of LogTalk language allowed us to use object facilities to structure transformational knowledge, create an instrumental basis for manipulation knowledge sets with object inheritance and composition.  The encapsulation gave us possibility to hide specialized knowledge behind object interfaces.
 
 The development tools is being tested in representation of bioinformatic tool Mothur as Rapidminer dataflow diagrams \cite{bit2019}.  The source data for transformation is the module specifications and UML Class Diagram, which organizes submodules in virtual class hierarchies.  The result is a Rapidminer plug-in, with each Mothur module being represented as a data block.
 
-With this tool now we will develop a programming techniques aimed at reuse of knowledge and their specialization, thus, supporting programming traditions used in small information system developing companies and collectives.  Another aspect of research is integration with existing Linked Open Data sources such as \cite{digarch}.
+With these MDA tools now we will develop a programming techniques aimed at reuse of knowledge and their specialization, thus, supporting programming traditions used in small information system developing companies and collectives.  Another aspect of research is integration with existing Linked Open Data sources such as \cite{digarch}.
 
 \section{Acknowledgements}
 \label{sec:ack-descr}
@@ -562,15 +562,15 @@ The presented research results is distributed among three grants as follows: asp
 \bibitem{Clio} \emph{Wielemaker,J.}, \emph{Beek,W.}, \emph{Hildebrand,M.}, \emph{Ossenbruggen,J.} ClioPatria: A SWI-Prolog Infrastructure for the Semantic Web, Semantic Web. vol. 7, no. 5, 2016, pp.~529-541. DOI:\url{10.3233/SW-150191}
 \bibitem{modelio} Modelio Open Source -- UML and BPMN free modeling tool. URL:\url{https://www.modelio.org/}.
 %Related research
-\bibitem{raslan} \emph{Raslan, W.}, \emph{Sameh, A.} Accelerating High-Level SysML and SystemC SoC Designs, URL:\url{https://www.design-reuse.com/articles/17562/high-level-sysml-systemc-soc-designs.html}
-\bibitem{natale} \emph{Natale,M.}, \emph{Perillo,D.}, \emph{Chirico,F.}, \emph{Sindico,A.}, \emph{Sangiovanni-Vincentelli,A.} A Model-based approach for the synthesis of software to firmware adapters for use with automatically generated components, Software \& Systems Modeling, February 2018,~Volume 17,~Issue~1,~pp.~11-–33
-\bibitem{boute} \emph{Boutekkouk,F.}, \emph{Fartas,O.} Automatic generation of SysML diagrams from VHDL code, In Proceedings of the Symposium on Complex Systems and Intelligent Computing (CompSIC), Souk Ahras, Algeria, September 2015.
-\bibitem{mish} \emph{Mischkalla,F.}, \emph{He,D.}, \emph{Mueller,W.}, \emph{Azcarate,F.}, \emph{Carballeda,M.} A Retargetable SysML-based Front-End for High-Level Synthesis, In: Proceedings of 2nd Workshop on Model Based Engineering for Embedded Systems Design (M-BED), Mrz. 2011
-\bibitem{tom16} \emph{Hauswald,T.} Automatic Code Synthesis of UML/SysML State Machines for airborne Applications.  Bachelor Thesis. Hamburg Univeristy of Technology. August 15. 2016. 80~p.
-\bibitem{sysmlpres} \emph{Friedenthal,S.}, \emph{Moore,A.}, \emph{Steiner,R.} OMG Systems Modeling Language (OMG SysML™) Tutorial. 2009. 132~p. \url{http://www.omgsysml.org/INCOSE-OMGSysML-Tutorial-Final-090901.pdf}
-\bibitem{tereh1} \emph{Cherkashin,E.}, \emph{Larionov,A.} \emph{et al.} Logical programming and data mining as engine for MDA model transformation implementation. Procs of 36th International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO). May 20--24, 2013, Opatija, Croatia, pp.~1029--1036.
+% \bibitem{raslan} \emph{Raslan, W.}, \emph{Sameh, A.} Accelerating High-Level SysML and SystemC SoC Designs, URL:\url{https://www.design-reuse.com/articles/17562/high-level-sysml-systemc-soc-designs.html}
+% \bibitem{natale} \emph{Natale,M.}, \emph{Perillo,D.}, \emph{Chirico,F.}, \emph{Sindico,A.}, \emph{Sangiovanni-Vincentelli,A.} A Model-based approach for the synthesis of software to firmware adapters for use with automatically generated components, Software \& Systems Modeling, February 2018,~Volume 17,~Issue~1,~pp.~11-–33
+% \bibitem{boute} \emph{Boutekkouk,F.}, \emph{Fartas,O.} Automatic generation of SysML diagrams from VHDL code, In Proceedings of the Symposium on Complex Systems and Intelligent Computing (CompSIC), Souk Ahras, Algeria, September 2015.
+% \bibitem{mish} \emph{Mischkalla,F.}, \emph{He,D.}, \emph{Mueller,W.}, \emph{Azcarate,F.}, \emph{Carballeda,M.} A Retargetable SysML-based Front-End for High-Level Synthesis, In: Proceedings of 2nd Workshop on Model Based Engineering for Embedded Systems Design (M-BED), Mrz. 2011
+% \bibitem{tom16} \emph{Hauswald,T.} Automatic Code Synthesis of UML/SysML State Machines for airborne Applications.  Bachelor Thesis. Hamburg Univeristy of Technology. August 15. 2016. 80~p.
+% \bibitem{sysmlpres} \emph{Friedenthal,S.}, \emph{Moore,A.}, \emph{Steiner,R.} OMG Systems Modeling Language (OMG SysML™) Tutorial. 2009. 132~p. \url{http://www.omgsysml.org/INCOSE-OMGSysML-Tutorial-Final-090901.pdf}
+% \bibitem{tereh1} \emph{Cherkashin,E.}, \emph{Larionov,A.} \emph{et al.} Logical programming and data mining as engine for MDA model transformation implementation. Procs of 36th International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO). May 20--24, 2013, Opatija, Croatia, pp.~1029--1036.
 \bibitem{digarch} Digital Archives
-\bibitem{icist} ICIST
+% \bibitem{icist} ICIST
 \bibitem{bit2019} BIT
 \bibitem{ghsrc}
 
@@ -611,27 +611,27 @@ and empirical validation. \emph{Computers \& Security},  vol~77, 2018, p.~315-34
 
 % % The paper \ref{Zdun} is considered a highly decoupled distributed event-driven application environment, whose design and functioning is dynamically controlled by its three-level DSL description and MDA transformations, which support change propagation.
 
-\bibitem{Malki}
- \textbf{B.\,Bouougada, D.\,Bouchiha, M.\,Malki} A framework for
- reengineering web applications into linked data based on MDA. Paper
- presented at the ACM International Conference Proceeding Series, 2015,
- 23-25-November-2015 doi:10.1145/2816839.2816880
+% \bibitem{Malki}
+%  \textbf{B.\,Bouougada, D.\,Bouchiha, M.\,Malki} A framework for
+%  reengineering web applications into linked data based on MDA. Paper
+%  presented at the ACM International Conference Proceeding Series, 2015,
+%  23-25-November-2015 doi:10.1145/2816839.2816880
 
 % % In \ref{Malki} a practical approach implemented with four-level description of ATL transformations from HTML-page to a RDF structure (via stage of an MDA PIM), which represents HTML (LI,TABLE, etc.) data as LOD.
 
-\bibitem{uml2owl} UMLtoOWL: Converter from UML to OWL. URL: \url{http://www.sfu.ca/~dgasevic/projects/UMLtoOWL/}.
-\bibitem{Dama}
-\textbf{V.\,\v{S}tuikys, R.\,Dama\v{s}evi\v{c}ius.} Meta-program development as a
- model transformation process. 2013. doi:10.1007/978-1-4471-4126-6\_11
+% \bibitem{uml2owl} UMLtoOWL: Converter from UML to OWL. URL: \url{http://www.sfu.ca/~dgasevic/projects/UMLtoOWL/}.
+% \bibitem{Dama}
+% \textbf{V.\,\v{S}tuikys, R.\,Dama\v{s}evi\v{c}ius.} Meta-program development as a
+% model transformation process. 2013. doi:10.1007/978-1-4471-4126-6\_11
 % % A wide overview of Western approaches to program transformation is given in \cite{Dama,Dama2}, the language PROMOL is suggested as well as its logical semantics. The book \cite{Dama}, together with John McCarthy's and Steve Russell's LISP technologies and Enn Tyugu's conceptual programming, covers the problem space history almost completely.
 
 % \bibitem{Dama2}
 % \textbf{V.\,\v{S}tuikys, R.\,Dama\v{s}evi\v{c}ius, A.\,Targamadze.} A model-driven
 % view to meta-program development process. \emph{Information Technology and
 % Control.} vol.~39(2), 2010, p.~89-99. URL:\url{http://itc.ktu.lt/index.php/ITC/article/download/12302/6838}
-\bibitem{odmprof} ODM UML profile for OWL. URL:\url{http://www.omg.org/spec/ODM/1.0/PDF/}.
-\bibitem{odnext} Ontology Domain Modeling example. URL:\url{https://thematix.com/tools/vom/}.
-\bibitem{odmvis} OWL UML Visualizer. URL:\url{http://owlgred.lumii.lv/}.
+% \bibitem{odmprof} ODM UML profile for OWL. URL:\url{http://www.omg.org/spec/ODM/1.0/PDF/}.
+% \bibitem{odnext} Ontology Domain Modeling example. URL:\url{https://thematix.com/tools/vom/}.
+% \bibitem{odmvis} OWL UML Visualizer. URL:\url{http://owlgred.lumii.lv/}.
 %\bibitem{wsdl} Web Services Description Language -- Wikipedia, the free encyclopedia.  URL:\url{https://en.wikipedia.org/wiki/Web_Services_Description_Language}
 %\bibitem{wsbpel} Business Process Execution Language -- Wikipedia, the free encyclopedia. \url{https://en.wikipedia.org/wiki/Business_Process_Execution_Language}
 % \bibitem{modelio} Modelio Open Source -- UML and BPMN free modeling tool. URL:\url{https://www.modelio.org/}.
