@@ -201,7 +201,7 @@ The usage experience of stereotypes and tag values resulted in recognition of th
 
 When implementing complex systems, which are composed from existing subsystems, these subsystem's specifications can be additional sources of model data.  For example, in our project \cite{bit2019}, the main PIM model is extracted from source code of the original library Mothur and converted to TTL (turtle) representation.  This approach requires one-time programming for adaptation of the sources, but for each new version of the library we can obtain new version of the PSM without additional analysis.  Formal rules of the source code analysis ad interpretation as PSM can also assist in finding errors in the source code.
 
-[[PSM libraries....???]]
+% [[PSM libraries....???]]
 
 
 \section{Related works}
@@ -210,9 +210,9 @@ The most widely used technology of model transformation is ATL (ATLAS Transforma
 
 Similar to ATL, Transformation Model Representation Language (TMRL) is developed in \cite{nikita} but oriented on visual representation of a knowledge base with following conversion in various production rules in CLIPS and OWL.  The visual presentation of transforming rules are used also in \cite{GT}.  In \cite{azis}, ATL is used to transform Computational Independent Model (CIM) represented as BPMN diagram into set of UML diagrams, defining PIM. Paper \cite{Rhazali} proposes a model transformation CIM to PIM for web-applications, where CIM is represented with State and Use case UML-Diagrams logically connected with ATL rules.  In \cite{Hamid} is proposed an evaluation of security aspects of distributed applications using MDA description; the evaluation is implemented a logical inference over the MDA synthesized logical security models. The paper \cite{Zdun} is considered a highly decoupled distributed event-driven application environment, whose design and functioning is dynamically controlled by its three-level DSL description and MDA transformations, which support change propagation.
 
-Paper \cite{Malki} presents a practical approach with four-level ATL-description from HTML-page to a LOD structure (via stage of an MDA PIM). In \cite{uml2owl}, a converter of UML package structures represented in XMI was developed as a XSLT transformation. A wide overview of Western approaches to program transformation is given in \cite{Dama,Dama2}, a transformation language PROMOL is suggested as well as its logical semantics. OMG proposed ODM standard \cite{odmprof} for knowledge modeling.  A Visual Ontology Modeler \cite{odnext} is being developed for building and verifying OWL ontologies for ODM~1.0, as well as in the reverse direction, ontologies are represented as UML Class Diagrams \cite{odmvis}.
+Paper \cite{Malki} presents a practical approach with four-level ATL-description from HTML-page to a LOD structure (via stage of an MDA PIM). In \cite{uml2owl}, a converter of UML package structures represented in XMI was developed as a XSLT transformation. A wide overview of Western approaches to program transformation is given in \cite{Dama}, a transformation language PROMOL is suggested as well as its logical semantics. OMG proposed ODM standard \cite{odmprof} for knowledge modeling.  A Visual Ontology Modeler \cite{odnext} is being developed for building and verifying OWL ontologies for ODM~1.0, as well as in the reverse direction, ontologies are represented as UML Class Diagrams \cite{odmvis}.
 
-An XML based specifications are used in representing metadata about web services, WSDL \cite{wsdl}, and the WS-BPEL language \cite{wsbpel} for describing orchestration of web services within execution of an instance of a business process.  The idea of the language is to describe complex systems down to Web Services units, their internal and external structure and behavior, as well as services interaction in the script instance.
+% An XML based specifications are used in representing metadata about web services, WSDL \cite{wsdl}, and the WS-BPEL language \cite{wsbpel} for describing orchestration of web services within execution of an instance of a business process.  The idea of the language is to describe complex systems down to Web Services units, their internal and external structure and behavior, as well as services interaction in the script instance.
 
 Thus, the majority of the presented techniques are closed with respect of XMI file format: the source data and the result of the transaction are represented in it, and it goes beyond only on the stage of the source code generation.  Our approach allows one to use other sources (not being presented in XMI) of model information, as well as general purpose libraries in implementation of the transformation engine.  Usage of object-oriented logical language LogTalk allows us powerfully structuring and manipulate knowledge base by means of the object encapsulation, inheritance, and composition.
 
@@ -286,43 +286,49 @@ SWI-Prolog with macro package LogTalk meet these constraints.  The LogTalk objec
 % The direct way of a transformation implementation is to use \textsc{Prolog} or a functional language, and we use \textsc{Logtalk}, a macro package of Prolog.  The main advantage of the language usage is knowledge structuring thanks to its object-orientation.  Objects are used for representation of the source PIM model and the resulting PIM structures as well as source code generators.  Moreover, the transformation rules are easily integrated with libraries processing LOD and LOD warehouses.
 
 
-\subsection{SWI-Prolog Semantic WEB library}
+\subsection{SWI-Prolog Semantic Web Library}
 \label{sec:swi-sw}
 
-SWI Prolog standard distribution contains library for RDF processing.  The library represents URI as a corresponding functor with atom argument. This structure can be constructed with a special form \texttt{<NS>:<ID>}, where \texttt{<NS>} is an abbreviation of a name space, and \texttt{<ID>} is identifier of an entity.  Library contains predicates for loading graphs from files and sites, store them in various text based and binary formats.
+SWI Prolog standard distribution contains library for RDF processing.  The library represents URI as a corresponding functor with atom argument. This structure can be constructed with a special form \texttt{<namespace>:<identifier>}.  Library contains predicates for loading graphs from files and internet sites, store them in various text based and binary formats for later use.
 
-The library support queries for the graphs as a predicate and as SPARQL.  There is a basic query optimization.  For the subclass and subpropery relation, library realizes transitive closure, which can be used in the predicate queries.  [[what else ???]]
-
-The library imported in LogTalk as object, that is an encapsulation of all the library predicates.  There is a little conflict of operation ``:'' between LogTalk and RDF library [[How to resolve]].
+The library support queries for the graphs as a predicate query and as SPARQL.  There is a basic query optimization.  For the subclass and subpropery relation, library realizes transitive closure, which can be used in the predicate queries.  The library imported in LogTalk as an object, that is an encapsulation of all the library predicates.
 
 % \subsection{Semantic Server ClioPatria}
 % \label{sec:clio-descr}
 % [[ClioPatria]]
-
-\subsection{PSM representation}
-\label{sec:blocks}
-
-PSM is represented with \texttt{code\_block} objects.  The object have the following interface:
-\begin{minted}{logtalk}
-% protocol of block object.
-\end{minted}
-
-The \verb|code_block|--objects consist of source code string lines and other objects, including other code blocks. Each item is denoted with \verb|item/1| and its private database element \verb|item_/1|.  The type of the element is defined by outer functor of the argument, \emph{e.g.}, we define with \verb|attributes(L)| a list \verb|L| of attributes of a class.  The way of rendering the sources is implemented by subclassing the object and realizing \verb|render/1| and \verb|renderitem/2|.  The first argument of \verb|renderitem/2| is the \verb|item/1|--structure to be rendered, and the second one is the list of strings representing generated source code.  Elements of the code block can be \verb|append|ed, \verb|prepend|ed and \verb|remove|ed.  We specially disallow to insert \verb|item|s into the database, as it will make object and its database more complex.  Instead, programmer can add an \verb|item| being another code block, inserting elements of the sources in it.
-
-
-\subsection{Programming LogTalk Methods}
+\subsection{LogTalk Methods}
 \label{sec:lgt-methods}
 
-LogTalk object consists of encapsulated predicates (methods), some of them can be defined as dynamic, implementing object state.  LogTalk as a macro package provides two kind of objects: static and dynamic.  Static objects is defined and instantiated during compilation, dynamic ones are created with \texttt{create\_object/4} usually at runtime.  Static parameterized objects can be considered as third way of instantiation.
+LogTalk object consists of only encapsulated predicates (methods), some of them can be defined as dynamic, implementing object state.  LogTalk as a macro package provides two kind of objects: static and dynamic.  Static objects is defined and instantiated during compilation, dynamic ones are created with \texttt{create\_object/4} usually at runtime.  Static parameterized objects can be considered as third way of instantiation.  The role of an object is defined with relation to other objects, \emph{e.g.}, instances of a class are the objects, which are \verb|instantiates/1| its class.
 
-Static object instances are used for defining configurations, scenarios, interfaces to input and output targets (streams, models), graph databases, and other global compile time known entities.  Dynamic objects are used in construction of PSM objects, currently, each instantiation is an entity of target programming language.  Parametrized objects are facade interfaces to other objects, e.g., input targets and graph databases.  These objects enables programmer to define recognition rules over set of structures provided it with parameters.  Parameterized objects should be stateless, in this case, LogTalk compiles it in statically executed code.
+Static object instances are used for defining configurations, scenarios, interfaces to input and output targets (streams, models), graph databases, and other global compile time known entities.  Their main role is structuring Prolog rule set.  Dynamic objects are used in construction of PSM objects, currently, each instantiation is an entity of target programming language.  Parametrized objects are facade interfaces to other objects (contexts), \emph{e.g.}, input targets and graph databases.  These objects enables programmer to define recognition rules over set of structures provided it with parameters.  Parameterized objects should be stateless, in this case, LogTalk compiles it in statically executed code.
 
 %%%%% Methods can be redefined during inheritance.  Sending to the redefined method is done with ``\texttt{\^\^}'' message to self.
 
+% [[Idea how to implement objects, methods, instantiations, references, calls]]
 
-[[Idea how to implement objects, methods, instantiations, references, calls]]
+\subsection{PSM Representation}
+\label{sec:blocks}
 
-\section{Defining rules of transformation}
+PSM and source code generation are represented with \texttt{code\_block} objects. The idea was taken from \verb|llvmlite| library.  The code block object have the following interface:
+\begin{minted}{logtalk}
+:- protocol(code_block_proto).
+:- public([
+   append/1, prepend/1,  % Manipulation of PSM
+   clear/0,              % content as a list
+   remove/1,             % of ordered items.
+   item/1, items/1]).    % List the items.
+:- protected([
+   renderitem/2,  % Converting items to code lines.
+   render_to/2]). % Storing lines to a stream.
+:- end_protocol.
+\end{minted}
+
+The \verb|code_block|--objects consist of source code string lines, structures denoting source code, objects, and other code blocks. Each item is accessed via \verb|item/1|.  The type of the element is defined by outer functor of the argument, \emph{e.g.}, we define with \verb|append(attributes(L))| a list \verb|L| of attributes of a class.  The way of rendering the sources is implemented by subclassing the object and realizing \verb|render/1| and \verb|renderitem/2|.  The first argument of \verb|renderitem/2| is the \verb|item/1|--structure to be rendered, and the second one is the list of strings representing generated source code.  Elements of a code block can be \verb|append|ed, \verb|prepend|ed and \verb|remove|ed.  We specially disallow inserting \verb|item|s into the database, as it will make object and its database more complex.  Instead, programmer can add an \verb|item| being another code block, inserting its content in the outer block.
+
+If needed the item's definition can include provision information which can be used in result construction of its object query.
+
+\subsection{Defining rules of transformation}
 \label{sec:mda-rules}
 
 Transformation process is organized as a scenario of connected transformational objects (in terms of LogTalk) \cite{tereh1}.  Scenario is programmed as a special object defining transformation by means of calling \verb|tr/N| rules.  Rules recognize structures in the input graph elements and constructs code blocks.
@@ -338,37 +344,37 @@ profiles(L):-
     findall(Profile, ::profile(Profile), L).
 tr(class, Class, ClassID):- ::package(Package),
     query(Package)::class(Name, ClassID),
-    create_object(Class,
+    create_object(Class,  % inherits code_block
         [instantiates(class)],[],[]),
     create_object(Attributes,
         [instantiates(params)],[],[]),
     create_object(Methods,
         [instantiates(methodlist)],[],[]),
-    Class::name(Name),
+    Class::append(name(Name)),
     forall(
         ::tr(attribute,Attribute,ClassID,_AttrID),
         Attributes::append(Attribute) ),
     forall(
         ::tr(method, Method, ClassID, _MethodID),
         Methods::append(Method) ),
-    Class::attributes(Attributes),
-    Class::methods(Methods).
+    Class::append(attributes(Attributes)),
+    Class::append(methods(Methods)).
 tr(attribute, Attribute, ClassID, AttributeID):-
     ::package(Package),
     query(Package)::attribute(Name,ClassID,AttrID),
     create_object(Attribute,
         [instantiates(param)],[],[]),
-    Attribute::name(Name).
+    Attribute::append(name(Name)).
 tr(method, Method, ClassID, MethodID):-
     ::package(Package),
     query(Package)::method(Name,ClassID,MethodID),
     create_object(Method,
-    [instantiates(method)],[],[]),
-    Method::name(Name).
+       [instantiates(method)],[],[]),
+    Method::append(name(Name)).
 :- end_object.
 \end{minted}
 
-The previous listing uses static parameterized object \verb|query/1|, whose argument is a graph representing model under transformation.  This is a powerful LogTalk abstraction instrument, which reduces necessity of adapter object creation in dynamic memory.  The SPARQL is encapsulated in methods.
+The previous listing uses static parameterized object \verb|query/1|, whose context argument is a graph representing model under transformation.  This is a powerful LogTalk abstraction instrument, which reduces necessity of adapter object creation in dynamic memory.  The SPARQL queries are encapsulated in methods.
 
 \begin{minted}{logtalk}
 :- object(query(_XMI)).
@@ -390,48 +396,11 @@ method(Name, ClassID, ID):- ::xmi(XMI),
 :- end_object.
 \end{minted}
 
-Procedure of source code generation is build using \verb|code_block|--objects (the idea was taken from \verb|llvmlite| library), which provide PSM representation:
-
-\begin{minted}{logtalk}
-:- object(code_block, specializes(root)).
-:- public([append/1, prepend/1, clear/0,
-   render/1, render_to/1, remove/1, item/1,
-   items/1 ]).
-:- dynamic([item_/1]). % elements of
-:- private([item_/1]). % the code block
-:- protected([renderitem/2, render_to/2]).
-
-item(Item)   :- ::item_(Item).
-items(Items) :- bagof(I, ::item(I), Items).
-append(Item) :- ::assertz(item_(Item)).
-prepend(Item):- ::asserta(item_(Item)).
-remove(Item) :- ::retract(item_(Item)).
-clear        :- ::retractall(item_(_)).
-render(_)    :- writef::writef("ERROR: \
-Implement render/1 by a subclass!\n"), fail.
-
-render_to(Stream):- ::render(List),
-    ::render_to(List, Stream).
-render_to(List, Stream):-
-    lists::is_list(List),!,
-    forall(lists::member(X,List),
-       ::render_to(X, Stream)).
-render_to(X,_) :- write(X),nl.
-renderitem(Object, String):-
-    current_object(Object), !,
-    Object::render(String).
-renderitem(literal(Item), String):-!,
-    atom_string(Item, String).
-renderitem(Item, String):-
-    root::iswritef(String, '%q', [Item]).
-:- end_object.
-\end{minted}
-
-
 The following example shows rendering class for Python classes. It contains public methods for defining class elements.
+
 \begin{minted}{logtalk}
 :- object(class, specializes(code_block),
-   imports([named])). % A category of named entities
+    imports([named])). % A category of named entities
 :- public([classlist/1, methods/1, attributes/1]).
 classlist(ClassList):- % List of base classes
     ::prepend(classlist(ClassList)).
@@ -480,10 +449,12 @@ render(Result):- % Render the class
 :- end_object.
 \end{minted}
 
-\subsection{Categories}
-\label{sec:cats-impl}
+Let us do some remarks.  Class method \verb|root::iswritef/3| is used to generate source code with a tab indent organized by \verb|root::indent| and \verb|root::unindent| predicates.  List \verb|Result| of \verb|render/1| specially not flatten in order to not use \verb|append| operations.  The object imports category \verb|named|, which defines behavior for named instances.
 
-LogTalk categories is very useful way of implementing a common functionality among a set of entities.  For example, programming language objects have an identifier and, optionally, type description.  These properties are implemented as two categories.
+% \subsection{Categories}
+% \label{sec:cats-impl}
+
+LogTalk \emph{categories} is very useful way of implementing a common functionality among a set of entities.  For example, programming language objects have an identifier and, optionally, type description.  These properties are implemented as two categories.
 \texttt{named}, and its child \texttt{namedtyped}.
 \begin{minted}{logtalk}
 :- category(named).
@@ -502,7 +473,7 @@ render(String):-
 :-end_category.
 \end{minted}
 
-The category implies interface of \texttt{code\_object} for the object being enriched with it.  % The second example adds type to the object.
+The category implies interface of \texttt{code\_object} for the object being enriched with it.  The second category definition as well as all the sources of transformation objects are stored at \texttt{github.com} \cite{ghsrc}.  % The second example adds type to the object.
 
 % \begin{minted}{logtalk}
 % :- category(namedtyped, extends(named)).
@@ -539,9 +510,9 @@ The category implies interface of \texttt{code\_object} for the object being enr
 % :- end_category.
 % \end{minted}
 
-Similarly lists .... [[(list of superclasses, variables,...)]]
+% Similarly lists .... [[(list of superclasses, variables,...)]]
 
-In the same way, we can construct procedures for creating structures of databases and populating them with initial data.
+%In the same way, we can construct procedures for creating structures of databases and populating them with initial data.
 
 % SO, IT IS TRANSFORMATION OF BUSINESS PROCESS MODELS (GRAPHICALLY SET) INTO FORMAL LANGUAGE, SUITABLE FOR AUTOMATED REASONING? HOW IS IT COMBINED WITH DATA FROM THE DATABASE? HOW THE DATA FROM THE DOCUMENT MANAGEMENT SYSTEM IS EXTRACTED INTO DATA SUITABLE FOR AUTOMATED REASONING?
 
@@ -555,6 +526,19 @@ In the same way, we can construct procedures for creating structures of database
 
 %(We have no time to implement it)
 
+\section{Application in NGS}
+\label{sec:ngs-appl}
+
+The proposed technique is applied in developing software for visual scripting NGS\footnote{New Generation Sequencing} computational procedures such as sequencing data loading, filtering, gene alignment, result assessment \cite{bit2019}.  The procedure is represented as dataflow diagram constructed and evaluated in Rapidminer system.  Each block of the diagram defines an operation, which is carried on over a set of input files by one of 147 Mothur modules; the result is stored in output files.  The files are transferred between modules.  This is reflected as connections between blocks in the diagram.  The visual instrument is intended for biologists allowing them to make bioinformatic exploration themselves.
+
+Each block structure, namely, the sets of input and output connections, together with parameters, reflects the interface of Mothur modules.  The modules are implemented as classes in C++ with special structures describing each component so as this description would be allowed for analysis at run-time.  We use this structural data of the source code of Mothur for analysis and conversion it to a RDF graph, resulting in the description of all the Mothur modules.
+
+The analysis of the sources is performed with regular expressions and simple translation units.  We tried to use a version of GCC\footnote{GNU C Compiler}, which outputs abstract syntax tree as an XML file.  Unfortunately, the structure of this file is too complex to analyze and contained only declarative parts of the sources (types, classes with field and method declarations and external variables).
+
+Transformation generated Java modules implementing structural and operational features of blocks.  The logic of some Mothur modules functioning requires to make flexible set of output connection to make usage of complex modules to be more convenient for end user. Now we are working on extending the knowledge base to generate algorithms figuring out the set of acceptable connections depending input and module configuration.
+
+Overall time spent to develop the proposed transformation technique and the basic (structural) aspects of Mothur module representation is two human-months.  The implemented internal logic allowed us to determine some errors in Mothur source module descriptions.  So the transformation modules can be used as a verification system for the sources.
+
 \section{Conclusion}
 
 % The idea of formal description of the business process during transition of a medical institution for compliance to ISO 9001:2015 standard is considered in the paper.  Diagrams SysML, BPMN2.0, CMMN are proposed to be used for this purpose.  The description provides Computational Independent Model (CIM) of Model Driven Architecture
@@ -562,15 +546,11 @@ In the same way, we can construct procedures for creating structures of database
 
 % CIM is being designed with visual editors, \emph{e.g.} Modelio \cite{modelio}, translated from their XMI to RDF and stored as ontology graphs as files or network resources.  MDA-transformation is represented and executed within Prolog programming environment LogTalk \cite{tereh1}, which provides us knowledge structuring, rich set of libraries and uniform well-known programming language for defining transformation rules.  The general scheme of transformation definition is presented.
 
-[[Presented how to use LogTalk to represent knowledge]]
+We presented an approach to implementation of transformation procedures for Model Driven Architecture (MDA) that mediates most convenient features of logical and object-oriented programming, representation of source model data as RDF sets (graphs).  The usage of LogTalk language allowed us to use object facilities to structure transformational knowledge, create an instrumental basis for manipulation knowledge sets with object inheritance and composition.  The encapsulation gave us possibility to hide specialized knowledge behind object interfaces.
 
-[[What we have better with our approach.]] [[About instrumentation allowing development a special cases of transformation for startups]]
+The development tools is being tested in representation of bioinformatic tool Mothur as Rapidminer dataflow diagrams \cite{bit2019}.  The source data for transformation is the module specifications and UML Class Diagram, which organizes submodules in virtual class hierarchies.  The result is a Rapidminer plug-in, with each Mothur module being represented as a data block.
 
-[[LOD integration]]
-
-[[Problems of absence programmer practice of Logtalk: what sources to study.]]
-
-IS development tools is being tested in representation of bioinformatic tool Mothur as Rapidminer dataflow diagrams \cite{dataflow}.  The source data for transformation is the module specifications and UML Class Diagram, which organizes submodules in virtual class hierarchies.  The result is a Rapidminer plug-in, with each Mothur module being represented as a data block.
+With this tool now we will develop a programming techniques aimed at reuse of knowledge and their specialization, thus, supporting programming traditions used in small information system developing companies and collectives.  Another aspect of research is integration with existing Linked Open Data sources such as \cite{digarch}.
 
 \section{Acknowledgements}
 \label{sec:ack-descr}
@@ -578,7 +558,7 @@ IS development tools is being tested in representation of bioinformatic tool Mot
 The presented research results is distributed among three grants as follows: aspect of LOD data representation and integration is supported by Russian Science Foundation, grant 18--07--0075; logical inference combining various source models and object--oriented knowledge representation is supported by Russian Foundation of Basic Research, grant 18--71--10001; the presented example of Rapidminer dataflow modules generation is being developed with support of grant of Irkutsk Scientific Center SB RAS, project No 4.2.
 
 \begin{thebibliography}{99}
-\bibitem{techaudit} [[[A book about technical audit.]]]
+% \bibitem{techaudit} [[[A book about technical audit.]]]
 \bibitem{Clio} \emph{Wielemaker,J.}, \emph{Beek,W.}, \emph{Hildebrand,M.}, \emph{Ossenbruggen,J.} ClioPatria: A SWI-Prolog Infrastructure for the Semantic Web, Semantic Web. vol. 7, no. 5, 2016, pp.~529-541. DOI:\url{10.3233/SW-150191}
 \bibitem{modelio} Modelio Open Source -- UML and BPMN free modeling tool. URL:\url{https://www.modelio.org/}.
 %Related research
@@ -591,7 +571,8 @@ The presented research results is distributed among three grants as follows: asp
 \bibitem{tereh1} \emph{Cherkashin,E.}, \emph{Larionov,A.} \emph{et al.} Logical programming and data mining as engine for MDA model transformation implementation. Procs of 36th International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO). May 20--24, 2013, Opatija, Croatia, pp.~1029--1036.
 \bibitem{digarch} Digital Archives
 \bibitem{icist} ICIST
-\end{thebibliography}
+\bibitem{bit2019} BIT
+\bibitem{ghsrc}
 
 
 
@@ -604,57 +585,55 @@ The presented research results is distributed among three grants as follows: asp
 % \bibitem{tereh1} \textbf{E.\,Cherkashin, A.\,Larionov et al.} Logical programming and data mining as engine for MDA model transformation implementation. \emph{Procs of 36th International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO).} May 20--24, 2013, Opatija, Croatia, pp.~1029--1036.
 % \bibitem{MDA} \textbf{D.\,Frankel.} Model Driven Architecture: Applying MDA to Enterprise Computing. Wiley; 1 edition, 2003, 352 p.
 % \bibitem{Clio} \textbf{J.\,Wielemaker, W.\,Beek, M.\,Hildebrand, J.\,Ossenbruggen.} ClioPatria: A SWI-Prolog Infrastructure for the Semantic Web, \emph{Semantic Web.} vol. 7, no. 5, 2016, pp.~529-541. DOI:\url{10.3233/SW-150191}
-% \bibitem{atl} \textbf{F.\,Jouault, F.\,Allilaire, J.\,Bezivin, I.\,Kurtev.} Atl: A model transformation tool. \emph{Sci. Comput. Program.} 72(1--2), pp.~31--39 (2008)
-% \bibitem{QVT} The MOF Query/View/Transformation Specification Version 1.1. URL:\url{http://www.omg.org/spec/QVT/1.1}
-% \bibitem{nikita} \textbf{A.\,Berman, M.\,Grishchenko, N.\,Dorodnykh, O.\,Nikolaychuk, A.\,Yurin.} A model-driven approach and a tool to support creation of rule-based expert systems for industrial safety expertise. \emph{Proc. of the 12 th International Forum on Knowledge Asset Dynamics (IFKAD-2017)} -- Russia, St.\,Petersburg : Graduate School of 16 Management of St.\,Petersburg University.  2017.  P.~2034--2050.
-% \bibitem{GT} \textbf{A.\,Belghiat, M.\,Bourahla.} UML Class Diagrams to OWL Ontologies: A Graph Transformation based Approach. \emph{International Journal of Computer Applications}. 41. pp.~41--46. 10.5120/5525-7566.
-% \bibitem{azis}\textbf{Y.\,Rhazali, Y.\,Hadi, A.\,Mouloudi.} Model Transformation with ATL into MDA from CIM to PIM Structured through MVC. \emph{Procedia Computer Science 83} (2016) 1096–1101. URL:\url{https://doi.org/10.1016/j.procs.2016.04.229}
-% \bibitem{Rhazali}
-% \textbf{Y.\,Rhazali, Y.\,Hadi, I.\,Chana, M.\,Lahmer, A.\,Rhattoy.} A model
-% transformation in model driven architecture from business model to web
-% model. \emph{IAENG International Journal of Computer Science}, vol.~45(1), 2018, 104-117, URL:\url{http://www.iaeng.org/IJCS/issues_v45/issue_1/IJCS_45_1_16.pdf}.
+\bibitem{atl} \textbf{F.\,Jouault, F.\,Allilaire, J.\,Bezivin, I.\,Kurtev.} Atl: A model transformation tool. \emph{Sci. Comput. Program.} 72(1--2), pp.~31--39 (2008)
+\bibitem{QVT} The MOF Query/View/Transformation Specification Version 1.1. URL:\url{http://www.omg.org/spec/QVT/1.1}
+\bibitem{nikita} \textbf{A.\,Berman, M.\,Grishchenko, N.\,Dorodnykh, O.\,Nikolaychuk, A.\,Yurin.} A model-driven approach and a tool to support creation of rule-based expert systems for industrial safety expertise. \emph{Proc. of the 12 th International Forum on Knowledge Asset Dynamics (IFKAD-2017)} -- Russia, St.\,Petersburg : Graduate School of 16 Management of St.\,Petersburg University.  2017.  P.~2034--2050.
+\bibitem{GT} \textbf{A.\,Belghiat, M.\,Bourahla.} UML Class Diagrams to OWL Ontologies: A Graph Transformation based Approach. \emph{International Journal of Computer Applications}. 41. pp.~41--46. 10.5120/5525-7566.
+\bibitem{azis}\textbf{Y.\,Rhazali, Y.\,Hadi, A.\,Mouloudi.} Model Transformation with ATL into MDA from CIM to PIM Structured through MVC. \emph{Procedia Computer Science 83} (2016) 1096–1101. URL:\url{https://doi.org/10.1016/j.procs.2016.04.229}
+\bibitem{Rhazali} \textbf{Y.\,Rhazali, Y.\,Hadi, I.\,Chana, M.\,Lahmer, A.\,Rhattoy.} A model
+ transformation in model driven architecture from business model to web
+ model. \emph{IAENG International Journal of Computer Science}, vol.~45(1), 2018, 104-117, URL:\url{http://www.iaeng.org/IJCS/issues_v45/issue_1/IJCS_45_1_16.pdf}.
 % % The paper \ref{Rhazali} proposes a model  transformation  method  to  master  the  transformation
 % % from  CIM  to  PIM  web-based  in  accordance  with  the  Model
 % % Driven  Architecture  approach. CIM is represented mainly with State and Use case UML-Diagrams connected with ATL rules.
 
-% \bibitem{Hamid}
-% \textbf{B.\,Hamid, D.\,Weber.} Engineering secure systems: Models, patterns
-% and empirical validation. \emph{Computers \& Security},  vol~77, 2018, p.~315-348.
+\bibitem{Hamid} \textbf{B.\,Hamid, D.\,Weber.} Engineering secure systems: Models, patterns
+and empirical validation. \emph{Computers \& Security},  vol~77, 2018, p.~315-348.
 % \href{https://www.sciencedirect.com/science/article/pii/S0167404818303043}{doi:10.1016/j.cose.2018.03.016}
 
 % % In \ref{Hamid} an approach proposed for evaluation security aspects of distributed applications using modeling, MDA description and synthesis of the applications. A logical inference evaluation is carried out over the MDA synthesized logical security models.
 
-% \bibitem{Zdun}
-% \textbf{S.\,Tragatschnig, S.\,Stevanetic, U.\,Zdun.} \href{https://www.sciencedirect.com/science/article/abs/pii/S0950584916303251}{Supporting the
-% evolution of event-driven service-oriented architectures using change
-% patterns.} \emph{Information and Software Technology.} vol.~100, 2018, p.~133-146. \href{doi:10.1016/j.infsof.2018.04.005}{https://www.sciencedirect.com/science/article/abs/pii/S0950584916303251}
+\bibitem{Zdun}
+ \textbf{S.\,Tragatschnig, S.\,Stevanetic, U.\,Zdun.} \href{https://www.sciencedirect.com/science/article/abs/pii/S0950584916303251}{Supporting the
+ evolution of event-driven service-oriented architectures using change
+ patterns.} \emph{Information and Software Technology.} vol.~100, 2018, p.~133-146. % \href{doi:10.1016/j.infsof.2018.04.005}{https://www.sciencedirect.com/science/article/abs/pii/S0950584916303251}
 
 
 % % The paper \ref{Zdun} is considered a highly decoupled distributed event-driven application environment, whose design and functioning is dynamically controlled by its three-level DSL description and MDA transformations, which support change propagation.
 
-% \bibitem{Malki}
-% \textbf{B.\,Bouougada, D.\,Bouchiha, M.\,Malki} A framework for
-% reengineering web applications into linked data based on MDA. Paper
-% presented at the ACM International Conference Proceeding Series, 2015,
-% 23-25-November-2015 doi:10.1145/2816839.2816880
+\bibitem{Malki}
+ \textbf{B.\,Bouougada, D.\,Bouchiha, M.\,Malki} A framework for
+ reengineering web applications into linked data based on MDA. Paper
+ presented at the ACM International Conference Proceeding Series, 2015,
+ 23-25-November-2015 doi:10.1145/2816839.2816880
 
 % % In \ref{Malki} a practical approach implemented with four-level description of ATL transformations from HTML-page to a RDF structure (via stage of an MDA PIM), which represents HTML (LI,TABLE, etc.) data as LOD.
 
-% \bibitem{uml2owl} UMLtoOWL: Converter from UML to OWL. URL: \url{http://www.sfu.ca/~dgasevic/projects/UMLtoOWL/}.
-% \bibitem{Dama}
-% \textbf{V.\,\v{S}tuikys, R.\,Dama\v{s}evi\v{c}ius.} Meta-program development as a
-% model transformation process. 2013. doi:10.1007/978-1-4471-4126-6\_11
+\bibitem{uml2owl} UMLtoOWL: Converter from UML to OWL. URL: \url{http://www.sfu.ca/~dgasevic/projects/UMLtoOWL/}.
+\bibitem{Dama}
+\textbf{V.\,\v{S}tuikys, R.\,Dama\v{s}evi\v{c}ius.} Meta-program development as a
+ model transformation process. 2013. doi:10.1007/978-1-4471-4126-6\_11
 % % A wide overview of Western approaches to program transformation is given in \cite{Dama,Dama2}, the language PROMOL is suggested as well as its logical semantics. The book \cite{Dama}, together with John McCarthy's and Steve Russell's LISP technologies and Enn Tyugu's conceptual programming, covers the problem space history almost completely.
 
 % \bibitem{Dama2}
 % \textbf{V.\,\v{S}tuikys, R.\,Dama\v{s}evi\v{c}ius, A.\,Targamadze.} A model-driven
 % view to meta-program development process. \emph{Information Technology and
 % Control.} vol.~39(2), 2010, p.~89-99. URL:\url{http://itc.ktu.lt/index.php/ITC/article/download/12302/6838}
-% \bibitem{odmprof} ODM UML profile for OWL. URL:\url{http://www.omg.org/spec/ODM/1.0/PDF/}.
-% \bibitem{odnext} Ontology Domain Modeling example. URL:\url{https://thematix.com/tools/vom/}.
-% \bibitem{odmvis} OWL UML Visualizer. URL:\url{http://owlgred.lumii.lv/}.
-% \bibitem{wsdl} Web Services Description Language -- Wikipedia, the free encyclopedia.  URL:\url{https://en.wikipedia.org/wiki/Web_Services_Description_Language}
-% \bibitem{wsbpel} Business Process Execution Language -- Wikipedia, the free encyclopedia. \url{https://en.wikipedia.org/wiki/Business_Process_Execution_Language}
+\bibitem{odmprof} ODM UML profile for OWL. URL:\url{http://www.omg.org/spec/ODM/1.0/PDF/}.
+\bibitem{odnext} Ontology Domain Modeling example. URL:\url{https://thematix.com/tools/vom/}.
+\bibitem{odmvis} OWL UML Visualizer. URL:\url{http://owlgred.lumii.lv/}.
+%\bibitem{wsdl} Web Services Description Language -- Wikipedia, the free encyclopedia.  URL:\url{https://en.wikipedia.org/wiki/Web_Services_Description_Language}
+%\bibitem{wsbpel} Business Process Execution Language -- Wikipedia, the free encyclopedia. \url{https://en.wikipedia.org/wiki/Business_Process_Execution_Language}
 % \bibitem{modelio} Modelio Open Source -- UML and BPMN free modeling tool. URL:\url{https://www.modelio.org/}.
 % \bibitem{dataflow} \textbf{Johnston W.M., Hanna J.R.P., Millar R.J.} Advances in Dataflow Programming Languages.
 %   \emph{ACM Computing Surveys}. -- 2004. -- Vol. 36. -- pp. 1--34.
@@ -666,6 +645,7 @@ The presented research results is distributed among three grants as follows: asp
 
 % \end{thebibliography}
 
+\end{thebibliography}
 
 
 
