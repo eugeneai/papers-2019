@@ -1,0 +1,14 @@
+10/2/19, 2:14 PM
+Project Statistics
+
+                 	Segments	Words	Characters (without spaces)	Characters (including spaces)	#Files	
+Total:           	     289	 4666	                      28354	                        32455	     1	
+Remaining:       	     253	 4136	                      25046	                        28670	     1	
+Unique:          	     287	 4664	                      28328	                        32427	     1	
+Unique Remaining:	     251	 4134	                      25020	                        28642	     1	
+
+
+Individual File Statistics:
+
+File Name    	Total Segments	Remaining Segments	Unique Segments	Unique Remaining Segments	Total Words	Remaining Words	Unique Words	Unique Remaining Words	Total Characters (without spaces)	Remaining Characters (without spaces)	Unique Characters (without spaces)	Unique Remaining Characters (without spaces)	Total Characters (including spaces)	Remaining Characters (including spaces)	Unique Characters (including spaces)	Unique Remaining Characters (including spaces)	
+tgr-paper.tex	           289	               253	            287	                      251	       4666	           4136	        4664	                  4134	                            28354	                                25046	                             28328	                                       25020	                              32455	                                  28670	                               32427	                                         28642	

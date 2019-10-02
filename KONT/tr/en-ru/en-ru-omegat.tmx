@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="4.3.0_0_b886877e" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="EN-US">
+        <seg>134 Lermontov Street, Irkutsk, 664033, Russia&lt;br0&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053643Z" creationid="eugeneai" creationdate="20191002T053643Z">
+        <seg>Ул. Лермонтова, д. 134, г. Иркутск, Россия, 664033</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;i1&gt;Irkutsk Scientific Center of SB RAS&lt;/i1&gt; &lt;br0&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053613Z" creationid="eugeneai" creationdate="20191002T053613Z">
+        <seg>&lt;i1&gt;Иркутский научный центр СО РАН&lt;/i1&gt; &lt;br0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u1&gt;eugeneai,shig,slv&lt;u2&gt;@icc.ru} }</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053647Z" creationid="eugeneai" creationdate="20191002T053647Z">
+        <seg>&lt;u1&gt;eugeneai,shig,slv&lt;u2&gt;@icc.ru} }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A part of PIM could be resulted from a Computational Independent Model representing the IS and its environment on conceptual, organizational, system level, which does not define information conversion (e.g., computation).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T061253Z" creationid="eugeneai" creationdate="20191002T061253Z">
+        <seg>Часть PIM порождается из вычислительно-независимой модели (Computational Independent Model, CIM), описывающей ИС и ее окружение на концептуальном, организационном, системном уровнях, абстрагированных, в целом, от преобразования информации и вычислений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>ATLAS Transformation Language</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T061303Z" creationid="eugeneai" creationdate="20191002T061303Z">
+        <seg>ATLAS Transformation Language</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An example of a dataflow environment synthesis encapsulating Mothur library for new generation sequencing is presented.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T054741Z" creationid="eugeneai" creationdate="20191002T054741Z">
+        <seg>Приводится пример использования разрабатываемых инструментов для представленя модулей прикладного пакета Mothur в виде блоков визуального потокового программирования системы Rapidminer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>CASE--systems are usually developed close to standard industrial technologies; it is not popular in developing IS for small organization and startups, which is characterized with uncertainties of requirements and specification.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T055737Z" creationid="eugeneai" creationdate="20191002T055737Z">
+        <seg>Существующие CASE-системы реализуют стандартные подходы к проектированию и поэтому не популярны в разработке WEB-приложений, в небольших организациях и стартапах, где процесс разработки характеризуется с высоким уровнем неопределенности требований и спецификаций.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In order to support IS subsystems generation, we are to develop an expressive means for transformation from set of formalized models represented in UML, SysML, BPMN and other ones constructed with corresponding design tools.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T060001Z" creationid="eugeneai" creationdate="20191002T060001Z">
+        <seg>Полноценная поддержка быстрого прототипирования требует разработки выразительных средств программирования трансформаций из комплекса разнородных моделей, представляющих различные аспекты ИС, например, UML, SysML, BPMN, которые задаются при помощи соответствующих визуальных инструментов. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Introduction</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T054830Z" creationid="eugeneai" creationdate="20191002T054830Z">
+        <seg>Введение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>MDA represents code generation as multistage process of model transformation.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T060731Z" creationid="eugeneai" creationdate="20191002T060731Z">
+        <seg>MDA представляет процесс порождения кода подсистем ИС как многостадийный процесс преобразования исходной визуальной модели.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Objects query graphs and other objects implementing a scenario of a software system synthesis within Model Driven Architecture paradigm.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T054342Z" creationid="eugeneai" creationdate="20191002T054337Z">
+        <seg>Сценарий трансформации задается в виде объектов, делающих запросы друг к другу, и реализующих, в целом, парадигму модельно--управляемой архитектуры (Model Driven Architecture).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One of the main challenge of informational systems (IS), as well as other industrial software design, development is complexity expressed in its structure, integration with other software, fast prototyping on the stage of design.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T055450Z" creationid="eugeneai" creationdate="20191002T055136Z">
+        <seg>Основная проблема при разработке сложных информационных систем (ИС), а также друхих систем автоматизации протизводства, -- это сложность, коотрая выражается в сложности испольуемых структур данных, интегрированием с другими системани, необходимости этапа быстрого прототипирования на этапе дизайна системы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One of the paradigm of the implementation could be object--orientation, which in context of knowledge based systems will allow us to have a powerful tools enabling knowledge structuring, manipulation, and encapsulation as transformation components.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T060431Z" creationid="eugeneai" creationdate="20191002T060431Z">
+        <seg>Внедрение объектно-ориентированного программирования позволило бы создавать трансформации, структурируя базу знаний, позволяя проводить манипуляции с наборами знаний, инкапсулировать знания в трансформационные компоненты.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PSM is obtained from a Platform Independent Model (PIM), which describe IS more abstract without platform specifics.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T061028Z" creationid="eugeneai" creationdate="20191002T061028Z">
+        <seg>PSM получается из платформо-независимой модели (Platform Independent Model, PIM), которая описывает ИС на более абстрактном уровне.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Representation of MDA Transformation with Logical Objects</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053508Z" creationid="eugeneai" creationdate="20191002T053351Z">
+        <seg>Представление трансформаций MDA в виде логических объектов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Rising the stage of code generation of IS within the development to abstract level of design allows us to produce IS prototypes as early as the specification are formalized.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T055442Z" creationid="eugeneai" creationdate="20191002T055442Z">
+        <seg>Если проводить этап порождения исходного кода на этапах дизайна системы, тогда можно порождать прототипы системы сазу же как сформирована формализованна модели разрабатываемой ИС.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Source models are converted into graphs of RDF and then processed with knowledge based system organized in a network of objects.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053948Z" creationid="eugeneai" creationdate="20191002T053948Z">
+        <seg>Исходные модели преобразуются в RDF-графы и, затем, обрабатываются системой знаний, структурированной в сеть объектов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The most investigated transformational approach of code generation, that goes beyond the CASE, is Model Driven Architecture (MDA).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T060628Z" creationid="eugeneai" creationdate="20191002T060628Z">
+        <seg>Модельно-управляемая архитектура (Model Driven Architecture, MDA) -- это наиболее изученный и развитый трансформационный подход, выходящий за ограничения CASE--систем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The objects are represented in the LogTalk programming language.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T054157Z" creationid="eugeneai" creationdate="20191002T054157Z">
+        <seg>Объекты представлены в языка программирования LogTalk.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The problem of software modeling having various models as sources and its transformation based on logical inference is considered.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053836Z" creationid="eugeneai" creationdate="20191002T053836Z">
+        <seg>Рассматривается задача моделирования программного обеспечения, которая представлена набором исходных моделей, а трансформация -- на основе логического вывода.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The process of tradition programming should allow us to develop specialized versions for peculiar software design approaches, with conserving common practices as libraries.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T060208Z" creationid="eugeneai" creationdate="20191002T060208Z">
+        <seg>Программирование трансформаций необходимо стелать близким к обычному традиционноц программированию, позволяющему, в частности, создавать из существующих специализированные версии, а также накапливать опыт в библиотеках объектов и компонент.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The source code and initial data are produced from a Platform Specific Model (PSM) that represents IS implementation on a specific program and hardware platform.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T060929Z" creationid="eugeneai" creationdate="20191002T060815Z">
+        <seg>Код генерируется из так называемой платформо-зависимой модели (Platform Specific Model, PSM), которая представляет реализацию ИС с включением специфики программно-аппаратной платформы...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Usage of such kind of transformation approach allows us to develop software system carcasses on the level of abstract models, involve various sources of model data in the transformation, define and structuring conversion knowledge as objects.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T054622Z" creationid="eugeneai" creationdate="20191002T054622Z">
+        <seg>Использования такого подхода к трансформации позволяет разрабатывать исходный код каркасов программных систем еще на этапе общего дизайна, включать в трансформацию различные источники модельных данных, задавать и структурировать знания. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Various notation can be used to represent models, such as UML, SysML, CMMN, BPMN2.0, as well as RDF graphs and analyzed source code, having implemented a corresponding converter.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T054140Z" creationid="eugeneai" creationdate="20191002T054140Z">
+        <seg>При этом существует возможность использования различных нотаций, например таких, как UML, SysML, CMMN, BPMN2.0, графов RDF и результаты анализа исходного кода других систем, если реализовать соответствующий модкль преобразования.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XML Metadata Interchange</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T061301Z" creationid="eugeneai" creationdate="20191002T061301Z">
+        <seg>XML Metadata Interchange</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>colorlinks=true, linkcolor=black, citecolor=black, filecolor=black, urlcolor=black, final=true }</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053414Z" creationid="eugeneai" creationdate="20191002T053414Z">
+        <seg>colorlinks=true, linkcolor=black, citecolor=black, filecolor=black, urlcolor=black, final=true }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>model driven architecture, logical inference, resource description framework, LogTalk</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T054821Z" creationid="eugeneai" creationdate="20191002T054821Z">
+        <seg>модельно-управляемаяархитектура, логический вывод, 	RDF, LogTalk</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>unicode=true, pdftoolbar=true, pdfmenubar=true, pdffitwindow=false, pdfstartview={FitH},</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053412Z" creationid="eugeneai" creationdate="20191002T053412Z">
+        <seg>unicode=true, pdftoolbar=true, pdfmenubar=true, pdffitwindow=false, pdfstartview={FitH},</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053409Z" creationid="eugeneai" creationdate="20191002T053409Z">
+        <seg>{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{&lt;i0&gt;Matrosov Institute for System Dynamics and Control Theory of SB RAS,&lt;/i0&gt; &lt;br0&gt;</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053557Z" creationid="eugeneai" creationdate="20191002T053557Z">
+        <seg>{&lt;i0&gt;Институт динамики систем и теории управления СО РАН,&lt;/i0&gt; &lt;br0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{&lt;u1&gt;}[1]{}</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053408Z" creationid="eugeneai" creationdate="20191002T053408Z">
+        <seg>{&lt;u1&gt;}[1]{}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{Evgeny Cherkashin, Alexey Shigarov, Viacheslav Paramonov</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053528Z" creationid="eugeneai" creationdate="20191002T053528Z">
+        <seg>Евгений Черкашин, Алексей Шигаров, Вячеслав Парамонов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{Times New Roman}</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053415Z" creationid="eugeneai" creationdate="20191002T053415Z">
+        <seg>{Times New Roman}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{bw}</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053406Z" creationid="eugeneai" creationdate="20191002T053406Z">
+        <seg>{bw}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{fontsize=&lt;u1&gt;}</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053407Z" creationid="eugeneai" creationdate="20191002T053407Z">
+        <seg>{fontsize=&lt;u1&gt;}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{{&lt;u2&gt; B&lt;u3&gt;-.05em{&lt;u8&gt; i&lt;u4&gt;-.025em b}&lt;u5&gt;-.08em T&lt;u6&gt;-.1667em&lt;u9&gt;.7ex&lt;i0&gt;E&lt;/i0&gt;&lt;u7&gt;-.125emX}}</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053404Z" creationid="eugeneai" creationdate="20191002T053404Z">
+        <seg>{{&lt;u2&gt; B&lt;u3&gt;-.05em{&lt;u8&gt; i&lt;u4&gt;-.025em b}&lt;u5&gt;-.08em T&lt;u6&gt;-.1667em&lt;u9&gt;.7ex&lt;i0&gt;E&lt;/i0&gt;&lt;u7&gt;-.125emX}}</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>

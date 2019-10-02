@@ -1,0 +1,13 @@
+#!/bin/sh
+cd /usr/share/java/omegat/
+. /etc/environment
+java -jar -Xmx1024M \
+    -Duser.language=en \
+    -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true \
+    -Dswing.aatext=true \
+    -Dyandex.api.key=trnsl.1.1.20161202T155250Z.2283bb8e232ca576.6c629f6e8651c105ed478bdbbcfce64a3675c499 \
+    -Dmicrosoft.api.client_id=60b1297f-8781-4471-b1a9-8f437b2f7cb7 \
+    -Dmicrosoft.api.client_secret=aDx+qJOP0sUvdbpW/Yhrdh22SHSNgjz6ZQURYPzxt9E \
+    -Dhttp.proxyHost=172.16.0.99 \
+    -Dhttp.proxyPort=3128 \
+    OmegaT.jar $*
