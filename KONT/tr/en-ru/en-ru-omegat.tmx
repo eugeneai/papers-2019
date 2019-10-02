@@ -6,10 +6,146 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>1037--1042.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110850Z" creationid="eugeneai" creationdate="20191002T110850Z">
+        <seg>1037--1042.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>134 Lermontov Street, Irkutsk, 664033, Russia&lt;br0&gt;</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053643Z" creationid="eugeneai" creationdate="20191002T053643Z">
         <seg>Ул. Лермонтова, д. 134, г. Иркутск, Россия, 664033</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>2017.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110845Z" creationid="eugeneai" creationdate="20191002T110845Z">
+        <seg>2017.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>41.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110827Z" creationid="eugeneai" creationdate="20191002T110827Z">
+        <seg>41.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>5, 2016, pp. 529-541.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110823Z" creationid="eugeneai" creationdate="20191002T110823Z">
+        <seg>5, 2016, pp. 529-541.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>72(1--2), pp. 31--39 (2008) &lt;u1&gt;{QVT} ``The MOF query/view/transformation specification version 1.1.'' URL:&lt;u5&gt;{http://www.omg.org/spec/QVT/1.1} &lt;u2&gt;{nikita} A. Berman, M. Grishchenko, N. Dorodnykh, O. Nikolaychuk, A. Yurin.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110842Z" creationid="eugeneai" creationdate="20191002T110842Z">
+        <seg>72(1--2), pp. 31--39 (2008) &lt;u1&gt;{QVT} ``The MOF query/view/transformation specification version 1.1.'' URL:&lt;u5&gt;{http://www.omg.org/spec/QVT/1.1} &lt;u2&gt;{nikita} A. Berman, M. Grishchenko, N. Dorodnykh, O. Nikolaychuk, A. Yurin.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:- end_object.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111030Z" creationid="eugeneai" creationdate="20191002T111030Z">
+        <seg>:- end_object.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:- end_protocol.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T165307Z" creationid="eugeneai" creationdate="20191002T165307Z">
+        <seg>:- end_protocol.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:- protected([ renderitem/2, render_to/2]).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T165306Z" creationid="eugeneai" creationdate="20191002T165306Z">
+        <seg>:- protected([ renderitem/2, render_to/2]).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:- protected([package/1, profiles/2, profile/1]).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111018Z" creationid="eugeneai" creationdate="20191002T111018Z">
+        <seg>:- protected([package/1, profiles/2, profile/1]).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:- protected([renderitem/2]).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T120854Z" creationid="eugeneai" creationdate="20191002T120854Z">
+        <seg>:- protected([renderitem/2]).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:- protected(xmi/1).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111350Z" creationid="eugeneai" creationdate="20191002T111350Z">
+        <seg>:- protected(xmi/1).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:- public([ append/1, prepend/1, clear/0, remove/1, item/1, items/1]).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T165305Z" creationid="eugeneai" creationdate="20191002T165305Z">
+        <seg>:- public([ append/1, prepend/1, clear/0, remove/1, item/1, items/1]).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:- public([class/2, attribute/3, method/3]).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111351Z" creationid="eugeneai" creationdate="20191002T111351Z">
+        <seg>:- public([class/2, attribute/3, method/3]).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:- public([classlist/1, methods/1, attributes/1]).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111520Z" creationid="eugeneai" creationdate="20191002T111520Z">
+        <seg>:- public([classlist/1, methods/1, attributes/1]).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:- public([name/1, render/1]).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T120853Z" creationid="eugeneai" creationdate="20191002T120853Z">
+        <seg>:- public([name/1, render/1]).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:- public([tr/4,tr/3]).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111017Z" creationid="eugeneai" creationdate="20191002T111017Z">
+        <seg>:- public([tr/4,tr/3]).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:-end_category.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T120857Z" creationid="eugeneai" creationdate="20191002T120857Z">
+        <seg>:-end_category.</seg>
       </tuv>
     </tu>
     <tu>
@@ -22,10 +158,90 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;i1&gt;named&lt;/i1&gt;, and its child &lt;i2&gt;namedtyped&lt;/i2&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T120744Z" creationid="eugeneai" creationdate="20191002T120744Z">
+        <seg>&lt;i1&gt;named&lt;/i1&gt;, и ее производной &lt;i2&gt;namedtyped&lt;/i2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;n0&gt;{logtalk} :- category(named).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T120853Z" creationid="eugeneai" creationdate="20191002T120853Z">
+        <seg>&lt;n0&gt;{logtalk} :- category(named).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;u1&gt;eugeneai,shig,slv&lt;u2&gt;@icc.ru} }</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053647Z" creationid="eugeneai" creationdate="20191002T053647Z">
         <seg>&lt;u1&gt;eugeneai,shig,slv&lt;u2&gt;@icc.ru} }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u1&gt;{modelio} ``Modelio open source -- UML and BPMN free modeling tool.'' URL:&lt;u7&gt;{https://www.modelio.org/}.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110824Z" creationid="eugeneai" creationdate="20191002T110824Z">
+        <seg>&lt;u1&gt;{modelio} ``Modelio open source -- UML and BPMN free modeling tool.'' URL:&lt;u7&gt;{https://www.modelio.org/}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u2&gt;{GT} A. Belghiat, M. Bourahla, ``UML Class Diagrams to OWL ontologies: a graph transformation based approach,'' International Journal of Computer Applications.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110825Z" creationid="eugeneai" creationdate="20191002T110825Z">
+        <seg>&lt;u2&gt;{GT} A. Belghiat, M. Bourahla, ``UML Class Diagrams to OWL ontologies: a graph transformation based approach,'' International Journal of Computer Applications.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u3&gt;{azis}Y. Rhazali, Y. Hadi, A. Mouloudi.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110830Z" creationid="eugeneai" creationdate="20191002T110830Z">
+        <seg>&lt;u3&gt;{azis}Y. Rhazali, Y. Hadi, A. Mouloudi.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u3&gt;{ghsrc} E. Cherkashin, ``GitHub project page of ICC.XMITransform project.'' URL:&lt;u6&gt;{https://github.com/isu-enterprise/icc.xmitransform} (access date: 01-oct-2019) &lt;u4&gt;{digarch} E. Cherkashin, A. Shigarov, V. Paramonov, A. Mikhailov, ``Digital archives supporting document content inference,'' Procs of 42-nd International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO), 20--24 May, 2019, Opatija, Croatia.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110847Z" creationid="eugeneai" creationdate="20191002T110847Z">
+        <seg>&lt;u3&gt;{ghsrc} E. Cherkashin, ``GitHub project page of ICC.XMITransform project.'' URL:&lt;u6&gt;{https://github.com/isu-enterprise/icc.xmitransform} (access date: 01-oct-2019) &lt;u4&gt;{digarch} E. Cherkashin, A. Shigarov, V. Paramonov, A. Mikhailov, ``Digital archives supporting document content inference,'' Procs of 42-nd International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO), 20--24 May, 2019, Opatija, Croatia.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u5&gt;{Hamid} B. Hamid, D. Weber, ``Engineering secure systems: models, patterns and empirical validation,'' Computers &lt;u10&gt; Security, vol. 77, 2018, p. 315-348.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110834Z" creationid="eugeneai" creationdate="20191002T110834Z">
+        <seg>&lt;u5&gt;{Hamid} B. Hamid, D. Weber, ``Engineering secure systems: models, patterns and empirical validation,'' Computers &lt;u10&gt; Security, vol. 77, 2018, p. 315-348.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;u6&gt;{Zdun} S. Tragatschnig, S. Stevanetic, U. Zdun, ``&lt;u11&gt;{https://www.sciencedirect.com/science/article/abs/pii/S0950584916303251}{Supporting the evolution of event-driven service-oriented architectures using change patterns.}'' Information and Software Technology.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110834Z" creationid="eugeneai" creationdate="20191002T110834Z">
+        <seg>&lt;u6&gt;{Zdun} S. Tragatschnig, S. Stevanetic, U. Zdun, ``&lt;u11&gt;{https://www.sciencedirect.com/science/article/abs/pii/S0950584916303251}{Supporting the evolution of event-driven service-oriented architectures using change patterns.}'' Information and Software Technology.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A flexible modeling tools also allow designer to extend a notation of a model (metamodel).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T162111Z" creationid="eugeneai" creationdate="20191002T162111Z">
+        <seg>Гибкие инструменты моделирования также позволяют дизайнеру расширить семантику структур модели (метамодели).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A general architecture of the development tools is presented in Fig. &lt;n0&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T105711Z" creationid="eugeneai" creationdate="20191002T105711Z">
+        <seg>Общая архитектура средств разработки представлена на рисунке &lt;n0&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -38,10 +254,42 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A use case can &lt;i7&gt;&lt;&lt;include&gt;&gt;&lt;/i7&gt; another one or be &lt;i8&gt;&lt;&lt;extend&gt;&gt;&lt;/i8&gt;-ed with another use case.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T162919Z" creationid="eugeneai" creationdate="20191002T162731Z">
+        <seg>Один вариант использования может "включать" (&lt;i7&gt;&lt;&lt;include&gt;&gt;&lt;/i7&gt;) или "уточнять" (&lt;i8&gt;&lt;&lt;extend&gt;&gt;&lt;/i8&gt;) другой.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>ATLAS Transformation Language</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T061303Z" creationid="eugeneai" creationdate="20191002T061303Z">
         <seg>ATLAS Transformation Language</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All components interact by means of network protocols and use utf-8 encoded HTML, TXT, XML and JSON formats for data representation, which are expressive enough and easily debugged.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110508Z" creationid="eugeneai" creationdate="20191002T110508Z">
+        <seg>Все компоненты взаимодействуют при помощи сетевых протоколов и используют форматы HTML, TXT, XML, JSON в кодировке UTF-8.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An entity can be named by means of a relation with its URI, &lt;i0&gt;e.g.&lt;/i0&gt;, &lt;i1&gt;dc:title&lt;/i1&gt; or &lt;i2&gt;rdfs:label&lt;/i2&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T125952Z" creationid="eugeneai" creationdate="20191002T125952Z">
+        <seg>Поименование сущностей осуществляется при помощи отношений, &lt;i0&gt;например&lt;/i0&gt;, &lt;i1&gt;dc:title&lt;/i1&gt; и &lt;i2&gt;rdfs:label&lt;/i2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An entity or a relation exist if they are defined or referred with its URI.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T121559Z" creationid="eugeneai" creationdate="20191002T121559Z">
+        <seg>Сущность и отношения существуют, если они где-то определены или где-то есть на них URI-ссылка.</seg>
       </tuv>
     </tu>
     <tu>
@@ -54,10 +302,146 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Application in NGS</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T121244Z" creationid="eugeneai" creationdate="20191002T121244Z">
+        <seg>Применение в NGS</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Architecture of MDA tools</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T104719Z" creationid="eugeneai" creationdate="20191002T104719Z">
+        <seg>Архитектура инструментов MDA</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As stereotype does not provide a value in its association, table name for &lt;i0&gt;&lt;&lt;RDBMSRecord&gt;&gt;&lt;/i0&gt; an optional tag value can be defined for this purpose, &lt;i2&gt;e.g.&lt;/i2&gt;, &lt;i1&gt;rdbms:table-name&lt;/i1&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T164707Z" creationid="eugeneai" creationdate="20191002T164707Z">
+        <seg>В нашем примере назначение стереотипа &lt;i0&gt;&lt;&lt;RDBMSRecord&gt;&gt;&lt;/i0&gt; классу не позволяет явно задавать соответствующую таблицу, для этого можно использовать теговое значение &lt;i1&gt;rdbms:table-name&lt;/i1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As the entities have global identification, their mentioning in different models denote the same object, &lt;i0&gt;e.g.&lt;/i0&gt;, in a BPMN diagram, a record object could be created of a type defined in an UML Class Diagram.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T140412Z" creationid="eugeneai" creationdate="20191002T140412Z">
+        <seg>Так как сущности глобально идентифицированы, их наличие в различных моделях обозначают один и тот же объект, например, в BPMN-диаграмме объект -- запись базы данных (или документ) может быть создан из типа, определенного в UML диаграмме классов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By default all classes are standard &lt;i6&gt;&lt;&lt;class&gt;&gt;&lt;/i6&gt;-es.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T162554Z" creationid="eugeneai" creationdate="20191002T162554Z">
+        <seg>По умолчанию классам назначен стереотип &lt;i6&gt;&lt;&lt;class&gt;&gt;&lt;/i6&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>CASE--systems are usually developed close to standard industrial technologies; it is not popular in developing IS for small organization and startups, which is characterized with uncertainties of requirements and specification.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T055737Z" creationid="eugeneai" creationdate="20191002T055737Z">
         <seg>Существующие CASE-системы реализуют стандартные подходы к проектированию и поэтому не популярны в разработке WEB-приложений, в небольших организациях и стартапах, где процесс разработки характеризуется с высоким уровнем неопределенности требований и спецификаций.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>CIM and PIM usually defined as a sets of SysML, CMMN, UML and other visual models, which saved in a standard way as XMI&lt;p0&gt; files.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T103704Z" creationid="eugeneai" creationdate="20191002T103316Z">
+        <seg>CIM и PIM обычно задаются набором SysML, CMMN, UML и других визуальных моделей, которые сохраняются стандартным способом в виде XMI-файлов&lt;p0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Class method &lt;u0&gt;|root::iswritef/3| is used to generate source code with a tab indent organized by &lt;u1&gt;|root::indent| and &lt;u2&gt;|root::unindent| predicates.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T112835Z" creationid="eugeneai" creationdate="20191002T112835Z">
+        <seg>Метод класса &lt;u0&gt;|root::iswritef/3| используется для порождения исходного кода с необходимыми отступами, регулируемыми методами &lt;u1&gt;|root::indent| и &lt;u2&gt;|root::unindent|.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comput.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110840Z" creationid="eugeneai" creationdate="20191002T110840Z">
+        <seg>Comput.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Dispute these notations additional data for transformation can be obtained from Semantic Web (SW), for example, ontology definitions, literal names of entities in various natural languages, current state of processes, and so on.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T103446Z" creationid="eugeneai" creationdate="20191002T103446Z">
+        <seg>Кроме этих моделей дополнительные данные для трансформации могут быть получены из Семантического Веба (СВ), например, определения онтологии, названия сущностей в различных естественных языках, текущее состояние процессов, и так далее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each T--module in a general case is a parameterized LogTalk object.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110745Z" creationid="eugeneai" creationdate="20191002T110745Z">
+        <seg>Каждый Т--Модуль в общем случае является параметризованным объектом LogTalk.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each item is accessed via &lt;u1&gt;|item/1|.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T165519Z" creationid="eugeneai" creationdate="20191002T165519Z">
+        <seg>Каждый элемент содержимого доступен при помощи метода &lt;u1&gt;|item/1|.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each model structure element or a relation in a model notation must have a corresponding notation in an model representation ontology.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T140154Z" creationid="eugeneai" creationdate="20191002T140154Z">
+        <seg>Каждый элемент и отношение в нотации модели (метамодели) должны иметь соответствующие обозначения в онтологическом представлении.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Entity identification and naming in RDF have various aspects.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T121431Z" creationid="eugeneai" creationdate="20191002T121431Z">
+        <seg>Идентификация сущностей и их поименование в RDF [[многоаспектно]].</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, all UML diagrams support &lt;i0&gt;stereotypes&lt;/i0&gt;, &lt;i1&gt;tag values&lt;/i1&gt;, and &lt;i2&gt;object constrains&lt;/i2&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T162236Z" creationid="eugeneai" creationdate="20191002T162236Z">
+        <seg>Например, все диаграммы UML поддерживают &lt;i0&gt;стереотипы&lt;/i0&gt; (stereotypes), &lt;i1&gt;теговые значения&lt;/i1&gt; (tag values) и &lt;i2&gt;ограничения над объектами&lt;/i2&gt; (object constrains).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, programming language objects have an identifier and, optionally, type description.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T120710Z" creationid="eugeneai" creationdate="20191002T120710Z">
+        <seg>Например, объекты языка программирования поыменовываются идентификаторами и, часто, принадлежат к некоторому типу данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, the easy way of providing of an interface label name for an object &lt;i0&gt;age&lt;/i0&gt; field in a class defined in a Class Diagram is an association the field with tag name &lt;i1&gt;interface-label-name&lt;/i1&gt; as ``&lt;i2&gt;Age&lt;/i2&gt;'' string.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T163907Z" creationid="eugeneai" creationdate="20191002T163907Z">
+        <seg>Например, самый простой способ назначения полю класса &lt;i0&gt;age&lt;/i0&gt; имени метки в интерфейсе пользователя -- это в диаграмме классов назначить этому полю теговое значение &lt;i1&gt;interface-label-name&lt;/i1&gt; равное строке ``&lt;i2&gt;Возраст&lt;/i2&gt;''.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a class is assigned standard &lt;i5&gt;&lt;&lt;interface&gt;&gt;&lt;/i5&gt; stereotype then it is an interface definition.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T162517Z" creationid="eugeneai" creationdate="20191002T162517Z">
+        <seg>Если классу назначен стандартный стереотип &lt;i5&gt;&lt;&lt;interface&gt;&gt;&lt;/i5&gt;, тогда класс превращается в определение интерфейса.</seg>
       </tuv>
     </tu>
     <tu>
@@ -70,10 +454,66 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this case, class is added to set of classes describing a relation database records, all relations between such classes are interpreted as rational (one--to--one, one--to--many, many--to--many, mandatory, etc.) relations.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T163431Z" creationid="eugeneai" creationdate="20191002T163431Z">
+        <seg>В данном случае, класс добавляется в перечень классов, определяющих структуру базы данных, все отношения между такими классами трактуются как реляционные (один-к-одному, один-к-многим, многие-к-многим, обязательные и нет) отношения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Inference engines also support SPARQL protocol for issuing subqueries.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110606Z" creationid="eugeneai" creationdate="20191002T110549Z">
+        <seg>[[Inference engines also support SPARQL protocol for issuing subqueries]].</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Introduction</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T054830Z" creationid="eugeneai" creationdate="20191002T054830Z">
         <seg>Введение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Involving SW data is problematic.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T103752Z" creationid="eugeneai" creationdate="20191002T103752Z">
+        <seg>Привлечение данных СВ достаточно проблематично.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It contains public methods for defining class elements.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111512Z" creationid="eugeneai" creationdate="20191002T111512Z">
+        <seg>Объект содержит публичные (public) методы для определения элементов класса.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let us do some remarks.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111550Z" creationid="eugeneai" creationdate="20191002T111550Z">
+        <seg>Сделаем несколько пояснений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>List &lt;u3&gt;|Result| of &lt;u4&gt;|render/1| specially not flatten in order to not use &lt;u5&gt;|append| operations.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T113028Z" creationid="eugeneai" creationdate="20191002T113028Z">
+        <seg>Список списков &lt;u3&gt;|Result|, аргумент метода &lt;u4&gt;|render/1|, специально не разравнивается, что позволяет не использовать операцию &lt;u5&gt;|append|.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>LogTalk &lt;i0&gt;categories&lt;/i0&gt; is very useful way of implementing a common functionality among a set of entities.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T113612Z" creationid="eugeneai" creationdate="20191002T113612Z">
+        <seg>&lt;i0&gt;Категории&lt;/i0&gt; языка LogTalk являются удобным инструментом реализации однотипного поведения среди несвязанных одной иерархией классов.</seg>
       </tuv>
     </tu>
     <tu>
@@ -86,10 +526,50 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Most UML and other modeling software do not restrict names of the identifiers, together with their semantics, which is defined with transformation tools.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T161904Z" creationid="eugeneai" creationdate="20191002T161904Z">
+        <seg>Большинство средств визуального редактирования UML не ограничивают имена идентификаторов, так же как и семантику структур, предполагая, что она определяется трансформацией.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>New Generation Sequencing</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T121249Z" creationid="eugeneai" creationdate="20191002T121249Z">
+        <seg>New Generation Sequencing</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Object Relation Mapping</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T162043Z" creationid="eugeneai" creationdate="20191002T162043Z">
+        <seg>Объектно-реляционное отображение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Object programming enables us to structure, manipulate the knowledge base with encapsulation, inheritance, extending and composition.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T104342Z" creationid="eugeneai" creationdate="20191002T104342Z">
+        <seg>Объектное программирование позволяет нам структурировать, управлять базой знаний при помощи инкапсуляции, наследования, расширения и композиции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Objects query graphs and other objects implementing a scenario of a software system synthesis within Model Driven Architecture paradigm.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T054342Z" creationid="eugeneai" creationdate="20191002T054337Z">
         <seg>Сценарий трансформации задается в виде объектов, делающих запросы друг к другу, и реализующих, в целом, парадигму модельно--управляемой архитектуры (Model Driven Architecture).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One entity can be assigned many stereotypes.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T163508Z" creationid="eugeneai" creationdate="20191002T163508Z">
+        <seg>Каждой структуре можно назначить множество стереотипов.</seg>
       </tuv>
     </tu>
     <tu>
@@ -110,10 +590,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>P. 2034--2050.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110846Z" creationid="eugeneai" creationdate="20191002T110846Z">
+        <seg>P. 2034--2050.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PSM and source code generation are represented with &lt;i0&gt;code&lt;u0&gt;block&lt;/i0&gt; objects.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T165137Z" creationid="eugeneai" creationdate="20191002T165137Z">
+        <seg>PSM и порождение исходного кода реализуется объектами, поддерживающими (оснащающими) интерфейс &lt;i0&gt;code&lt;u0&gt;block&lt;/i0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>PSM is obtained from a Platform Independent Model (PIM), which describe IS more abstract without platform specifics.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T061028Z" creationid="eugeneai" creationdate="20191002T061028Z">
         <seg>PSM получается из платформо-независимой модели (Platform Independent Model, PIM), которая описывает ИС на более абстрактном уровне.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Program. vol.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110841Z" creationid="eugeneai" creationdate="20191002T110841Z">
+        <seg>Program. vol.</seg>
       </tuv>
     </tu>
     <tu>
@@ -126,10 +630,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Resource Description Framework</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T103806Z" creationid="eugeneai" creationdate="20191002T103806Z">
+        <seg>Resource Description Framework</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Rising the stage of code generation of IS within the development to abstract level of design allows us to produce IS prototypes as early as the specification are formalized.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T055442Z" creationid="eugeneai" creationdate="20191002T055442Z">
         <seg>Если проводить этап порождения исходного кода на этапах дизайна системы, тогда можно порождать прототипы системы сазу же как сформирована формализованна модели разрабатываемой ИС.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Rules recognize structures in the input graph elements and constructs code blocks.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111013Z" creationid="eugeneai" creationdate="20191002T111013Z">
+        <seg>Правила распознают композиции элементов входного графа и конструируют блоки кода.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Scenario is programmed as a special object defining transformation by means of calling &lt;u0&gt;|tr/N| rules.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T165816Z" creationid="eugeneai" creationdate="20191002T165816Z">
+        <seg>Также сценарии можно реализовывать как упорядоченные наборы правил (методов) вида &lt;u0&gt;|tr/N|.</seg>
       </tuv>
     </tu>
     <tu>
@@ -142,6 +670,134 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Special user interfaces were developed to control assignment a stereotype to an entity.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T164518Z" creationid="eugeneai" creationdate="20191002T164518Z">
+        <seg>[[Разработаны специальные интерфейсы пользователя для управления перечнем стереотипов.]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Springer Proceedings in Earth and Environmental Sciences.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110838Z" creationid="eugeneai" creationdate="20191002T110838Z">
+        <seg>Springer Proceedings in Earth and Environmental Sciences.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Springer, Cham, 2019, pp. 151--158.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110839Z" creationid="eugeneai" creationdate="20191002T110839Z">
+        <seg>Springer, Cham, 2019, pp. 151--158.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Stereotypes declare an extended set of properties for an object or relation, &lt;i3&gt;e.g.&lt;/i3&gt;, in UML Class Diagram stereotypes are used to define the kind of a class.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T162411Z" creationid="eugeneai" creationdate="20191002T162411Z">
+        <seg>Стереотипы задают расширенный набор атрибутов для объекта или связи, например, в диаграмме классов UML стереотипы используются для задания разновидности класса.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tag values allow one to associate a string value identified by a string key, which are somehow interpreted with a transformation procedure.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T163623Z" creationid="eugeneai" creationdate="20191002T163623Z">
+        <seg>Теговые значения позволяют связать некоторое строковое значение с ключом (строкой), которые так или иначе интерпретируются с процедурой трансформации.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>That's why we require either to store all the input model data in SW graphs of ontologies, or provide an interface representing the source model as the ontology graph.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T105134Z" creationid="eugeneai" creationdate="20191002T105134Z">
+        <seg>Поэтому мы требуем, чтобы либо хранить все входные модели данных в виде графов СВ при помощи соответствующих онтологий, или создавать конвертер, представляющий исходные модели в виде таких графов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;i0&gt;object&lt;/i0&gt; of the research is the development of a technology for transformation implementation as knowledge based system and be capable to process heterogeneous model sources as a complex of CIM and PIM. The &lt;i1&gt;subject&lt;/i1&gt; of the paper is to describe above proposed data representation and transformation techniques.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T104701Z" creationid="eugeneai" creationdate="20191002T104701Z">
+        <seg>&lt;i0&gt;Объектом&lt;/i0&gt; исследования является разработка технологии реализации трансформации как системы знаний такой, чтобы была возможность обработки модельных данных CIM и PIM из разнородных источников. &lt;i1&gt;Предметом&lt;/i1&gt; статьи является описание предложенного выше представления данных и методов преобразования моделей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;u0&gt;|code_block|--objects consist of source code string lines, structures denoting source code, objects, and other code blocks.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T165447Z" creationid="eugeneai" creationdate="20191002T165447Z">
+        <seg>Объекты &lt;u0&gt;|code_block| внутри содержат строки исходного кода, структуры, из которых порождаются куски исходного кода, объекты LogTalk и другие блоки кода.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The MDA tools consists of the following main components: &lt;n0&gt; &lt;u0&gt; source model server (2), which stores and retrieve model data as RDF triples; &lt;u1&gt; MDA transformation engine (1), which queries data from the server other SPARQL compliant servers (4); &lt;u2&gt; the CIM (3) and PIM (6) model data sources; &lt;u3&gt; indexing engine (5), which provides persistent utility means for text data storage and text processing interfaces.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110308Z" creationid="eugeneai" creationdate="20191002T110308Z">
+        <seg>Инструменты MDA состоят из следующих основных компонентов: &lt;n0&gt; &lt;u0&gt; сервер исходных моделей (2), который хранит модель данных в виде RDF-троек; &lt;u1&gt; механизм трансформации (1), который запрашивает данные с сервера моделей и других SPARQL-совместимых серверов (4); &lt;u2&gt; конвертеры форматов представления моделей CIM (3) и PIM (6); &lt;u3&gt; сервис полнотекстового индекса (5).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The SPARQL queries are encapsulated in methods.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111347Z" creationid="eugeneai" creationdate="20191002T111347Z">
+        <seg>Запросы SPARQL инкапсулируются в методах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The architecture of the transformation tools is based on the provision of uniformity of the transformation rules language and predicate input data representation.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T104914Z" creationid="eugeneai" creationdate="20191002T104914Z">
+        <seg>Архитектура средства трансформации основывается на обеспечения единообразия языка правил трансформации язык и [[предикативного]] представления входных данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The category implies interface of &lt;i0&gt;code&lt;u0&gt;object&lt;/i0&gt; for the object being enriched with it.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T121113Z" creationid="eugeneai" creationdate="20191002T121113Z">
+        <seg>Представленная категория требует, чтобы контекстный объект реализовывал интерфейс &lt;i0&gt;code&lt;u0&gt;object&lt;/i0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The code block object have the following interface: &lt;n0&gt;{logtalk} :- protocol(code_block_proto).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T165303Z" creationid="eugeneai" creationdate="20191002T165303Z">
+        <seg>Итерфейс блока кода имеет следующий вид: &lt;n0&gt;{logtalk} :- protocol(code_block_proto).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following example shows rendering class for Python classes.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111433Z" creationid="eugeneai" creationdate="20191002T111433Z">
+        <seg>Следующий пример показывает как происходит порождение класса языка Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The idea was taken from &lt;u1&gt;|llvmlite| library.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T165224Z" creationid="eugeneai" creationdate="20191002T165224Z">
+        <seg>Идея взята из реализации блока кода в библиотеке &lt;u1&gt;|llvmlite|.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The kernel of the system is MDA tool, which is a set of transformational modules (T--modules).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110724Z" creationid="eugeneai" creationdate="20191002T110724Z">
+        <seg>Подсистема MDA представляет собой набор модулей трансформации (Т--модули).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The most investigated transformational approach of code generation, that goes beyond the CASE, is Model Driven Architecture (MDA).</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T060628Z" creationid="eugeneai" creationdate="20191002T060628Z">
@@ -150,10 +806,42 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The object imports category &lt;u6&gt;|named|, which defines behavior for named instances.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T113152Z" creationid="eugeneai" creationdate="20191002T113152Z">
+        <seg>Объект импортирует категорию &lt;u6&gt;|named|, которая определяет поведение поименованных языковых структур (переменных, типов, классов и т.д.).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The objects are represented in the LogTalk programming language.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T054157Z" creationid="eugeneai" creationdate="20191002T054157Z">
         <seg>Объекты представлены в языка программирования LogTalk.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ontologies could be served as RDF--files of triples or with servers having SPARQL endpoints.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T105453Z" creationid="eugeneai" creationdate="20191002T105453Z">
+        <seg>Графы хранятся в виде RDF-файлов или загружаются с сервера через точки доступа SPARQL.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The popular ways of model transformation, like ATL&lt;p1&gt;, are based on transformation one XMI model to another XMI, and then to the code.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T103650Z" creationid="eugeneai" creationdate="20191002T103650Z">
+        <seg>Популярные способы трансформации модели, как ATL&lt;p1&gt;, основаны на трансформации одной XMI-моделm в другую XMI, а затем уже в код.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The previous listing uses static parameterized object &lt;u0&gt;|query/1|, whose context argument is a graph representing model under transformation.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111206Z" creationid="eugeneai" creationdate="20191002T111206Z">
+        <seg>Предыдущий листинг использует статический параметризованный объект &lt;u0&gt;|query/1|, с контекст-аргументом -- графом, представляющим трансформируемую модельно.</seg>
       </tuv>
     </tu>
     <tu>
@@ -168,8 +856,40 @@
       <tuv lang="EN-US">
         <seg>The process of tradition programming should allow us to develop specialized versions for peculiar software design approaches, with conserving common practices as libraries.</seg>
       </tuv>
-      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T060208Z" creationid="eugeneai" creationdate="20191002T060208Z">
-        <seg>Программирование трансформаций необходимо стелать близким к обычному традиционноц программированию, позволяющему, в частности, создавать из существующих специализированные версии, а также накапливать опыт в библиотеках объектов и компонент.</seg>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T103101Z" creationid="eugeneai" creationdate="20191002T060208Z">
+        <seg>Программирование трансформаций необходимо стелать близким к обычному традиционной программированию, позволяющему, в частности, создавать из существующих специализированные версии, а также накапливать опыт в библиотеках объектов и компонент.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The references of an entity of a model from another model can be done as RDF names of a form &lt;i1&gt;&lt;prefix&gt;:&lt;identifier&gt;&lt;/i1&gt;, where &lt;i2&gt;&lt;prefix&gt;&lt;/i2&gt; is the prefix of the model, where &lt;i3&gt;&lt;identifier&gt;&lt;/i3&gt; is defined.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T161652Z" creationid="eugeneai" creationdate="20191002T161652Z">
+        <seg>Межмодельные ссылки также делаются при помощи URI или префиксной формы RDF &lt;i1&gt;&lt;prefix&gt;:&lt;identifier&gt;&lt;/i1&gt;, где &lt;i2&gt;&lt;prefix&gt;&lt;/i2&gt; -- это аббревиатура подграфа, представляющего модель, в которой задан &lt;i3&gt;&lt;identifier&gt;&lt;/i3&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The relation refers to a &lt;i3&gt;literal&lt;/i3&gt; string with a corresponding name in a natural language (defined by an attribute).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T130143Z" creationid="eugeneai" creationdate="20191002T130143Z">
+        <seg>Субъектом отношения является URI сущности, а объектом -- &lt;i3&gt;литерал&lt;/i3&gt; (строка) и метка естественного языка, задаваемая дополнительным атрибутом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The same is used to describe relations between use cases in Use Case diagram.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T162702Z" creationid="eugeneai" creationdate="20191002T162702Z">
+        <seg>Те же идею используются, чтобы описать связи между вариантами использования в UML-диаграмме вариантов использования.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The second category definition as well as all the sources of transformation objects are stored at &lt;i1&gt;github.com&lt;/i1&gt; &lt;n0&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T121222Z" creationid="eugeneai" creationdate="20191002T121222Z">
+        <seg>Текст другой категории и тексты остальных объектов трансформации хранятся на сервере &lt;i1&gt;github.com&lt;/i1&gt; &lt;n0&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -182,10 +902,90 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The usage experience of stereotypes and tag values resulted in recognition of the fact, that assigning a stereotype usually implies definition of a set of regular tag values.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T164243Z" creationid="eugeneai" creationdate="20191002T164243Z">
+        <seg>Опыт использования стереотипов и теговых значений показал, что назначение определенного стереотипа, как правило, предполагает определение набора одного и того же перечня теговых значений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These properties are implemented as two categories.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T120848Z" creationid="eugeneai" creationdate="20191002T120716Z">
+        <seg>Эти свойства реализуются в категориях</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This allows us represent the transformation as a scenario of objects exchanging messages, querying a SW graph fact database on model structures and SW data.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T104301Z" creationid="eugeneai" creationdate="20191002T104301Z">
+        <seg>Это позволяет нам представлять трансформации как сценарии из объектов, обменивающихся сообщениям и запрашивающих модельные данные из графа СВ.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is a powerful LogTalk abstraction instrument, which reduces necessity of adapter object creation in dynamic memory.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111330Z" creationid="eugeneai" creationdate="20191002T111330Z">
+        <seg>Это мощный инструмент абстрагирования LogTalk, который отменяет необходимость создавать объекты-адаптеры протокола в динамической памяти.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Transformation process is organized as a scenario of connected transformational objects (in terms of LogTalk).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T165642Z" creationid="eugeneai" creationdate="20191002T165642Z">
+        <seg>Процесс трансформации организован в виде сценария, составленного из объектов, посылающих сообщения друг другу.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>UML standard of version 2.4 fixed this observation, allowing formal definition the set of tag values for user-defined stereotypes.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T164406Z" creationid="eugeneai" creationdate="20191002T164406Z">
+        <seg>Стандарт UML версии 2.4 этот момент учтен, и современные средства визуального моделирования позволяют формально определять данный перечень для собственных стереотипов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>UML-2.4 explicit stereotype descriptions is a powerful tool for attributing entities with additional information.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T164943Z" creationid="eugeneai" creationdate="20191002T164943Z">
+        <seg>Таким образом, явная спецификация стереотипов в UML-2.4 -- это мощный инструмент расширения семантики элементов визуальных моделей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>URL:&lt;u8&gt;{https://doi.org/10.1016/j.procs.2016.04.229} &lt;u4&gt;{Rhazali} Y. Rhazali, Y. Hadi, I. Chana, M. Lahmer, A. Rhattoy, ``A model transformation in model driven architecture from business model to web model,'' IAENG International Journal of Computer Science, vol. 45(1), 2018, 104-117, URL:&lt;u9&gt;{http://www.iaeng.org/IJCS/issues_v45/issue_1/IJCS_45_1_16.pdf}.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110833Z" creationid="eugeneai" creationdate="20191002T110833Z">
+        <seg>URL:&lt;u8&gt;{https://doi.org/10.1016/j.procs.2016.04.229} &lt;u4&gt;{Rhazali} Y. Rhazali, Y. Hadi, I. Chana, M. Lahmer, A. Rhattoy, ``A model transformation in model driven architecture from business model to web model,'' IAENG International Journal of Computer Science, vol. 45(1), 2018, 104-117, URL:&lt;u9&gt;{http://www.iaeng.org/IJCS/issues_v45/issue_1/IJCS_45_1_16.pdf}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Usage of such kind of transformation approach allows us to develop software system carcasses on the level of abstract models, involve various sources of model data in the transformation, define and structuring conversion knowledge as objects.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T054622Z" creationid="eugeneai" creationdate="20191002T054622Z">
         <seg>Использования такого подхода к трансформации позволяет разрабатывать исходный код каркасов программных систем еще на этапе общего дизайна, включать в трансформацию различные источники модельных данных, задавать и структурировать знания. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User-defined stereotypes can express various aspects of classes, &lt;i4&gt;e.g.&lt;/i4&gt;, we can define the storage class as an ORM&lt;p0&gt; for a class by &lt;i9&gt;&lt;&lt;RDBMSRecord&gt;&gt;&lt;/i9&gt; stereotype.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T163220Z" creationid="eugeneai" creationdate="20191002T163220Z">
+        <seg>Новые стереотипы могут задавать разработчики, например, при разработке ИС удобно использовать ORM&lt;p0&gt;, при этом тот факт, что конкретный класс будет отображаться в запись реляционной базы данных можно при помощи назначенного ему стереотипа &lt;i9&gt;&lt;&lt;RDBMSRecord&gt;&gt;&lt;/i9&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using RDF, we can change the tag name to &lt;i3&gt;dc:title&lt;/i3&gt; and value can be interpreted as URI, &lt;i5&gt;e.g.&lt;/i5&gt;, to a &lt;i4&gt;DBPedia&lt;/i4&gt; object.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T164055Z" creationid="eugeneai" creationdate="20191002T164055Z">
+        <seg>При использовании RDF имена тегов можно задавать в форме &lt;i3&gt;dc:title&lt;/i3&gt;, а значение тега интерпретировать и как литерал и как URI, например, на объект &lt;i4&gt;DBPedia&lt;/i4&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -198,10 +998,90 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We propose a more general approach, where for all model sources a converter to RDF&lt;p0&gt; format, the standard SW data and knowledge representation, and the transformation is defined as object-oriented logical program in the LogTalk language.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T104058Z" creationid="eugeneai" creationdate="20191002T104058Z">
+        <seg>Мы предлагаем более общий подход, где для всех исходных типов моделей разрабатываются конвертера в формат RDF&lt;p0&gt;, в стандартное представление данных и знаний в СВ, а трансформация программируется в виде объектно-ориентированной логической программы на языке LogTalk.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>XMI::rdf(ID, rdfs:label, literal(Name)).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111355Z" creationid="eugeneai" creationdate="20191002T111355Z">
+        <seg>XMI::rdf(ID, rdfs:label, literal(Name)).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>XML Metadata Interchange</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T061301Z" creationid="eugeneai" creationdate="20191002T061301Z">
         <seg>XML Metadata Interchange</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[AttrName, AttrName]) ), AttrAssigns), root::unindent, AttrList=[ConstructorDef|AttrAssigns]; root::iswritef(ConstructorDef, 'def __init__(self): ', []), root::indent, root::iswritef(Pass,'pass', []), root::unindent, AttrList=[ConstructorDef, Pass] ), ( ::item(methods(Methods))-&gt; Methods::render(MethodList); MethodList=[] ), lists::append(AttrList,MethodList,StringList), root::unindent, Result=[Signature|StringList].</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111528Z" creationid="eugeneai" creationdate="20191002T111528Z">
+        <seg>[AttrName, AttrName]) ), AttrAssigns), root::unindent, AttrList=[ConstructorDef|AttrAssigns]; root::iswritef(ConstructorDef, 'def __init__(self): ', []), root::indent, root::iswritef(Pass,'pass', []), root::unindent, AttrList=[ConstructorDef, Pass] ), ( ::item(methods(Methods))-&gt; Methods::render(MethodList); MethodList=[] ), lists::append(AttrList,MethodList,StringList), root::unindent, Result=[Signature|StringList].</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[htb]</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T105714Z" creationid="eugeneai" creationdate="20191002T105714Z">
+        <seg>[htb]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``A model-driven approach and a tool to support creation of rule-based expert systems for industrial safety expertise,'' Proc.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110843Z" creationid="eugeneai" creationdate="20191002T110843Z">
+        <seg>``A model-driven approach and a tool to support creation of rule-based expert systems for industrial safety expertise,'' Proc.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``Model transformation with ATL into MDA from CIM to PIM structured through MVC,''Procedia Computer Science 83 (2016) 1096-–1101.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110832Z" creationid="eugeneai" creationdate="20191002T110832Z">
+        <seg>``Model transformation with ATL into MDA from CIM to PIM structured through MVC,''Procedia Computer Science 83 (2016) 1096-–1101.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>attribute(Name, ClassID, ID):- ::xmi(XMI), XMI::graph(G), XMI::rdf(ClassID, G:ownedAttribute, ID),</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111354Z" creationid="eugeneai" creationdate="20191002T111354Z">
+        <seg>attribute(Name, ClassID, ID):- ::xmi(XMI), XMI::graph(G), XMI::rdf(ClassID, G:ownedAttribute, ID),</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>attributes(Attributes):- ::prepend(attributes(Attributes)).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111522Z" creationid="eugeneai" creationdate="20191002T111522Z">
+        <seg>attributes(Attributes):- ::prepend(attributes(Attributes)).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>class(Name, ID):- ::xmi(XMI), XMI::rdf(ID,rdf:type,uml,'Class'), XMI::rdf(ID,rdfs:label, literal(Name)).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111353Z" creationid="eugeneai" creationdate="20191002T111353Z">
+        <seg>class(Name, ID):- ::xmi(XMI), XMI::rdf(ID,rdf:type,uml,'Class'), XMI::rdf(ID,rdfs:label, literal(Name)).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>classlist(ClassList):- ::prepend(classlist(ClassList)).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111521Z" creationid="eugeneai" creationdate="20191002T111521Z">
+        <seg>classlist(ClassList):- ::prepend(classlist(ClassList)).</seg>
       </tuv>
     </tu>
     <tu>
@@ -214,10 +1094,154 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>method(Name, ClassID, ID):- ::xmi(XMI), XMI::graph(G), XMI::rdf(ClassID, G:ownedOperation, ID), XMI::rdf(ID, rdfs:label, literal(Name)).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111357Z" creationid="eugeneai" creationdate="20191002T111357Z">
+        <seg>method(Name, ClassID, ID):- ::xmi(XMI), XMI::graph(G), XMI::rdf(ClassID, G:ownedOperation, ID), XMI::rdf(ID, rdfs:label, literal(Name)).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>methods(MethodList):- ::append(methods(MethodList)).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111523Z" creationid="eugeneai" creationdate="20191002T111523Z">
+        <seg>methods(MethodList):- ::append(methods(MethodList)).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>model driven architecture, logical inference, resource description framework, LogTalk</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T054821Z" creationid="eugeneai" creationdate="20191002T054821Z">
         <seg>модельно-управляемаяархитектура, логический вывод, 	RDF, LogTalk</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>name(Name):- ::prepend(name(Name)).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T120855Z" creationid="eugeneai" creationdate="20191002T120855Z">
+        <seg>name(Name):- ::prepend(name(Name)).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>no.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110826Z" creationid="eugeneai" creationdate="20191002T110826Z">
+        <seg>no.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>of the 12-th International Forum on Knowledge Asset Dynamics (IFKAD-2017) -- Russia, St. Petersburg : Graduate School of 16 Management of St. Petersburg University.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110844Z" creationid="eugeneai" creationdate="20191002T110844Z">
+        <seg>of the 12-th International Forum on Knowledge Asset Dynamics (IFKAD-2017) -- Russia, St. Petersburg : Graduate School of 16 Management of St. Petersburg University.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>package(Package):- parameter(1, Package).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111019Z" creationid="eugeneai" creationdate="20191002T111019Z">
+        <seg>package(Package):- parameter(1, Package).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>pp.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110848Z" creationid="eugeneai" creationdate="20191002T110848Z">
+        <seg>pp.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>pp. 41--46.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110828Z" creationid="eugeneai" creationdate="20191002T110828Z">
+        <seg>pp. 41--46.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>profile(Profile):- parameter(2, Profile).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111020Z" creationid="eugeneai" creationdate="20191002T111020Z">
+        <seg>profile(Profile):- parameter(2, Profile).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>profile(Profile):- parameter(3, Profile).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111021Z" creationid="eugeneai" creationdate="20191002T111021Z">
+        <seg>profile(Profile):- parameter(3, Profile).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>profiles(L):- findall(Profile, ::profile(Profile), L).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111023Z" creationid="eugeneai" creationdate="20191002T111023Z">
+        <seg>profiles(L):- findall(Profile, ::profile(Profile), L).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>render(Result):- ^^render(Name), ( ::item(classlist(List)) -&gt; List::render(ClassList), root::iswritef(Signature,'class [Name, ClassList]); root::iswritef(Signature,'class [Name]) ), root::indent, ( ::item(attributes(Attributes))-&gt; Attributes::render(DefAttrList), root::iswritef(ConstructorDef, 'def __init__(self, [DefAttrList]), root::indent, Attributes::items(InstanceAttrs), findall(S, ( lists::member(Attr, InstanceAttrs), Attr::item(name(AttrName)), root::iswritef(S, "self.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111527Z" creationid="eugeneai" creationdate="20191002T111527Z">
+        <seg>render(Result):- ^^render(Name), ( ::item(classlist(List)) -&gt; List::render(ClassList), root::iswritef(Signature,'class [Name, ClassList]); root::iswritef(Signature,'class [Name]) ), root::indent, ( ::item(attributes(Attributes))-&gt; Attributes::render(DefAttrList), root::iswritef(ConstructorDef, 'def __init__(self, [DefAttrList]), root::indent, Attributes::items(InstanceAttrs), findall(S, ( lists::member(Attr, InstanceAttrs), Attr::item(name(AttrName)), root::iswritef(S, "self.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>render(String):- ::item(name(Name)), ::renderitem(name(Name), String).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T120856Z" creationid="eugeneai" creationdate="20191002T120856Z">
+        <seg>render(String):- ::item(name(Name)), ::renderitem(name(Name), String).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>renderitem(Item, Result):- ^^renderitem(Item, Result).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111524Z" creationid="eugeneai" creationdate="20191002T111524Z">
+        <seg>renderitem(Item, Result):- ^^renderitem(Item, Result).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>renderitem(name(Name), String):-!, atom_string(Name, String).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T120855Z" creationid="eugeneai" creationdate="20191002T120855Z">
+        <seg>renderitem(name(Name), String):-!, atom_string(Name, String).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>tr(attribute, Attribute, ClassID, AttributeID):- ::package(Package), query(Package)::attribute(Name,ClassID,AttrID), create_object(Attribute, [instantiates(param)],[],[]), Attribute::append(name(Name)).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111026Z" creationid="eugeneai" creationdate="20191002T111026Z">
+        <seg>tr(attribute, Attribute, ClassID, AttributeID):- ::package(Package), query(Package)::attribute(Name,ClassID,AttrID), create_object(Attribute, [instantiates(param)],[],[]), Attribute::append(name(Name)).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>tr(class, Class, ClassID):- ::package(Package), query(Package)::class(Name, ClassID), create_object(Class, [instantiates(class)],[],[]), create_object(Attributes, [instantiates(params)],[],[]), create_object(Methods, [instantiates(methodlist)],[],[]), Class::append(name(Name)), forall( ::tr(attribute,Attribute,ClassID,_AttrID), Attributes::append(Attribute) ), forall( ::tr(method, Method, ClassID, _MethodID), Methods::append(Method) ), Class::append(attributes(Attributes)), Class::append(methods(Methods)).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111025Z" creationid="eugeneai" creationdate="20191002T111025Z">
+        <seg>tr(class, Class, ClassID):- ::package(Package), query(Package)::class(Name, ClassID), create_object(Class, [instantiates(class)],[],[]), create_object(Attributes, [instantiates(params)],[],[]), create_object(Methods, [instantiates(methodlist)],[],[]), Class::append(name(Name)), forall( ::tr(attribute,Attribute,ClassID,_AttrID), Attributes::append(Attribute) ), forall( ::tr(method, Method, ClassID, _MethodID), Methods::append(Method) ), Class::append(attributes(Attributes)), Class::append(methods(Methods)).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>tr(method, Method, ClassID, MethodID):- ::package(Package), query(Package)::method(Name,ClassID,MethodID), create_object(Method, [instantiates(method)],[],[]), Method::append(name(Name)).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111028Z" creationid="eugeneai" creationdate="20191002T111028Z">
+        <seg>tr(method, Method, ClassID, MethodID):- ::package(Package), query(Package)::method(Name,ClassID,MethodID), create_object(Method, [instantiates(method)],[],[]), Method::append(name(Name)).</seg>
       </tuv>
     </tu>
     <tu>
@@ -230,10 +1254,42 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>vol. 100, 2018, p. 133-146.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110835Z" creationid="eugeneai" creationdate="20191002T110835Z">
+        <seg>vol. 100, 2018, p. 133-146.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>vol. 7, no.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110823Z" creationid="eugeneai" creationdate="20191002T110823Z">
+        <seg>vol. 7, no.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>xmi(XMI) :- parameter(1, XMI).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111352Z" creationid="eugeneai" creationdate="20191002T111352Z">
+        <seg>xmi(XMI) :- parameter(1, XMI).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>{</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053409Z" creationid="eugeneai" creationdate="20191002T053409Z">
         <seg>{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{99}</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110820Z" creationid="eugeneai" creationdate="20191002T110820Z">
+        <seg>{99}</seg>
       </tuv>
     </tu>
     <tu>
@@ -254,6 +1310,38 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>{Architecture of MDA transformational tools}</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T105745Z" creationid="eugeneai" creationdate="20191002T105745Z">
+        <seg>{Архитектура инструментальных средств трансформации}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{Clio} J. Wielemaker, W. Beek, M. Hildebrand, J. Ossenbruggen, ``ClioPatria: a SWI-Prolog infrastructure for the Semantic Web,'' Semantic Web.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110822Z" creationid="eugeneai" creationdate="20191002T110822Z">
+        <seg>{Clio} J. Wielemaker, W. Beek, M. Hildebrand, J. Ossenbruggen, ``ClioPatria: a SWI-Prolog infrastructure for the Semantic Web,'' Semantic Web.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{Defining rules of transformation}</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T165538Z" creationid="eugeneai" creationdate="20191002T165538Z">
+        <seg>{Определение правил преобразования}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{Entity denotation}</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T121345Z" creationid="eugeneai" creationdate="20191002T121345Z">
+        <seg>{Определение сущностей}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>{Evgeny Cherkashin, Alexey Shigarov, Viacheslav Paramonov</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053528Z" creationid="eugeneai" creationdate="20191002T053528Z">
@@ -262,10 +1350,50 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>{Model extensions}</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T162021Z" creationid="eugeneai" creationdate="20191002T162021Z">
+        <seg>{Средства расширения семантики моделей}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{Other sources of model data}</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T164956Z" creationid="eugeneai" creationdate="20191002T164956Z">
+        <seg>{Другие источники модельных данных}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{PSM Representation}</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T165025Z" creationid="eugeneai" creationdate="20191002T165025Z">
+        <seg>{Представление PSM}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>{Times New Roman}</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053415Z" creationid="eugeneai" creationdate="20191002T053415Z">
         <seg>{Times New Roman}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{atl} F. Jouault, F. Allilaire, J. Bezivin, I. Kurtev, ``ATL: a model transformation tool,'' Sci.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110839Z" creationid="eugeneai" creationdate="20191002T110839Z">
+        <seg>{atl} F. Jouault, F. Allilaire, J. Bezivin, I. Kurtev, ``ATL: a model transformation tool,'' Sci.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{bit2019} E. Cherkashin, A. Shigarov, F. Malkov, A. Morozov, ``An instrumental environment for metagenomic analysis,'' In: Bychkov I., Voronin V. (eds) Information Technologies in the Research of Biodiversity.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110837Z" creationid="eugeneai" creationdate="20191002T110837Z">
+        <seg>{bit2019} E. Cherkashin, A. Shigarov, F. Malkov, A. Morozov, ``An instrumental environment for metagenomic analysis,'' In: Bychkov I., Voronin V. (eds) Information Technologies in the Research of Biodiversity.</seg>
       </tuv>
     </tu>
     <tu>
@@ -282,6 +1410,30 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T053407Z" creationid="eugeneai" creationdate="20191002T053407Z">
         <seg>{fontsize=&lt;u1&gt;}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{logtalk} :- object(class, specializes(code_block), imports([named])).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111519Z" creationid="eugeneai" creationdate="20191002T111519Z">
+        <seg>{logtalk} :- object(class, specializes(code_block), imports([named])).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{logtalk} :- object(direct(_Package,_LocalProf,_CodeProf)).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111017Z" creationid="eugeneai" creationdate="20191002T111017Z">
+        <seg>{logtalk} :- object(direct(_Package,_LocalProf,_CodeProf)).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{logtalk} :- object(query(_XMI)).</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111349Z" creationid="eugeneai" creationdate="20191002T111349Z">
+        <seg>{logtalk} :- object(query(_XMI)).</seg>
       </tuv>
     </tu>
     <tu>
