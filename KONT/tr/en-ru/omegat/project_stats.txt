@@ -1,14 +1,14 @@
-10/3/19, 12:58 AM
+10/3/19, 12:10 PM
 Project Statistics
 
                  	Segments	Words	Characters (without spaces)	Characters (including spaces)	#Files	
 Total:           	     289	 4666	                      28354	                        32455	     1	
-Remaining:       	     107	 2064	                      11977	                        13934	     1	
+Remaining:       	      61	 1164	                       6986	                         8088	     1	
 Unique:          	     287	 4664	                      28328	                        32427	     1	
-Unique Remaining:	     107	 2064	                      11977	                        13934	     1	
+Unique Remaining:	      61	 1164	                       6986	                         8088	     1	
 
 
 Individual File Statistics:
 
 File Name    	Total Segments	Remaining Segments	Unique Segments	Unique Remaining Segments	Total Words	Remaining Words	Unique Words	Unique Remaining Words	Total Characters (without spaces)	Remaining Characters (without spaces)	Unique Characters (without spaces)	Unique Remaining Characters (without spaces)	Total Characters (including spaces)	Remaining Characters (including spaces)	Unique Characters (including spaces)	Unique Remaining Characters (including spaces)	
-tgr-paper.tex	           289	               107	            287	                      107	       4666	           2064	        4664	                  2064	                            28354	                                11977	                             28328	                                       11977	                              32455	                                  13934	                               32427	                                         13934	
+tgr-paper.tex	           289	                61	            287	                       61	       4666	           1164	        4664	                  1164	                            28354	                                 6986	                             28328	                                        6986	                              32455	                                   8088	                               32427	                                          8088	

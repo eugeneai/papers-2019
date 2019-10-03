@@ -278,6 +278,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>All relations and attributes must be expressed in a SW ontology, which should preferably be a standard one and have a publicly accessible formal definition.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T030350Z" creationid="eugeneai" creationdate="20191003T030350Z">
+        <seg>Все отношения и атрибуты должны быть формально описаны в соответствующей онтологии, предпочтительно являющейся стандартной и общедоступной.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>An entity can be named by means of a relation with its URI, <bpt i="0" x="0">&lt;i0&gt;</bpt>e.g.<ept i="0">&lt;/i0&gt;</ept>, <bpt i="1" x="1">&lt;i1&gt;</bpt>dc:title<ept i="1">&lt;/i1&gt;</ept> or <bpt i="2" x="2">&lt;i2&gt;</bpt>rdfs:label<ept i="2">&lt;/i2&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T125952Z" creationid="eugeneai" creationdate="20191002T125952Z">
@@ -374,6 +382,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Conclusion</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T040855Z" creationid="eugeneai" creationdate="20191003T040855Z">
+        <seg>Заключение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Dispute these notations additional data for transformation can be obtained from Semantic Web (SW), for example, ontology definitions, literal names of entities in various natural languages, current state of processes, and so on.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T103446Z" creationid="eugeneai" creationdate="20191002T103446Z">
@@ -386,6 +402,22 @@
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T110745Z" creationid="eugeneai" creationdate="20191002T110745Z">
         <seg>Каждый Т--Модуль в общем случае является параметризованным объектом LogTalk.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Each block of the diagram defines an operation, which is carried on over a set of input files by one of 147 Mothur modules; the result is stored in output files.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T034419Z" creationid="eugeneai" creationdate="20191003T034419Z">
+        <seg>Каждый блок диаграммы определяет операцию, которая преобразует набор входных файлов в набор выходных.  В Mothur находится 147 модулей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Each block structure, namely, the sets of input and output connections, together with parameters, reflects the interface of Mothur modules.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T034736Z" creationid="eugeneai" creationdate="20191003T034736Z">
+        <seg>Структура каждого блока, а именно, входные и выходные соединения, а также внутренние параметры, отражают интерфейсы и структуры модулей Mothur.</seg>
       </tuv>
     </tu>
     <tu>
@@ -414,10 +446,26 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>For example in Fig. <it pos="begin" x="0">&lt;n0&gt;</it> CIM (3) drawn in Modelio <it pos="begin" x="1">&lt;n1&gt;</it> is converted to triples with a special module ``XMI to RDF converter''.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T023851Z" creationid="eugeneai" creationdate="20191003T023851Z">
+        <seg>Например, на рисунке <it pos="begin" x="0">&lt;n0&gt;</it> CIM (3) сконструирована в редакторе Modelio <it pos="begin" x="1">&lt;n1&gt;</it> и,  затем, преобразована в тройки в модуле ``Конвернтер XMI в RDF''.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>For example, all UML diagrams support <bpt i="0" x="0">&lt;i0&gt;</bpt>stereotypes<ept i="0">&lt;/i0&gt;</ept>, <bpt i="1" x="1">&lt;i1&gt;</bpt>tag values<ept i="1">&lt;/i1&gt;</ept>, and <bpt i="2" x="2">&lt;i2&gt;</bpt>object constrains<ept i="2">&lt;/i2&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T162236Z" creationid="eugeneai" creationdate="20191002T162236Z">
         <seg>Например, все диаграммы UML поддерживают <bpt i="0" x="0">&lt;i0&gt;</bpt>стереотипы<ept i="0">&lt;/i0&gt;</ept> (stereotypes), <bpt i="1" x="1">&lt;i1&gt;</bpt>теговые значения<ept i="1">&lt;/i1&gt;</ept> (tag values) и <bpt i="2" x="2">&lt;i2&gt;</bpt>ограничения над объектами<ept i="2">&lt;/i2&gt;</ept> (object constrains).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For example, in our project <it pos="begin" x="0">&lt;n0&gt;</it>, the main PIM model is extracted from source code of the original library Mothur and converted to TTL (turtle) representation.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T031818Z" creationid="eugeneai" creationdate="20191003T031818Z">
+        <seg>Например, в нашем проекте <it pos="begin" x="0">&lt;n0&gt;</it>, основная модель PIM извлекается из исходного кода библиотеки Mothur и преобразуются в ТТЛ-формат.</seg>
       </tuv>
     </tu>
     <tu>
@@ -438,10 +486,42 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>For example, we can use DBPedia for constructing <bpt i="1" x="1">&lt;i1&gt;</bpt>title<ept i="1">&lt;/i1&gt;</ept> and <bpt i="2" x="2">&lt;i2&gt;</bpt>placeholder<ept i="2">&lt;/i2&gt;</ept> attributes of a web input widget, together with its label name text in user's locale and a help description.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T024846Z" creationid="eugeneai" creationdate="20191003T024846Z">
+        <seg>Например, мы можем использовать данные DBPedia для формирования атрибутов <bpt i="1" x="1">&lt;i1&gt;</bpt>title<ept i="1">&lt;/i1&gt;</ept> и <bpt i="2" x="2">&lt;i2&gt;</bpt>placeholder<ept i="2">&lt;/i2&gt;</ept> элемента input, а также соответствующий текст метки (label) с учетом локальных настроек пользователя и help-текста.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>From other hand side, converting the complex tree-like structures used for model representation to set of triples, <bpt i="0" x="0">&lt;i0&gt;</bpt>i.e.<ept i="0">&lt;/i0&gt;</ept>, facts for inference machine, enables us to use Prolog--based engines for transformation definition.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T025937Z" creationid="eugeneai" creationdate="20191003T025937Z">
+        <seg>С другой стороны, преобразование сложных древовидных структур, используемых для представления модели, в набор троек, т.е. фактов для машинного вывода, позволяет использовать Prolog в качестве основного механизма трансформации.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>GNU C Compiler</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T035125Z" creationid="eugeneai" creationdate="20191003T035125Z">
+        <seg>GNU C Compiler</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>If a class is assigned standard <bpt i="5" x="5">&lt;i5&gt;</bpt>&lt;&lt;interface&gt;&gt;<ept i="5">&lt;/i5&gt;</ept> stereotype then it is an interface definition.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T162517Z" creationid="eugeneai" creationdate="20191002T162517Z">
         <seg>Если классу назначен стандартный стереотип <bpt i="5" x="5">&lt;i5&gt;</bpt>&lt;&lt;interface&gt;&gt;<ept i="5">&lt;/i5&gt;</ept>, тогда класс превращается в определение интерфейса.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>In order to meet SW requirements, each model should be identified with a global URI, and in addition, its prefix could be defined.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T030232Z" creationid="eugeneai" creationdate="20191003T030232Z">
+        <seg>Согласно рекомендациям СВ, каждое описание модели должно быть помечено глобальным URI и, для удобства использования, некоторым синонимом-префиксом.</seg>
       </tuv>
     </tu>
     <tu>
@@ -470,6 +550,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Input structures of CIM and PIM models are converted into graphs with converter adapters.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T023721Z" creationid="eugeneai" creationdate="20191003T023721Z">
+        <seg>Исходные данные моделей CIM и PIM преобразуются в графы RDF специальными адаптерами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Introduction</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T054830Z" creationid="eugeneai" creationdate="20191002T054830Z">
@@ -494,10 +582,34 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>It enables system designer and programmer to use globally identified resource references (URI), and ontology representation standards (RDF, RDFa, TTL, etc.), which are implemented in various programming environments as libraries.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T025411Z" creationid="eugeneai" creationdate="20191003T025154Z">
+        <seg>Наличие этих стандартов позволяет разработчикам ИС использовать глобальные ссылки URI для идентификации конкретных объектов, а также стандарты представления онтологий RDF, RDFa, TTL.  Для большинства сред программирования реализованы библиотеки поддержки технологий СВ.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>LOD is based on RDF so our input model representation data can be used in generation the markup of the report templates and algorithms.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T040852Z" creationid="eugeneai" creationdate="20191003T040814Z">
+        <seg>Разметка LOD основана на RDF, поэтому данные о структуре моделей можно использовать в генераторах отчетов для разметки выводимых значений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Let us do some remarks.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T111550Z" creationid="eugeneai" creationdate="20191002T111550Z">
         <seg>Сделаем несколько пояснений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Linked Open Data</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T040309Z" creationid="eugeneai" creationdate="20191003T040309Z">
+        <seg>Linked Open Data</seg>
       </tuv>
     </tu>
     <tu>
@@ -542,6 +654,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Now we are working on extending the knowledge base to generate algorithms figuring out the set of acceptable connections depending input combination and module configuration.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T035842Z" creationid="eugeneai" creationdate="20191003T035842Z">
+        <seg>Сейчас мы работаем над расширением базы знаний для генерации алгоритмов, реализующих вычисление наборов допустимых комбинаций соединений в зависимости от комбинации входных и конфигурации модуля.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Object Relation Mapping</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T162043Z" creationid="eugeneai" creationdate="20191002T162043Z">
@@ -574,6 +694,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>One of auxiliary RDF--compliant data sources is <bpt i="0" x="0">&lt;i0&gt;</bpt>DBPedia.org<ept i="0">&lt;/i0&gt;</ept> containing naming literals in various languages, as well as relations, of the entities represented in Wikipedia.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T024300Z" creationid="eugeneai" creationdate="20191003T024300Z">
+        <seg>Одним из вспомогательных RDF--совместимым источником данных является сервер <bpt i="0" x="0">&lt;i0&gt;</bpt>DBPedia.org<ept i="0">&lt;/i0&gt;</ept>, содержащий именованные константы в различных языках, а также полезные отношения сущностей, представленных в Википедии.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>One of the main challenge of informational systems (IS), as well as other industrial software design, development is complexity expressed in its structure, integration with other software, fast prototyping on the stage of design.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T055450Z" creationid="eugeneai" creationdate="20191002T055136Z">
@@ -586,6 +714,22 @@
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T060431Z" creationid="eugeneai" creationdate="20191002T060431Z">
         <seg>Внедрение объектно-ориентированного программирования позволило бы создавать трансформации, структурируя базу знаний, позволяя проводить манипуляции с наборами знаний, инкапсулировать знания в трансформационные компоненты.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>One of the system's functioning mode will be interaction with big data storage, so after refining in the current stand--alone mode we are to develop a variant of the visual tools, which would able to query needed content from the storage and generate LOD<it pos="begin" x="0">&lt;p0&gt;</it>--marked up reports.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T040716Z" creationid="eugeneai" creationdate="20191003T040335Z">
+        <seg>Основным режимом функционирования полученной среды визуального программирования будет взаимодействие с сервером Больших данных, где хранятся результаты секвенирования собираемых проб.  После реализации данной части проекта необходимо будет разработать интерфейсы и конвертеры данных к серверу, а также системы порождения отчетов исследований, которые мы предполагаем размечать согласно методике LOD<it pos="begin" x="0">&lt;p0&gt;</it>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Overall time spent to develop the proposed transformation technique and the basic (structural) aspects of Mothur module representation is two human-months.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T035956Z" creationid="eugeneai" creationdate="20191003T035956Z">
+        <seg>Общее время, затраченное на доработку предложенной методики трансформации на основные (структурные) аспекты Mothur и реализацию модуля трансформации -- два человека-месяца.</seg>
       </tuv>
     </tu>
     <tu>
@@ -618,6 +762,22 @@
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T110841Z" creationid="eugeneai" creationdate="20191002T110841Z">
         <seg>Program. vol.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>RDF representation of the models</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T024911Z" creationid="eugeneai" creationdate="20191003T024911Z">
+        <seg>Представление данных моделей в RDF</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Related works</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T041003Z" creationid="eugeneai" creationdate="20191003T032123Z">
+        <seg>Исследования--аналоги</seg>
       </tuv>
     </tu>
     <tu>
@@ -658,6 +818,22 @@
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T165816Z" creationid="eugeneai" creationdate="20191002T165816Z">
         <seg>Также сценарии можно реализовывать как упорядоченные наборы правил (методов) вида <it pos="begin" x="0">&lt;u0&gt;</it>|tr/N|.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Similar converter is realized for PIM represented in UML.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T023949Z" creationid="eugeneai" creationdate="20191003T023949Z">
+        <seg>Аналогичный конвертер разработан и для PIM, представляемой диаграммами UML.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>So the transformation modules can be used as a verification system for the sources.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T040307Z" creationid="eugeneai" creationdate="20191003T040307Z">
+        <seg>Поэтому модули преобразования могут быть использованы в качестве верификации исходного кода Mothur.</seg>
       </tuv>
     </tu>
     <tu>
@@ -750,6 +926,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The analysis of the sources is performed with regular expressions and simple translation units.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T035204Z" creationid="eugeneai" creationdate="20191003T035204Z">
+        <seg>Анализ исходного кода выполняется при помощи регулярных выражений и простого синтаксического анализа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The architecture of the transformation tools is based on the provision of uniformity of the transformation rules language and predicate input data representation.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T104914Z" creationid="eugeneai" creationdate="20191002T104914Z">
@@ -774,6 +958,22 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The entity names and their relation expressed with the source notation must be convertible to the RDF definition upon request from transformation engine.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T030518Z" creationid="eugeneai" creationdate="20191003T030518Z">
+        <seg>Имена сущностей и их взаимосвязей, представленных в исходном формате визуального редактора, должны быть конвертируемыми в RDF по запросу во время трансформации.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The files are transferred between modules.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T034427Z" creationid="eugeneai" creationdate="20191003T034427Z">
+        <seg>Файлы передаются между модулями.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The following example shows rendering class for Python classes.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T111433Z" creationid="eugeneai" creationdate="20191002T111433Z">
@@ -790,10 +990,34 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The implemented internal logic allowed us to determine some errors in Mothur source module descriptions.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T040221Z" creationid="eugeneai" creationdate="20191003T040221Z">
+        <seg>Реализованная внутренняя логика позволила идентифицировать ошибки в исходном коде описаний модулей Mothur: процедура трансформации PIM в PSM для "бракованных" описаний попросту не выполнялась.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The kernel of the system is MDA tool, which is a set of transformational modules (T--modules).</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T110724Z" creationid="eugeneai" creationdate="20191002T110724Z">
         <seg>Подсистема MDA представляет собой набор модулей трансформации (Т--модули).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The logic of some Mothur modules functioning requires to make flexible set of output connection to make usage of complex modules to be more convenient for end user.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T035751Z" creationid="eugeneai" creationdate="20191003T035751Z">
+        <seg>По логике некоторых модулей Mothur заложена гибкая функциональность: набор выходных файлов зависит от набора входных и настроек модуля.  В идеальном случае в dataflow-блоках необходимо учитывать такие нюансы и предоставлять пользователю комбинации входов и выходов отражающие эти особенности.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The modules are implemented as classes in C++ with special structures describing each component so as this description would be allowed for analysis at run-time.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T034927Z" creationid="eugeneai" creationdate="20191003T034927Z">
+        <seg>Модули Mothur реализованы в виде классов на C++.  При помощи дополнительных структур каждый модуль дополнительно описывается, и эти описания доступны во время выполнения скрипта.</seg>
       </tuv>
     </tu>
     <tu>
@@ -814,6 +1038,14 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The object queries the Server of domain models, which is built on the base of ClioPatria <it pos="begin" x="0">&lt;n0&gt;</it>, other objects and other Ontology servers for structural patterns.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T023210Z" creationid="eugeneai" creationdate="20191003T023210Z">
+        <seg>Объект запрашивает у сервера моделей предметной области.  Сервер построен на базе системы ClioPatria <it pos="begin" x="0">&lt;n0&gt;</it>.  Объект может запрашивать также другие объекты и другие сервера онтологий.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The objects are represented in the LogTalk programming language.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T054157Z" creationid="eugeneai" creationdate="20191002T054157Z">
@@ -826,6 +1058,14 @@
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T105453Z" creationid="eugeneai" creationdate="20191002T105453Z">
         <seg>Графы хранятся в виде RDF-файлов или загружаются с сервера через точки доступа SPARQL.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The past 20 years of unhurried SW technologies development formed descriptions of commonly used domains and represented them as W3C approved ontologies.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T025123Z" creationid="eugeneai" creationdate="20191003T025123Z">
+        <seg>Последние 20 лет разработки технологий СВ привели к созданию стандартов описания большого количества предметных областей, причем большинство из них стандартизованы консорциумом W3C.</seg>
       </tuv>
     </tu>
     <tu>
@@ -854,10 +1094,26 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The procedure is represented as dataflow diagram constructed and evaluated in Rapidminer system.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T034245Z" creationid="eugeneai" creationdate="20191003T034245Z">
+        <seg>Процедура представлена в виде диаграммы потоков данных (dataflow diagram), они визуально конструируются и исполняются в системе Rapidminer.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The process of tradition programming should allow us to develop specialized versions for peculiar software design approaches, with conserving common practices as libraries.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T103101Z" creationid="eugeneai" creationdate="20191002T060208Z">
         <seg>Программирование трансформаций необходимо стелать близким к обычному традиционной программированию, позволяющему, в частности, создавать из существующих специализированные версии, а также накапливать опыт в библиотеках объектов и компонент.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The proposed technique is applied in developing software for visual scripting NGS<it pos="begin" x="0">&lt;p0&gt;</it> computational procedures such as sequencing data loading, filtering, gene alignment, result assessment <it pos="begin" x="0">&lt;n0&gt;</it>.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T034135Z" creationid="eugeneai" creationdate="20191003T034135Z">
+        <seg>Предложенная методика применяется при разработке программного обеспечения для проектирования визуальных сценариев вычислительных процедур в NGS<it pos="begin" x="0">&lt;p0&gt;</it>, таких как загрузки данных секвенирования, фильтрации, выравнивания гена, оценки качества результата <it pos="begin" x="0">&lt;n0&gt;</it>.</seg>
       </tuv>
     </tu>
     <tu>
@@ -902,10 +1158,34 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The states of the object represent PSM, which is translated into source code and initial data.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T023611Z" creationid="eugeneai" creationdate="20191003T023611Z">
+        <seg>Совокупность состояний объектов представляет собой PSM, которая на последнем этапе трансформации преобразуется в исходный код и начальные данные.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The usage experience of stereotypes and tag values resulted in recognition of the fact, that assigning a stereotype usually implies definition of a set of regular tag values.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T164243Z" creationid="eugeneai" creationdate="20191002T164243Z">
         <seg>Опыт использования стереотипов и теговых значений показал, что назначение определенного стереотипа, как правило, предполагает определение набора одного и того же перечня теговых значений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The visual instrument is intended for biologists allowing them to make bioinformatic exploration themselves.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T034541Z" creationid="eugeneai" creationdate="20191003T034541Z">
+        <seg>Визуальный инструмент предназначен для биологов, позволяя им самостоятельно проводить биоинформатические исследования.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>These patterns are analyzed and the results are stored as the objects states, <bpt i="0" x="0">&lt;i0&gt;</bpt>e.g.<ept i="0">&lt;/i0&gt;</ept>, cashed in the indexing engine.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T023453Z" creationid="eugeneai" creationdate="20191003T023453Z">
+        <seg>В полученные данные о структуре моделей анализируются и распознаются заданные структурные комбинации.  Результаты кэшируются в состояниях объектов или индексирутся механизмом индексирования текстов.</seg>
       </tuv>
     </tu>
     <tu>
@@ -926,10 +1206,66 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This approach makes the input stage modular, and, consequently, easier extensible with new model types.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T024054Z" creationid="eugeneai" creationdate="20191003T024054Z">
+        <seg>Такой подход позволяет расширять инструмент новыми видами моделями благодаря такой модульности.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This approach requires one-time programming for adaptation of the sources, but for each new version of the library we can obtain new version of the PSM without additional analysis.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T032048Z" creationid="eugeneai" creationdate="20191003T031835Z">
+        <seg>Этот подход требует один раз запрограммировать такой конвертер, и при выпуске новой версии библиотеки мы автоматом получаем новую версию PIM.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This information can be used to describe user interface properties of the program objects, and referred by URI's from devised models.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T024534Z" creationid="eugeneai" creationdate="20191003T024534Z">
+        <seg>Эта информация может быть использована для описания свойств элементов пользовательского интерфейса для редактирования объектов ИС, заданных в исходной модели.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This is a powerful LogTalk abstraction instrument, which reduces necessity of adapter object creation in dynamic memory.</seg>
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T111330Z" creationid="eugeneai" creationdate="20191002T111330Z">
         <seg>Это мощный инструмент абстрагирования LogTalk, который отменяет необходимость создавать объекты-адаптеры протокола в динамической памяти.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This is reflected as connections between blocks in the diagram.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T034500Z" creationid="eugeneai" creationdate="20191003T034500Z">
+        <seg>В диаграмме это отражается в виде связей между блоками.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This is why, we decided to represent the source model data in the SW framework too, enriching the existing knowledge with a specific domains.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T025754Z" creationid="eugeneai" creationdate="20191003T025754Z">
+        <seg>Именно поэтому, было решено использовать СВ как основной формат представления моделей, что обогащают имеющиеся знания предметных областях дополнительной спецификой.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This results in a globally approved in various software projects knowledge and data base, the common foundation of a domain description.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T025559Z" creationid="eugeneai" creationdate="20191003T025559Z">
+        <seg>В результате, отрасль ИТ постепенно на глобальном уровне накапливает и стандартизирует знания и данные предметных областей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Transformation generates Java modules implementing structural and operational features of blocks.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T035403Z" creationid="eugeneai" creationdate="20191003T035403Z">
+        <seg>Трансформация порождает модули Java, реализующие структуру и функции блоков.</seg>
       </tuv>
     </tu>
     <tu>
@@ -962,6 +1298,14 @@
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T110833Z" creationid="eugeneai" creationdate="20191002T110833Z">
         <seg>URL:<it pos="begin" x="8">&lt;u8&gt;</it>{https://doi.org/10.1016/j.procs.2016.04.229} <it pos="begin" x="4">&lt;u4&gt;</it>{Rhazali} Y. Rhazali, Y. Hadi, I. Chana, M. Lahmer, A. Rhattoy, ``A model transformation in model driven architecture from business model to web model,'' IAENG International Journal of Computer Science, vol. 45(1), 2018, 104-117, URL:<it pos="begin" x="9">&lt;u9&gt;</it>{http://www.iaeng.org/IJCS/issues_v45/issue_1/IJCS_45_1_16.pdf}.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Unfortunately, the structure of this file is too complex to analyze and contained only declarative parts of the sources (types, classes with field and method declarations and external variables).</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T035318Z" creationid="eugeneai" creationdate="20191003T035318Z">
+        <seg>Но, к сожалению, структура этого файла является слишком сложной для анализа и содержит лишь декларативные части источников (типы, классы с полями и объявлениями методов, внешние переменные).</seg>
       </tuv>
     </tu>
     <tu>
@@ -1002,6 +1346,30 @@
       </tuv>
       <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191002T104058Z" creationid="eugeneai" creationdate="20191002T104058Z">
         <seg>Мы предлагаем более общий подход, где для всех исходных типов моделей разрабатываются конвертера в формат RDF<it pos="begin" x="0">&lt;p0&gt;</it>, в стандартное представление данных и знаний в СВ, а трансформация программируется в виде объектно-ориентированной логической программы на языке LogTalk.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>We tried to use a version of GCC<it pos="begin" x="0">&lt;p0&gt;</it>, which outputs abstract syntax tree as an XML file.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T035240Z" creationid="eugeneai" creationdate="20191003T035240Z">
+        <seg>Мы пытались использовать специальную версию компилятора GCC<it pos="begin" x="0">&lt;Р0&gt;</it>, который представляет абстрактное синтаксическое дерево в виде XML-файла.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>We use this structural data of the source code of Mothur for analysis and conversion it to a RDF graph, resulting in the description of all the Mothur modules.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T035122Z" creationid="eugeneai" creationdate="20191003T035122Z">
+        <seg>Анализ этой дополнительной информации дает данные о структуре межмодульного взаимодействия, которые активно используются при трансформации.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>When implementing complex software, which are composed from existing subsystems, their specifications can be additional sources of model data.</seg>
+      </tuv>
+      <tuv xml:lang="RU-RU" changeid="eugeneai" changedate="20191003T031723Z" creationid="eugeneai" creationdate="20191003T031723Z">
+        <seg>При реализации сложных программных систем, их иногда составляют из действующих модулей, спецификации этих модулей могут выступать дополнительными источниками модельных данных.</seg>
       </tuv>
     </tu>
     <tu>
