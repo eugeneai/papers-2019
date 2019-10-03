@@ -398,6 +398,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Domain Specific Language</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T060156Z" creationid="eugeneai" creationdate="20191003T060156Z">
+        <seg>Язык описания предметной области </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Each T--module in a general case is a parameterized LogTalk object.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110745Z" creationid="eugeneai" creationdate="20191002T110745Z">
@@ -514,6 +522,22 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T162517Z" creationid="eugeneai" creationdate="20191002T162517Z">
         <seg>Если классу назначен стандартный стереотип &lt;i5&gt;&lt;&lt;interface&gt;&gt;&lt;/i5&gt;, тогда класс превращается в определение интерфейса.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In &lt;n2&gt;, ATL is used to transform Computational Independent Model (CIM) represented as BPMN diagram into set of UML diagrams, defining PIM. Paper &lt;n3&gt; proposes a model transformation CIM to PIM for web-applications, where CIM is represented with State and Use case UML-Diagrams logically connected with ATL rules.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T061131Z" creationid="eugeneai" creationdate="20191003T061131Z">
+        <seg>В &lt;n2&gt;, ATL используется для преобразования CIM, педставленной в виде диаграммы BPMN на набор UML-диаграмм, т.е. PIM. В статье &lt;n3&gt; предложена модель трансформации CIM в PIM для веб-приложений, CIM представлен диаграммами UML, диаграммой состояний и диаграммой вариантов использования.  Логические связи между диаграммами реализуются в ATL.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In &lt;n4&gt; is proposed an evaluation of security aspects of distributed applications using MDA description; the evaluation is implemented a logical inference over the MDA synthesized logical security models.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T061812Z" creationid="eugeneai" creationdate="20191003T061812Z">
+        <seg>В &lt;n4&gt; предложен способ оценки аспектов безопасности распределенных приложений при помощи моделей MDA.  Оценка реализуется при помощи логического вывода над данными, полученными в результате трансформации MDA.</seg>
       </tuv>
     </tu>
     <tu>
@@ -726,6 +750,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Our approach allows one to use other sources (not being presented in XMI) of model information, as well as general purpose libraries in implementation of the transformation engine.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T075534Z" creationid="eugeneai" creationdate="20191003T075534Z">
+        <seg>Наш подход позволяет использовать другие (не только в XMI) модели, а также библиотеками общего назначения в реализации модуля преобразования.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Overall time spent to develop the proposed transformation technique and the basic (structural) aspects of Mothur module representation is two human-months.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T035956Z" creationid="eugeneai" creationdate="20191003T035956Z">
@@ -830,6 +862,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Similar to ATL, Transformation Model Representation Language (TMRL) is developed in &lt;n0&gt; but oriented on visual representation of a knowledge base with following conversion in various production rules in CLIPS and OWL.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T060550Z" creationid="eugeneai" creationdate="20191003T060550Z">
+        <seg>Аналогично ATL, Язык представления модели трансформации (Transformation Model Representation Language, TMRL) описанный в &lt;n0&gt;, но ориентированный на визуальное представление базы знаний с последующим преобразованием в продукционные правила CLIPS и OWL.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>So the transformation modules can be used as a verification system for the sources.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T040307Z" creationid="eugeneai" creationdate="20191003T040307Z">
@@ -882,6 +922,14 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T163623Z" creationid="eugeneai" creationdate="20191002T163623Z">
         <seg>Теговые значения позволяют связать некоторое строковое значение с ключом (строкой), которые так или иначе интерпретируются с процедурой трансформации.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Technique of Transformation Implementation</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T075626Z" creationid="eugeneai" creationdate="20191003T075626Z">
+        <seg>Методика реализации трансформации </seg>
       </tuv>
     </tu>
     <tu>
@@ -1006,10 +1054,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The language and its engine supports conversion from one XMI model to another one in the same XMI format.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T055718Z" creationid="eugeneai" creationdate="20191003T055718Z">
+        <seg>Язык и его интерпретатор поддерживают преобразование из одной модели, сохраненной в формате XMI, в другую в том же формате XMI.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The language structures describe recognition of properties of compositions of the source model and direct construction of new structures in the target model.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T060111Z" creationid="eugeneai" creationdate="20191003T060111Z">
+        <seg>Структуры языка описывают распознавание свойств композиций элементов исходной модели и построение соответствующих структур в целевой модели.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The logic of some Mothur modules functioning requires to make flexible set of output connection to make usage of complex modules to be more convenient for end user.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T035751Z" creationid="eugeneai" creationdate="20191003T035751Z">
         <seg>По логике некоторых модулей Mothur заложена гибкая функциональность: набор выходных файлов зависит от набора входных и настроек модуля.  В идеальном случае в dataflow-блоках необходимо учитывать такие нюансы и предоставлять пользователю комбинации входов и выходов отражающие эти особенности.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The main idea behind implementation of transformation engine is an usage of an object logical programming language meeting the following constraints: &lt;n0&gt; &lt;u0&gt; support multiple sources of model data, &lt;u1&gt; first-order language for definition of the transformation, &lt;u2&gt; transformation is represented as rules, &lt;u3&gt; rules should be encapsulated in objects, &lt;u4&gt; objects should query other objects for results, &lt;u5&gt; means for transformation configuration and scenario description, &lt;u6&gt; knowledge manipulation, including composition, &lt;u7&gt; expression and query of RDF entities.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T080254Z" creationid="eugeneai" creationdate="20191003T080254Z">
+        <seg>Основная идея реализации механизма преобразования является использование объектного логического языка программирования, который соответствует следующим ограничениям: &lt;p0&gt; &lt;u0&gt; поддержка нескольких источников данных модели, &lt;u1&gt; язык первого порядка для определения трансформации, &lt;u2&gt; трансформация представляется в виде правил, &lt;u3&gt; правила должны инкапсулироваться в объекты, &lt;u4&gt; объекты должны запрашивать другие объекты и получать результат, &lt;u5&gt; поддерживать средства конфигурирования сценария трансформации, &lt;u6&gt; преобразование структуры знаний, в том числе композиция, &lt;u7&gt; оперировать тройками RDF.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1026,6 +1098,14 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T060628Z" creationid="eugeneai" creationdate="20191002T060628Z">
         <seg>Модельно-управляемая архитектура (Model Driven Architecture, MDA) -- это наиболее изученный и развитый трансформационный подход, выходящий за ограничения CASE--систем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The most widely used technology of model transformation is ATL (ATLAS Transformation Language) &lt;n0&gt; and its predecessor QVT, an OMG standard &lt;n1&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T055608Z" creationid="eugeneai" creationdate="20191003T055608Z">
+        <seg>Наиболее широко используемая технология трансформации моделей -- это ATL (ATLAS Transformation Language) &lt;n0&gt; и его предшественник QVT, эти технологии -- стандарт OMG &lt;n1&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1058,6 +1138,14 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T105453Z" creationid="eugeneai" creationdate="20191002T105453Z">
         <seg>Графы хранятся в виде RDF-файлов или загружаются с сервера через точки доступа SPARQL.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The paper &lt;n5&gt; is considered a highly decoupled distributed event-driven application environment, whose design and functioning is dynamically controlled by its three-level DSL&lt;p0&gt; description and MDA transformations, which support change propagation.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T062431Z" creationid="eugeneai" creationdate="20191003T062431Z">
+        <seg>В статье &lt;n5&gt; рассматривается сильно несвязных распределенных вычислительных сред, управляемых событиями.  Состав среды и ее функционирование динамически управляется трехуровневым описанием в DSL&lt;p0&gt; и соответствующей трансформацией MDA, поддерживающей распространение изменений (change propagation).</seg>
       </tuv>
     </tu>
     <tu>
@@ -1182,6 +1270,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The visual presentation of transforming rules are used also in &lt;n1&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T060654Z" creationid="eugeneai" creationdate="20191003T060654Z">
+        <seg>Визуальное представление правил трансформации используется также в &lt;n1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These patterns are analyzed and the results are stored as the objects states, &lt;i0&gt;e.g.&lt;/i0&gt;, cashed in the indexing engine.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T023453Z" creationid="eugeneai" creationdate="20191003T023453Z">
@@ -1262,6 +1358,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Thus, the majority of the presented techniques are closed with respect of XMI file format: the source data and the result of the transaction are represented in it, and it goes beyond only on the stage of the source code generation.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T075443Z" creationid="eugeneai" creationdate="20191003T075443Z">
+        <seg>Таким образом, большинство представленных методов является замкнутым относительно файла формат XMI: исходные данные и результат трансформации представлены, в основном, в этом формате, выход за границу формата происходит только на этапе генерации кода.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Transformation generates Java modules implementing structural and operational features of blocks.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T035403Z" creationid="eugeneai" creationdate="20191003T035403Z">
@@ -1306,6 +1410,14 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T035318Z" creationid="eugeneai" creationdate="20191003T035318Z">
         <seg>Но, к сожалению, структура этого файла является слишком сложной для анализа и содержит лишь декларативные части источников (типы, классы с полями и объявлениями методов, внешние переменные).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Usage of object-oriented logical language LogTalk allows us powerfully structuring and manipulate knowledge base.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T075614Z" creationid="eugeneai" creationdate="20191003T075614Z">
+        <seg>Использование объектно-ориентированного логического языка LogTalk позволяет нам активно использовать структурирование и управление базой знаний.</seg>
       </tuv>
     </tu>
     <tu>
