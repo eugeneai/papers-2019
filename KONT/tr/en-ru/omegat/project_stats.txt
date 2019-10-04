@@ -1,14 +1,14 @@
-10/3/19, 4:03 PM
+10/4/19, 10:02 AM
 Project Statistics
 
                  	Segments	Words	Characters (without spaces)	Characters (including spaces)	#Files	
 Total:           	     289	 4666	                      28354	                        32455	     1	
-Remaining:       	      47	  798	                       4732	                         5465	     1	
+Remaining:       	       0	    0	                          0	                            0	     0	
 Unique:          	     287	 4664	                      28328	                        32427	     1	
-Unique Remaining:	      47	  798	                       4732	                         5465	     1	
+Unique Remaining:	       0	    0	                          0	                            0	     0	
 
 
 Individual File Statistics:
 
 File Name    	Total Segments	Remaining Segments	Unique Segments	Unique Remaining Segments	Total Words	Remaining Words	Unique Words	Unique Remaining Words	Total Characters (without spaces)	Remaining Characters (without spaces)	Unique Characters (without spaces)	Unique Remaining Characters (without spaces)	Total Characters (including spaces)	Remaining Characters (including spaces)	Unique Characters (including spaces)	Unique Remaining Characters (including spaces)	
-tgr-paper.tex	           289	                47	            287	                       47	       4666	            798	        4664	                   798	                            28354	                                 4732	                             28328	                                        4732	                              32455	                                   5465	                               32427	                                          5465	
+tgr-paper.tex	           289	                 0	            287	                        0	       4666	              0	        4664	                     0	                            28354	                                    0	                             28328	                                           0	                              32455	                                      0	                               32427	                                             0	

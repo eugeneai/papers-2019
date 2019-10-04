@@ -270,6 +270,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Acknowledgements</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T140458Z" creationid="eugeneai" creationdate="20191003T140458Z">
+        <seg>Благодарности</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All components interact by means of network protocols and use utf-8 encoded HTML, TXT, XML and JSON formats for data representation, which are expressive enough and easily debugged.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110508Z" creationid="eugeneai" creationdate="20191002T110508Z">
@@ -306,6 +314,14 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T054741Z" creationid="eugeneai" creationdate="20191002T054741Z">
         <seg>Приводится пример использования разрабатываемых инструментов для представленя модулей прикладного пакета Mothur в виде блоков визуального потокового программирования системы Rapidminer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Another aspect of research is integration with existing Linked Open Data sources such as .</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T140455Z" creationid="eugeneai" creationdate="20191003T140455Z">
+        <seg>Другой аспект исследования -- это интеграция с существующими приложениями открытых связанных данных, таких как .</seg>
       </tuv>
     </tu>
     <tu>
@@ -390,6 +406,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Configurations are implemented as a prototyping hierarchies: in inheritance, a configuration are refined by replacing and adding new values.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T122130Z" creationid="eugeneai" creationdate="20191003T122130Z">
+        <seg>Конфигурирование реализована в виде иерархии прототипирования: при наследовании, конфигурация уточняются при помощи замены существующих и добавления новых значений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Dispute these notations additional data for transformation can be obtained from Semantic Web (SW), for example, ontology definitions, literal names of entities in various natural languages, current state of processes, and so on.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T103446Z" creationid="eugeneai" creationdate="20191002T103446Z">
@@ -402,6 +426,14 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T060156Z" creationid="eugeneai" creationdate="20191003T060156Z">
         <seg>Язык описания предметной области </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Dynamic objects are used in construction of PSM objects, currently, each instantiation is an entity of target programming language.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T134758Z" creationid="eugeneai" creationdate="20191003T134758Z">
+        <seg>Динамические объекты используются в формировании объектов PSM, и на данном этапе каждый экземпляр является элементом синтезируемого программного кода.</seg>
       </tuv>
     </tu>
     <tu>
@@ -446,10 +478,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Each object is respected as a knowledge base of encapsulated rules.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T121723Z" creationid="eugeneai" creationdate="20191003T121723Z">
+        <seg>Каждый объект представляет собой фасад к инкапсулированным знаниям.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Elements of a code block can be |append|ed, |prepend|ed and |remove|ed.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191004T014604Z" creationid="eugeneai" creationdate="20191004T014604Z">
+        <seg>Элементы блока кода можно добавлять в конец (|append|) и в начало (|prepend|) списка, а также удалять (|remove|).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Entity identification and naming in RDF have various aspects.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T121431Z" creationid="eugeneai" creationdate="20191002T121431Z">
         <seg>Идентификация сущностей и их поименование в RDF [[многоаспектно]].</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Finally, SWI-Prolog has a good LogTalk compatible RDF library strongly tied to the language itself.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T122325Z" creationid="eugeneai" creationdate="20191003T122325Z">
+        <seg>Наконец, для SWI-Prolog существует реализация LogTalk, совместимая с библиотекой RDF, которая привязана к синтаксису языка.</seg>
       </tuv>
     </tu>
     <tu>
@@ -502,6 +558,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For the subclass and subpropery relation, library realizes transitive closure, which can be used in the predicate queries.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T133426Z" creationid="eugeneai" creationdate="20191003T133426Z">
+        <seg>Для отношений subclass и subpropery библиотека реализует транзитивное замыкание, которое использовано в предикативных запросах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>From other hand side, converting the complex tree-like structures used for model representation to set of triples, i.e., facts for inference machine, enables us to use Prolog--based engines for transformation definition.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T025937Z" creationid="eugeneai" creationdate="20191003T025937Z">
@@ -526,6 +590,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If needed the item's definition can include provision information which can be used in result construction, when its object being queried.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191004T015033Z" creationid="eugeneai" creationdate="20191004T015033Z">
+        <seg>Структура элемента блока не регламентируется, поэтому к нему можно добавлять дополнительные поля, информации которых может быть использована для хранения промежуточных данных или данных для других этапов трансформации.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In , ATL is used to transform Computational Independent Model (CIM) represented as BPMN diagram into set of UML diagrams, defining PIM. Paper  proposes a model transformation CIM to PIM for web-applications, where CIM is represented with State and Use case UML-Diagrams logically connected with ATL rules.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T061131Z" creationid="eugeneai" creationdate="20191003T061131Z">
@@ -538,6 +610,14 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T061812Z" creationid="eugeneai" creationdate="20191003T061812Z">
         <seg>В  предложен способ оценки аспектов безопасности распределенных приложений при помощи моделей MDA.  Оценка реализуется при помощи логического вывода над данными, полученными в результате трансформации MDA.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In inheritance, methods can be reprogrammed implementing refined knowledge set.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T122019Z" creationid="eugeneai" creationdate="20191003T122019Z">
+        <seg>При наследовании методы можно перепрограммировать наследуемый набор знаний на определенную специфику.</seg>
       </tuv>
     </tu>
     <tu>
@@ -578,6 +658,14 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T023721Z" creationid="eugeneai" creationdate="20191003T023721Z">
         <seg>Исходные данные моделей CIM и PIM преобразуются в графы RDF специальными адаптерами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Instead, programmer can add an |item| being another code block, inserting its content in the outer block.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191004T014844Z" creationid="eugeneai" creationdate="20191004T014844Z">
+        <seg>Вместо этого можно вставлять вспомогательные блоки кода как |item|-элементы основного блока, добавляя новое содержимое во вспомогательные блоки.</seg>
       </tuv>
     </tu>
     <tu>
@@ -630,6 +718,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Library contains predicates for loading graphs from files and internet sites, store them in various text based and binary formats for later use.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T132010Z" creationid="eugeneai" creationdate="20191003T132010Z">
+        <seg>Библиотека содержит предикаты для загрузки графов из файлов и интернет-сайтов, хранить их в различных текстовых и двоичных форматах для последующего использования.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Linked Open Data</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T040309Z" creationid="eugeneai" creationdate="20191003T040309Z">
@@ -650,6 +746,22 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T113612Z" creationid="eugeneai" creationdate="20191002T113612Z">
         <seg>Категории языка LogTalk являются удобным инструментом реализации однотипного поведения среди несвязанных одной иерархией классов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>LogTalk as a macro package provides two kind of objects: static and dynamic.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T133841Z" creationid="eugeneai" creationdate="20191003T133841Z">
+        <seg>LogTalk как макропакет позволяет создавать два вида объектов -- статические и динамические.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>LogTalk object consists of only encapsulated predicates (methods), some of them can be defined as dynamic, implementing object state.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T133708Z" creationid="eugeneai" creationdate="20191003T133708Z">
+        <seg>Объекты LogTalk состоят только из инкапсулированных предикатов (методов), некоторые из них могут быть определены как динамические, что позволяет задавать состояния объектов.</seg>
       </tuv>
     </tu>
     <tu>
@@ -698,6 +810,14 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T104342Z" creationid="eugeneai" creationdate="20191002T104342Z">
         <seg>Объектное программирование позволяет нам структурировать, управлять базой знаний при помощи инкапсуляции, наследования, расширения и композиции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Objects can be inherited (as prototypes or classes), parameterized, and composed with categories.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T121844Z" creationid="eugeneai" creationdate="20191003T121844Z">
+        <seg>Объекты наследуются (как прототипы или классы), параметризуются и комплексируются с категориями.</seg>
       </tuv>
     </tu>
     <tu>
@@ -790,6 +910,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Parameterized objects should be stateless, in this case, LogTalk compiles it in statically executed code.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T135154Z" creationid="eugeneai" creationdate="20191003T135154Z">
+        <seg>Параметризованные объекты должны быть только статическими объектами, в этом случае, LogTalk компилирует их в статически код.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Parametrized objects are facade interfaces to other objects (contexts), e.g., input targets and graph databases.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T134923Z" creationid="eugeneai" creationdate="20191003T134923Z">
+        <seg>Параметризованные объекты выполняют роль интерфейсов--фасадов к другим объектам и данным графов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Program. vol.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T110841Z" creationid="eugeneai" creationdate="20191002T110841Z">
@@ -846,10 +982,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>SWI Prolog standard distribution contains library for RDF processing.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T130725Z" creationid="eugeneai" creationdate="20191003T130725Z">
+        <seg>SWI-Prolog в стандартном дистрибутиве включает библиотеку для обработки RDF.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SWI-Prolog with macro package LogTalk meet these constraints.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T121514Z" creationid="eugeneai" creationdate="20191003T121514Z">
+        <seg>SWI-Prolog с макропакетом LogTalk соответствует этим ограничениям.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Scenario is programmed as a special object defining transformation by means of calling |tr/N| rules.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T165816Z" creationid="eugeneai" creationdate="20191002T165816Z">
         <seg>Также сценарии можно реализовывать как упорядоченные наборы правил (методов) вида |tr/N|.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Scenarios are implemented as an ordered sets of methods.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T122141Z" creationid="eugeneai" creationdate="20191003T122141Z">
+        <seg>Сценарии реализуются в виде упорядоченного набора методов.</seg>
       </tuv>
     </tu>
     <tu>
@@ -910,6 +1070,30 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Static object instances are used for defining configurations, scenarios, interfaces to input and output targets (streams, models), graph databases, and other global compile time known entities.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T134530Z" creationid="eugeneai" creationdate="20191003T134530Z">
+        <seg>Статические экземпляры используются для определения конфигураций, сценариев, интерфейсов к входной и выходной информации, базам данных онтологий, и другим глобальным сущностям, известным во время компиляции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Static objects is defined and instantiated during compilation, dynamic ones are created with createobject/4 usually at runtime.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T134034Z" creationid="eugeneai" creationdate="20191003T134034Z">
+        <seg>Статические объекты создаются при помощи отношения создания экземпляра во время компиляции, динамические -- создаются предикатом createobject/4 во время исполнения программы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Static parameterized objects can be considered as third way of instantiation.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T134114Z" creationid="eugeneai" creationdate="20191003T134114Z">
+        <seg>Статические параметризованные объекты можно рассматривать как третий способ создания экземпляров.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Stereotypes declare an extended set of properties for an object or relation, e.g., in UML Class Diagram stereotypes are used to define the kind of a class.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T162411Z" creationid="eugeneai" creationdate="20191002T162411Z">
@@ -954,6 +1138,14 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T165447Z" creationid="eugeneai" creationdate="20191002T165447Z">
         <seg>Объекты |code_block| внутри содержат строки исходного кода, структуры, из которых порождаются куски исходного кода, объекты LogTalk и другие блоки кода.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The LogTalk objects encapsulate Prolog first-order language rules as methods.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T121618Z" creationid="eugeneai" creationdate="20191003T121618Z">
+        <seg>Объекты LogTalk инкапсулируют правила языка в виде методов.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1006,6 +1198,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The development tools is being tested in representation of bioinformatic tool Mothur as Rapidminer dataflow diagrams .</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191004T015728Z" creationid="eugeneai" creationdate="20191004T015728Z">
+        <seg>Инструменты разработки использованы в создании инструмента представления биоинформатических модулей Mothur в виде dataflow-диаграмм системы Rapidminer &lt;п0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The encapsulation gave us possibility to hide specialized knowledge behind object interfaces.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T135328Z" creationid="eugeneai" creationdate="20191003T135328Z">
+        <seg>Инкапсуляция дает возможность скрывать специальные знаний за интерфейсом объекта.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The entity names and their relation expressed with the source notation must be convertible to the RDF definition upon request from transformation engine.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T030518Z" creationid="eugeneai" creationdate="20191003T030518Z">
@@ -1018,6 +1226,14 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T034427Z" creationid="eugeneai" creationdate="20191003T034427Z">
         <seg>Файлы передаются между модулями.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first argument of |renderitem/2| is the |item/1|--structure to be rendered, and the second one is the list of strings representing generated source code.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191004T014439Z" creationid="eugeneai" creationdate="20191004T014439Z">
+        <seg>Первый аргумент |renderitem/2| -- это структура из |item/1|, а второй -- список строк, представляющий сгенерированный исходный код.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1066,6 +1282,38 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T060111Z" creationid="eugeneai" creationdate="20191003T060111Z">
         <seg>Структуры языка описывают распознавание свойств композиций элементов исходной модели и построение соответствующих структур в целевой модели.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The library imported in LogTalk as an object, that is an encapsulation of all the library predicates.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T133456Z" creationid="eugeneai" creationdate="20191003T133456Z">
+        <seg>Библиотеки импортируется в LogTalk как объекты, то есть как инкапсуляции всех библиотечных предикатов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The library represents RDF entities in a W3C compliant way.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T130526Z" creationid="eugeneai" creationdate="20191003T130526Z">
+        <seg>Библиотека представляет сущности RDF в виде, рекомендованном W3C.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The library represents URI as a corresponding functor with atom argument.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T131316Z" creationid="eugeneai" creationdate="20191003T131316Z">
+        <seg>Библиотека представляет URI при помощи функтора с аргументом -- атомом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The library support queries for the graphs as a predicate query and as SPARQL.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T133300Z" creationid="eugeneai" creationdate="20191003T133300Z">
+        <seg>Библиотека поддерживает запросы к графам в виде комбинации предикатов или на языке SPARQL.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1166,6 +1414,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The presented research results is distributed among three grants as follows: aspect of LOD data representation and integration is supported by Russian Science Foundation, grant 18--07--0075; logical inference combining various source models and object--oriented knowledge representation is supported by Russian Foundation of Basic Research, grant 18--71--10001; the presented example of Rapidminer dataflow modules generation is being developed with support of grant of Irkutsk Scientific Center SB RAS, project No 4.2.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T140743Z" creationid="eugeneai" creationdate="20191003T140743Z">
+        <seg>Представленные результаты исследований распределена среди трех грантов следующим образом: LOD-- и RDF--представления данных и их интеграция поддержана Российским научным фондом, Грант 18--07--0075; логический вывод в процедуре трансформации над комплексами моделей и объектно-ориентированное представление знаний -- поддержка Российского фонда фундаментальных исследований, Грант 18--71--10001; представленный пример Rapidminer разрабатывается при поддержке гранта Иркутского научного центра СО РАН, проект № 4.2.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The previous listing uses static parameterized object |query/1|, whose context argument is a graph representing model under transformation.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T111206Z" creationid="eugeneai" creationdate="20191002T111206Z">
@@ -1222,6 +1478,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The result is a Rapidminer plug-in, with each Mothur module being represented as a data block.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T140408Z" creationid="eugeneai" creationdate="20191003T140408Z">
+        <seg>В результате был синтезирован модуль Rapidminer, в котором все модули Mothur представлены в виде блоков.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The role of an object is defined with relation to other objects, e.g., instances of a class are the objects, which are |instantiates/1| its class.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T134254Z" creationid="eugeneai" creationdate="20191003T134254Z">
+        <seg>Роль объекта полностью определяется системой отношений с другими объектами, например, экземпляры классов -- это объекты, состоящие в отношении |instantiates/1| со своим классом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The same is used to describe relations between use cases in Use Case diagram.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T162702Z" creationid="eugeneai" creationdate="20191002T162702Z">
@@ -1246,6 +1518,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The source data for transformation is the module specifications and UML Class Diagram, which organizes submodules in virtual class hierarchies.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191004T015838Z" creationid="eugeneai" creationdate="20191004T015838Z">
+        <seg>Исходные данные для преобразования -- это спецификации модуля и дополнительные диаграмма классов UML, которая организует модули в виртуальную иерархию блоков.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The states of the object represent PSM, which is translated into source code and initial data.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T023611Z" creationid="eugeneai" creationdate="20191003T023611Z">
@@ -1254,10 +1534,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The type of the element is defined by outer functor of the argument, e.g., we define with |append(attributes(L))| a list |L| of attributes of a class.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191004T014122Z" creationid="eugeneai" creationdate="20191004T014122Z">
+        <seg>Тип элемента определяется его внешним функтором, например, сообщение |append(attributes(L))| добавляет список |L| атрибутов в класс.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The usage experience of stereotypes and tag values resulted in recognition of the fact, that assigning a stereotype usually implies definition of a set of regular tag values.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T164243Z" creationid="eugeneai" creationdate="20191002T164243Z">
         <seg>Опыт использования стереотипов и теговых значений показал, что назначение определенного стереотипа, как правило, предполагает определение набора одного и того же перечня теговых значений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The usage of LogTalk language allowed us to use object facilities to structure transformational knowledge, create an instrumental basis for manipulation knowledge sets with object inheritance and composition.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191004T015516Z" creationid="eugeneai" creationdate="20191004T015516Z">
+        <seg>Использование языка LogTalk позволило структурировать трансформационные знания, создать инструментальный базис для внесения модификаций в наборы знаний при помощи наследования и композиции.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1274,6 +1570,38 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T060654Z" creationid="eugeneai" creationdate="20191003T060654Z">
         <seg>Визуальное представление правил трансформации используется также в .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The way of rendering the sources is implemented by subclassing the object and realizing |render/1| and |renderitem/2|.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191004T014247Z" creationid="eugeneai" creationdate="20191004T014247Z">
+        <seg>Генерация исходного кода реализуется при наследовании, при этом надо добавить правила, соответствующие новым структурам: |render/1| и |renderitem/2|.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Their main role is structuring Prolog rule set.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T134608Z" creationid="eugeneai" creationdate="20191003T134608Z">
+        <seg>Их основная задача -- структурировать множества правил Prolog.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is a basic query optimization.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T133315Z" creationid="eugeneai" creationdate="20191003T133315Z">
+        <seg>Реализована базовая оптимизация запросов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These objects enables programmer to define recognition rules over set of structures provided it with parameters.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T135122Z" creationid="eugeneai" creationdate="20191003T135122Z">
+        <seg>Такие объекты дают инструмент создания правил распознавания структур в некотором окружении (контексте), задаваемыми параметрами объекта.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1354,6 +1682,14 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T025559Z" creationid="eugeneai" creationdate="20191003T025559Z">
         <seg>В результате, отрасль ИТ постепенно на глобальном уровне накапливает и стандартизирует знания и данные предметных областей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This structure can be constructed with a special form &lt;namespace&gt;:&lt;identifier&gt;.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T131656Z" creationid="eugeneai" creationdate="20191003T131656Z">
+        <seg>URI также задается при помощи специальной формы &lt;namespace&gt;:&lt;identifier&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1454,10 +1790,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We presented an approach to implementation of transformation procedures for Model Driven Architecture (MDA) that mediates most convenient features of logical and object-oriented programming, representation of source model data as RDF graphs.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191004T015312Z" creationid="eugeneai" creationdate="20191004T015312Z">
+        <seg>В докладе представлен подход к реализации процедуры трансформации, поддерживающей подход Model Driven Architecture (MDA), который опосредует большинство удобных свойств логического и объектно-ориентированного программирования, представление данных исходной модели данных в виде графов RDF.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We propose a more general approach, where for all model sources a converter to RDF format, the standard SW data and knowledge representation, and the transformation is defined as object-oriented logical program in the LogTalk language.</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T104058Z" creationid="eugeneai" creationdate="20191002T104058Z">
         <seg>Мы предлагаем более общий подход, где для всех исходных типов моделей разрабатываются конвертера в формат RDF, в стандартное представление данных и знаний в СВ, а трансформация программируется в виде объектно-ориентированной логической программы на языке LogTalk.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We specially disallow inserting |item|s into code blocks, as it will make object and its database more complex.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191004T014714Z" creationid="eugeneai" creationdate="20191004T014714Z">
+        <seg>Вставка специально запрещена, так как это усложняет реализацию.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1482,6 +1834,14 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T031723Z" creationid="eugeneai" creationdate="20191003T031723Z">
         <seg>При реализации сложных программных систем, их иногда составляют из действующих модулей, спецификации этих модулей могут выступать дополнительными источниками модельных данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>With these MDA tools now we will develop a programming techniques aimed at reuse of knowledge and their specialization, thus, supporting programming traditions used in small information system developing companies and collectives.</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191004T020047Z" creationid="eugeneai" creationdate="20191004T020047Z">
+        <seg>Разработанная методика проектирования инструментов MDA будет развиваться в направлении формирования приемов программирования, направленных на повторное использование знаний и их специализации, таким образом, поддерживая традиции программирования, используемые при проектировании небольших информационных систем для развивающихся компаний.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1830,6 +2190,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>{LogTalk Methods}</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T133500Z" creationid="eugeneai" creationdate="20191003T133500Z">
+        <seg>{Методы LogTalk}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>{Model extensions}</seg>
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T162021Z" creationid="eugeneai" creationdate="20191002T162021Z">
@@ -1850,6 +2218,14 @@
       </tuv>
       <tuv lang="RU-RU" changeid="eugeneai" changedate="20191002T165025Z" creationid="eugeneai" creationdate="20191002T165025Z">
         <seg>{Представление PSM}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>{SWI-Prolog Semantic Web Library}</seg>
+      </tuv>
+      <tuv lang="RU-RU" changeid="eugeneai" changedate="20191003T130609Z" creationid="eugeneai" creationdate="20191003T130609Z">
+        <seg>{Библиотека СВ SWI-Prolog-а}</seg>
       </tuv>
     </tu>
     <tu>
